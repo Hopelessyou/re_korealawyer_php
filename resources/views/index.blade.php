@@ -17,11 +17,11 @@
       <button class="seg" type="button" aria-label="개인 선택">개인
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5"/></svg>
       </button>
-      <div class="search">
-        <input placeholder="법률 질문, 문서작성 여기서 해결하세요." />
-        <div class="plus" aria-hidden="true">+</div>
-        <div class="go" aria-label="검색">🔍</div>
-      </div>
+              <form class="search" method="GET" action="{{ route('qna.index') }}">
+          <input id="hero-search" name="query" placeholder="법률 질문, 문서작성 여기서 해결하세요." autocomplete="off" />
+          <div class="plus" aria-hidden="true">+</div>
+          <button type="submit" class="go" aria-label="검색">🔍</button>
+        </form>
     </div>
 
     <!-- 해시태그 라인 -->
@@ -229,23 +229,23 @@
           <h2>실시간 의뢰 가능 변호사</h2>
           <span style="font-weight:900; color:#10b981">›</span>
         </div>
-        <div class="live-ctrl">
-          <button class="ctr" aria-label="이전">‹</button>
-          <button class="ctr" aria-label="다음">›</button>
-        </div>
+                       <div class="live-ctrl">
+                 <button type="button" class="ctr" aria-label="이전">‹</button>
+                 <button type="button" class="ctr" aria-label="다음">›</button>
+               </div>
       </div>
-      <div class="live-chips" role="tablist">
-        <button class="chip">재산범죄</button>
-        <button class="chip">가족</button>
-        <button class="chip is-active">형사절차</button>
-        <button class="chip">기타 형사범죄</button>
-        <button class="chip">부동산/임대차</button>
-        <button class="chip">금전/계약 문제</button>
-        <button class="chip">폭행/협박</button>
-        <button class="chip">명예훼손/모욕</button>
-        <button class="chip">회사</button>
-        <button class="chip">교통</button>
-      </div>
+                   <div class="live-chips" role="tablist">
+               <button type="button" class="chip" role="tab" aria-selected="false">재산범죄</button>
+               <button type="button" class="chip" role="tab" aria-selected="false">가족</button>
+               <button type="button" class="chip is-active" role="tab" aria-selected="true">형사절차</button>
+               <button type="button" class="chip" role="tab" aria-selected="false">기타 형사범죄</button>
+               <button type="button" class="chip" role="tab" aria-selected="false">부동산/임대차</button>
+               <button type="button" class="chip" role="tab" aria-selected="false">금전/계약 문제</button>
+               <button type="button" class="chip" role="tab" aria-selected="false">폭행/협박</button>
+               <button type="button" class="chip" role="tab" aria-selected="false">명예훼손/모욕</button>
+               <button type="button" class="chip" role="tab" aria-selected="false">회사</button>
+               <button type="button" class="chip" role="tab" aria-selected="false">교통</button>
+             </div>
 
       <div class="live-grid">
         <!-- 카드 1 -->

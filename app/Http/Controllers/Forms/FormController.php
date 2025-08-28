@@ -11,15 +11,15 @@ class FormController extends Controller
     {
         return view('forms.index');
     }
-    
-    public function show(string $slug)
+
+    public function show($slug)
     {
         return view('forms.show', compact('slug'));
     }
-    
+
     public function requestReview(Request $request)
     {
-        // 문서 검토 의뢰 처리
-        return back()->with('success', '문서 검토가 요청되었습니다.');
+        // 빈 메서드
+        return redirect()->back();
     }
 }

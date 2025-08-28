@@ -1,5 +1,6 @@
 :root{
   --bg:#ffffff;
+  --bg-2:#f6f7f8;
   --text:#1f2937;             /* gray-800 */
   --muted:#6b7280;            /* gray-500 */
   --muted-2:#9ca3af;          /* gray-400 */
@@ -21,7 +22,7 @@ body{
 /* 헤더 래퍼 */
 .site-header{
   position:sticky; top:0; z-index:50;
-  background:var(--bg-2);
+  background:var(--bg);
 }
 .container{
   max-width:1280px; margin:0 auto;

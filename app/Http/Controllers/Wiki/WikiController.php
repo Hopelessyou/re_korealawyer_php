@@ -11,8 +11,8 @@ class WikiController extends Controller
     {
         return view('wiki.index');
     }
-    
-    public function show(string $slug)
+
+    public function show($slug)
     {
         return view('wiki.show', compact('slug'));
     }

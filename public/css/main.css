@@ -116,6 +116,8 @@ body{
   justify-content:center; 
   font-weight:900; 
   box-shadow:var(--shadow);
+  border:none;
+  cursor:pointer;
 }
 
 /* 해시태그 */

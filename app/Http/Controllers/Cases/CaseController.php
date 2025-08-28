@@ -3,9 +3,7 @@
 namespace App\Http\Controllers\Cases;
 
 use App\Http\Controllers\Controller;
-use App\Http\Requests\CaseStoreRequest;
-use App\Models\LegalCase;
-use Illuminate\Support\Str;
+use Illuminate\Http\Request;
 
 class CaseController extends Controller
 {
@@ -13,58 +11,32 @@ class CaseController extends Controller
     {
         return view('cases.index');
     }
-    
+
     public function list()
     {
-        $items = LegalCase::where('status', 'published')
-            ->latest('published_at')
-            ->paginate(20);
-        return view('cases.list', compact('items'));
+        return view('cases.list');
     }
-    
-    public function show(string $id)
+
+    public function show($id)
     {
-        $case = LegalCase::with(['lawyers', 'lawfirm'])->findOrFail($id);
-        return view('cases.show', compact('case'));
+        return view('cases.show', compact('id'));
     }
-    
-    public function store(CaseStoreRequest $r)
+
+    public function store(Request $request)
     {
-        $case = LegalCase::create([
-            'id' => Str::uuid(),
-            'title' => $r->title,
-            'summary' => $r->summary,
-            'body' => $r->body,
-            'org_id' => $r->user()->memberships()
-                ->whereHas('org', fn($q) => $q->where('type', 'lawfirm'))
-                ->value('org_id'),
-            'status' => 'review',
-            'created_by' => $r->user()->id
-        ]);
-        return redirect()->route('cases.show', $case->id);
+        // 빈 메서드
+        return redirect()->back();
     }
-    
-    public function update(CaseStoreRequest $r, string $id)
+
+    public function update(Request $request, $id)
     {
-        $case = LegalCase::findOrFail($id);
-        $this->authorize('update', $case);
-        
-        $case->update([
-            'title' => $r->title,
-            'summary' => $r->summary,
-            'body' => $r->body,
-        ]);
-        
-        return redirect()->route('cases.show', $case->id);
+        // 빈 메서드
+        return redirect()->back();
     }
-    
-    public function publish(string $id)
+
+    public function publish($id)
     {
-        $case = LegalCase::findOrFail($id);
-        $this->authorize('publish', $case);
-        $case->status = 'published';
-        $case->published_at = now();
-        $case->save();
-        return back();
+        // 빈 메서드
+        return redirect()->back();
     }
 }
