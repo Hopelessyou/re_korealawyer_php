@@ -1,7 +1,7 @@
 <aside class="bd-right">
-  @unless(request()->routeIs('lawfirms.*'))
+  @if(request()->routeIs('qna.*'))
     <a class="write-green" href="#">상담글 쓰기</a>
-  @endunless
+  @endif
   <div class="adbox" aria-hidden="true"></div>
 
   <div class="widget widget-hotlawyers"><div class="wtitle">최근 답변이 활발한 변호사</div>

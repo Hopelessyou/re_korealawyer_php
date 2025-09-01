@@ -32,7 +32,13 @@ Route::prefix('consult/qna')->group(function () {
 Route::prefix('lawyers')->group(function () {
     Route::get('/', [LawyerController::class, 'index'])->name('lawyers.index');
     Route::get('/search', [LawyerController::class, 'search'])->name('lawyers.search');
+    Route::get('/category/{slug}', [LawyerController::class, 'category'])->name('lawyers.category');
+    Route::get('/profile/{id}', [LawyerController::class, 'profile'])->name('lawyers.profile');
     Route::get('/{id}', [LawyerController::class, 'show'])->name('lawyers.show');
+    // profile subpages (placeholders)
+    Route::get('/profile/{id}/services', [LawyerController::class, 'profileServices'])->name('lawyers.profile.services');
+    Route::get('/profile/{id}/reviews', [LawyerController::class, 'profileReviews'])->name('lawyers.profile.reviews');
+    Route::get('/profile/{id}/activities', [LawyerController::class, 'profileActivities'])->name('lawyers.profile.activities');
 });
 
 // ③ 로펌 (소속변호사 + 전 사례)

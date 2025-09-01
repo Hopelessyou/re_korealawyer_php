@@ -29,7 +29,7 @@
         <!-- 좌측 네비게이션 -->
         <nav class="category-nav" aria-label="분야별 네비게이션">
           <ul class="nav-list">
-            <li><button type="button" class="nav-item active" data-category="sexual">성범죄</button></li>
+                         <li><button type="button" class="nav-item" data-category="sexual">성범죄</button></li>
             <li><button type="button" class="nav-item" data-category="property">재산범죄</button></li>
             <li><button type="button" class="nav-item" data-category="traffic">교통사고/범죄</button></li>
             <li><button type="button" class="nav-item" data-category="criminal-procedure">형사절차</button></li>
@@ -51,17 +51,17 @@
         <div class="category-content">
             <h1 class="page-title">분야로 변호사를 찾으세요.</h1>
           <!-- 성범죄 -->
-          <div class="category-section active" data-category="sexual">
+          <div class="category-section" data-category="sexual">
             <div class="category-header">성범죄</div>
             <div class="category-grid">
-              <div class="category-item">
+              <a href="{{ route('lawyers.category', 'sexual-prostitution') }}" class="category-item">
                 <div class="item-title">성매매</div>
                 <div class="item-desc">조건만남, 랜덤채팅, 유흥업소, 유사성매매 등</div>
-              </div>
-              <div class="category-item">
+              </a>
+              <a href="{{ route('lawyers.category', 'sexual-assault') }}" class="category-item">
                 <div class="item-title">성폭력/강제추행 등</div>
                 <div class="item-desc">성폭행, 준강간, 데이트폭력, 성희롱, 성추행 등</div>
-              </div>
+              </a>
               <div class="category-item">
                 <div class="item-title">미성년 대상 성범죄</div>
                 <div class="item-desc">아동청소년보호법, 미성년성매매 등</div>
@@ -331,43 +331,8 @@
   </div>
 </main>
 
-<script>
-document.addEventListener('DOMContentLoaded', function() {
-  // 탭 스위처 기능
-  const tabBtns = document.querySelectorAll('.tab-btn');
-  const tabContents = document.querySelectorAll('.tab-content');
-
-  tabBtns.forEach(btn => {
-    btn.addEventListener('click', function() {
-      const targetTab = this.getAttribute('data-tab');
-      
-      // 모든 탭 비활성화
-      tabBtns.forEach(b => b.classList.remove('active'));
-      tabContents.forEach(c => c.classList.remove('active'));
-      
-      // 선택된 탭 활성화
-      this.classList.add('active');
-      document.getElementById(targetTab + '-tab').classList.add('active');
-    });
-  });
-
-  // 카테고리 네비게이션 기능
-  const navItems = document.querySelectorAll('.nav-item');
-  const categorySections = document.querySelectorAll('.category-section');
-
-  navItems.forEach(item => {
-    item.addEventListener('click', function() {
-      const targetCategory = this.getAttribute('data-category');
-      
-      // 모든 네비게이션 아이템 비활성화
-      navItems.forEach(nav => nav.classList.remove('active'));
-      categorySections.forEach(section => section.classList.remove('active'));
-      
-      // 선택된 네비게이션 아이템과 섹션 활성화
-      this.classList.add('active');
-      document.querySelector(`[data-category="${targetCategory}"]`).classList.add('active');
-    });
-  });
-});
-</script>
+@section('scripts')
+<script src="{{ asset('js/lawyers.js') }}?v={{ filemtime(public_path('js/lawyers.js')) }}"></script>
 @endsection
+@endsection
+

@@ -193,70 +193,7 @@
           </section>
 
           <!-- 로펌 섹션 -->
-          <section class="lawfirm-section" aria-label="로펌 리스트">
-            <div class="fb-inside">
-              <h2 class="fb-title">로펌</h2>
-              <div class="fb-list">
-                <!-- Row 1 -->
-                <article class="fb-row">
-                  <div class="fb-left">
-                    <h3 class="fb-h1">[로티피] 법률상담부터 사건종결까지 직접 진행합니다.</h3>
-                    <div class="fb-desc">의뢰인의 눈높이에서 쉽고 친절한 상담을 약속합니다</div>
-                    <div class="fb-tags">
-                      <span class="fb-tag">최강팀 변호사</span>
-                      <span class="fb-tag">민사사건</span>
-                      <span class="fb-tag">이혼/상속사건</span>
-                      <span class="fb-tag">지역주택조합</span>
-                    </div>
-                    <div class="fb-cta">
-                      <div class="left"><span class="ico" aria-hidden="true"></span>로펌에 간편 상담을 신청해 보세요</div>
-                      <a class="btn" href="#">간편 상담 신청</a>
-                    </div>
-                    <div class="fb-meta">📍 서울특별시 서초구 반포대로30길 61 (서초동) 4층, 로티피 법률사무소</div>
-                  </div>
-                  <div class="fb-right"><div class="fb-thumb" aria-hidden="true"></div></div>
-                </article>
-                <!-- Row 2 -->
-                <article class="fb-row">
-                  <div class="fb-left">
-                    <h3 class="fb-h1">[로티피] 법률상담부터 사건종결까지 직접 진행합니다.</h3>
-                    <div class="fb-desc">의뢰인의 눈높이에서 쉽고 친절한 상담을 약속합니다</div>
-                    <div class="fb-tags">
-                      <span class="fb-tag">최강팀 변호사</span>
-                      <span class="fb-tag">민사사건</span>
-                      <span class="fb-tag">이혼/상속사건</span>
-                      <span class="fb-tag">지역주택조합</span>
-                    </div>
-                    <div class="fb-cta">
-                      <div class="left"><span class="ico" aria-hidden="true"></span>로펌에 간편 상담을 신청해 보세요</div>
-                      <a class="btn" href="#">간편 상담 신청</a>
-                    </div>
-                    <div class="fb-meta">📍 서울특별시 서초구 반포대로30길 61 (서초동) 4층, 로티피 법률사무소</div>
-                  </div>
-                  <div class="fb-right"><div class="fb-thumb" aria-hidden="true"></div></div>
-                </article>
-                <!-- Row 3 -->
-                <article class="fb-row">
-                  <div class="fb-left">
-                    <h3 class="fb-h1">[로티피] 법률상담부터 사건종결까지 직접 진행합니다.</h3>
-                    <div class="fb-desc">의뢰인의 눈높이에서 쉽고 친절한 상담을 약속합니다</div>
-                    <div class="fb-tags">
-                      <span class="fb-tag">최강팀 변호사</span>
-                      <span class="fb-tag">민사사건</span>
-                      <span class="fb-tag">이혼/상속사건</span>
-                      <span class="fb-tag">지역주택조합</span>
-                    </div>
-                    <div class="fb-cta">
-                      <div class="left"><span class="ico" aria-hidden="true"></span>로펌에 간편 상담을 신청해 보세요</div>
-                      <a class="btn" href="#">간편 상담 신청</a>
-                    </div>
-                    <div class="fb-meta">📍 서울특별시 서초구 반포대로30길 61 (서초동) 4층, 로티피 법률사무소</div>
-                  </div>
-                  <div class="fb-right"><div class="fb-thumb" aria-hidden="true"></div></div>
-                </article>
-              </div>
-            </div>
-          </section>
+          @include('components.lawfirm-section')
         </div>
 
         <!-- 우: 사이드바 -->

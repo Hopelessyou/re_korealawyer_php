@@ -19,6 +19,9 @@
     @if(request()->routeIs('retain.*'))
         <link rel="stylesheet" href="{{ asset('css/retain.css') }}?v={{ filemtime(public_path('css/retain.css')) }}">
     @endif
+    @if(request()->routeIs('lawyers.*'))
+        <link rel="stylesheet" href="{{ asset('css/lawyers.css') }}?v={{ filemtime(public_path('css/lawyers.css')) }}">
+    @endif
     @yield('styles')
 </head>
 <body>
