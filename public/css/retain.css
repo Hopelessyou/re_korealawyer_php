@@ -16,6 +16,12 @@
 html,body{margin:0;padding:0}
 body{font-family:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic","Segoe UI",Roboto,Arial,sans-serif;color:var(--text);background:#fff}
 
+/* 메인 컨테이너 스타일 재정의 */
+.main {
+  background: #fff;
+  min-height: 100vh;
+}
+
 .frame{max-width:var(--wrap); margin:36px auto; padding:28px; border:1px solid var(--line); border-radius:12px; box-shadow:0 10px 30px rgba(15,23,42,.06); background:#fff}
 .title{font-size:24px; font-weight:900; text-align:center; margin:0 0 10px; letter-spacing:-.01em} 
 .subtitle{margin:0 0 18px; text-align:center; color:#8a94a6; font-weight:800; font-size:13px}
@@ -90,5 +96,64 @@ body{font-family:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic","Segoe UI"
     font-size: 12px;
     padding: 6px 10px;
   }
+}
+
+/* 추가 개선사항 */
+.frame {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* 탭 전환 애니메이션 */
+.cats, .cols {
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.cats[style*="display: none"], .cols[style*="display: none"] {
+  opacity: 0;
+  transform: translateY(10px);
+}
+
+.cats:not([style*="display: none"]), .cols:not([style*="display: none"]) {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.col {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.col:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(15,23,42,.1);
+}
+
+.pill.option {
+  transition: all 0.2s ease;
+}
+
+.pill.option:hover {
+  background: #eef3f7;
+  transform: translateY(-1px);
+}
+
+.pill.selected {
+  animation: selectPulse 0.3s ease-out;
+}
+
+@keyframes selectPulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.02); }
+  100% { transform: scale(1); }
 }
 

@@ -16,6 +16,9 @@
     @if(request()->routeIs('wiki.*'))
         <link rel="stylesheet" href="{{ asset('css/wiki.css') }}?v={{ time() }}">
     @endif
+    @if(request()->routeIs('retain.*'))
+        <link rel="stylesheet" href="{{ asset('css/retain.css') }}?v={{ filemtime(public_path('css/retain.css')) }}">
+    @endif
     @yield('styles')
 </head>
 <body>
@@ -26,5 +29,7 @@
     </main>
 
     @include('components.footer')
+    
+    @yield('scripts')
 </body>
 </html>

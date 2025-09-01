@@ -12,8 +12,8 @@
   </div>
   <p class="subtitle">필요한 단계만 선택해 빠르게 진행하세요 — 불필요한 비용과 시간을 줄여드립니다.</p>
 
-  <!-- 주요 분야 아이콘 라인(샘플) -->
-  <div class="cats" aria-label="주요 분야">
+  <!-- 주요 분야 아이콘 라인(형사) -->
+  <div class="cats criminal-cats" aria-label="주요 분야">
     <span class="chip"><span class="ico"></span>형사·범죄</span>
     <span class="chip"><span class="ico"></span>사기·횡령</span>
     <span class="chip"><span class="ico"></span>성범죄</span>
@@ -26,8 +26,19 @@
     <span class="chip"><span class="ico"></span>상속</span>
   </div>
 
-  <!-- 3단 단계 카드 -->
-  <div class="cols">
+  <!-- 주요 분야 아이콘 라인(민사) -->
+  <div class="cats civil-cats" aria-label="주요 분야" style="display: none;">
+    <span class="chip"><span class="ico"></span>금전청구</span>
+    <span class="chip"><span class="ico"></span>부동산</span>
+    <span class="chip"><span class="ico"></span>손해배상청구</span>
+    <span class="chip"><span class="ico"></span>이혼(재판상 이혼)</span>
+    <span class="chip"><span class="ico"></span>친권·양육권</span>
+    <span class="chip"><span class="ico"></span>계약해제·해지·손해배상</span>
+    <span class="chip"><span class="ico"></span>보험금청구 구상금청구</span>
+  </div>
+
+  <!-- 3단 단계 카드 (형사) -->
+  <div class="cols criminal-content">
     <!-- 1단계 -->
     <section class="col" aria-label="경찰 조사 단계">
       <div class="colhead"><span class="badge">1</span> <div><div class="coltitle">경찰 조사 단계</div><div class="coldesc">초동수사 및 의뢰인 인정여부 결정</div></div></div>
@@ -118,82 +129,74 @@
     </section>
   </div>
 
+  <!-- 3단 단계 카드 (민사) -->
+  <div class="cols civil-content" style="display: none;">
+    <!-- 1단계 -->
+    <section class="col" aria-label="소송 전 단계">
+      <div class="colhead"><span class="badge">1</span> <div><div class="coltitle">소송 전 단계</div><div class="coldesc">소송 진행 전 사전 준비</div></div></div>
+
+      <div class="group">
+        <div class="glabel">소송 서류 준비</div>
+        <div class="list" role="radiogroup" aria-label="소송 서류 준비">
+          <button type="button" class="pill option" role="radio" aria-checked="false">피해 범위, 보상액 등 산정</button>
+          <button type="button" class="pill option" role="radio" aria-checked="false">소장 작성</button>
+          <button type="button" class="pill option" role="radio" aria-checked="false">답변서 작성</button>
+        </div>
+      </div>
+
+      <div class="group">
+        <div class="glabel">보전 처분</div>
+        <div class="list">
+          <div class="pill">소송 전 재산 처분 방지</div>
+          <div class="pill">가처분</div>
+          <div class="pill">가압류</div>
+        </div>
+      </div>
+
+      <div class="group">
+        <div class="glabel">기타</div>
+        <div class="list">
+          <div class="pill">기타 소송</div>
+          <div class="pill">소액심판청구(3,000만원 이하)</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 2단계 -->
+    <section class="col" aria-label="소송 단계">
+      <div class="colhead"><span class="badge">2</span> <div><div class="coltitle">소송 단계</div><div class="coldesc">재판 진행 중</div></div></div>
+
+      <div class="group">
+        <div class="glabel">재판 대응</div>
+        <div class="list">
+          <div class="pill">법적 분쟁에 대한 조치</div>
+          <div class="pill">쟁점 및 증거 정리</div>
+          <div class="pill">변호사 재판 출석</div>
+          <div class="pill">조정 절차 대리인</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3단계 -->
+    <section class="col" aria-label="판결 및 집행절차">
+      <div class="colhead"><span class="badge">3</span> <div><div class="coltitle">판결 및 집행절차</div><div class="coldesc">최종 판결</div></div></div>
+
+      <div class="group">
+        <div class="glabel">판결 후 대응 절차</div>
+        <div class="list">
+          <div class="pill">승소, 패소시 대응</div>
+          <div class="pill">항소이유서 작성</div>
+          <div class="pill">상고 이유서 작성</div>
+          <div class="pill">강제집행</div>
+        </div>
+      </div>
+    </section>
+  </div>
+
   <div class="footer"><button class="next">다음 →</button></div>
 </div>
 @endsection
 
 @section('scripts')
-<script>
-(function(){
-  // ---- helpers ----
-  function toButton(node){
-    if (node.tagName.toLowerCase() === 'button') return node;
-    const btn = document.createElement('button');
-    btn.type = 'button';
-    btn.className = 'pill option' + (node.classList.contains('action') ? ' selected' : '');
-    btn.setAttribute('role','radio');
-    btn.setAttribute('aria-checked', node.classList.contains('action') ? 'true' : 'false');
-    btn.innerHTML = node.innerHTML;
-    node.replaceWith(btn);
-    return btn;
-  }
-
-  function upgradeGroup(list){
-    if (!list) return [];
-    list.setAttribute('role','radiogroup');
-    const btns = Array.from(list.children).map(toButton);
-    // remove legacy .action
-    btns.forEach(b=>b.classList.remove('action'));
-    return btns;
-  }
-
-  // ---- build all option sets ----
-  const allLists = Array.from(document.querySelectorAll('.cols .group .list'));
-  const allButtons = allLists.flatMap(upgradeGroup);
-
-  // keep only the first preselected (if any) across ALL groups
-  let firstSel = allButtons.find(b => b.classList.contains('selected') || b.getAttribute('aria-checked')==='true');
-  if (firstSel) {
-    allButtons.forEach(b=>{
-      const on = b===firstSel;
-      b.classList.toggle('selected', on);
-      b.setAttribute('aria-checked', on);
-    });
-  } else {
-    // ensure all start unselected
-    allButtons.forEach(b=>{ b.classList.remove('selected'); b.setAttribute('aria-checked','false'); });
-  }
-
-  function selectOnly(btn){
-    allButtons.forEach(b=>{
-      const on = b===btn;
-      b.classList.toggle('selected', on);
-      b.setAttribute('aria-checked', on);
-    });
-  }
-
-  // click handler (global single-select)
-  document.addEventListener('click', (e)=>{
-    const btn = e.target.closest('.option[role="radio"]');
-    if (btn && allButtons.includes(btn)) selectOnly(btn);
-  });
-
-  // keyboard navigation inside a list, but still enforce global single-select
-  allLists.forEach(list => {
-    const radios = Array.from(list.querySelectorAll('.option[role="radio"]'));
-    list.addEventListener('keydown', (e)=>{
-      const idx = radios.indexOf(document.activeElement);
-      if(idx<0) return;
-      let target = null;
-      if(e.key==='ArrowRight' || e.key==='ArrowDown'){
-        e.preventDefault(); target = radios[(idx+1)%radios.length];
-      }
-      if(e.key==='ArrowLeft' || e.key==='ArrowUp'){
-        e.preventDefault(); target = radios[(idx-1+radios.length)%radios.length];
-      }
-      if(target){ target.focus(); selectOnly(target); }
-    });
-  });
-})();
-</script>
+<script src="{{ asset('js/retain.js') }}?v={{ filemtime(public_path('js/retain.js')) }}"></script>
 @endsection
