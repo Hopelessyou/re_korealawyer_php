@@ -13,6 +13,9 @@
     <!-- Styles -->
     <link rel="stylesheet" href="{{ asset('css/header.css') }}">
     <link rel="stylesheet" href="{{ asset('css/footer.css') }}">
+    @if(request()->routeIs('wiki.*'))
+        <link rel="stylesheet" href="{{ asset('css/wiki.css') }}?v={{ time() }}">
+    @endif
     @yield('styles')
 </head>
 <body>

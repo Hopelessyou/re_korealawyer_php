@@ -1,0 +1,1648 @@
+/* 위키 페이지 스타일 */
+:root {
+  --primary-green: #11835E;
+  --primary-green-light: #1FB581;
+  --text-dark: #163C2E;
+  --border-color: #E6ECE8;
+  --text-black: #0B0F14;
+  --text-muted: #5A6B7B;
+  --text-light: #757575;
+  --success-green: #22A06B;
+  --light-green: #E9F8F0;
+  --light-green-border: #C7E4D4;
+  --secondary-border: #AECCBD;
+  --light-bg: #F2F7F3;
+}
+
+/* 상단 네비게이션 탭 */
+.nav-tabs {
+  align-self: stretch;
+  height: 63.39px;
+  position: relative;
+  border-top: 1px solid var(--border-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.nav-tab {
+  position: relative;
+  width: 32px;
+  height: 42.39px;
+  cursor: pointer;
+}
+
+.tab-text {
+  width: 32.20px;
+  height: 16px;
+  position: absolute;
+  top: 13px;
+  left: 0;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: var(--text-dark);
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 26.40px;
+  word-wrap: break-word;
+}
+
+.nav-tab.active .tab-text {
+  color: var(--primary-green);
+}
+
+.tab-indicator {
+  width: 32px;
+  height: 3px;
+  position: absolute;
+  left: 0;
+  top: 45.39px;
+  background: var(--primary-green-light);
+  border-radius: 8px;
+}
+
+/* 히어로 섹션 */
+.hero-section {
+  width: 1160px;
+  height: 414.19px;
+  position: relative;
+  background: radial-gradient(ellipse 103.63% 145.56% at 30.00% -40.00%, rgba(10.32, 190.99, 131.97, 0.16) 0%, rgba(10.32, 190.99, 131.97, 0) 55%), linear-gradient(180deg, rgba(242.01, 246.97, 242.96, 0.85) 0%, rgba(242.01, 246.97, 242.96, 0) 100%);
+  border-radius: 19.60px;
+  outline: 1px solid var(--border-color);
+  outline-offset: -1px;
+  margin: 0 auto;
+}
+
+/* 히어로 배지 */
+.hero-badge {
+  width: 176.02px;
+  height: 33.80px;
+  position: absolute;
+  left: 37px;
+  top: 37px;
+  background: rgba(242.01, 246.97, 242.96, 0.94);
+  border-radius: 999px;
+  outline: 1px solid var(--border-color);
+  outline-offset: -1px;
+}
+
+.badge-text {
+  width: 154.22px;
+  height: 12px;
+  position: absolute;
+  left: 11px;
+  top: 10px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: var(--success-green);
+  font-size: 12px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 19.80px;
+  word-wrap: break-word;
+}
+
+/* 히어로 제목 */
+.hero-title {
+  width: 380.73px;
+  height: 79.50px;
+  position: absolute;
+  left: 37px;
+  top: 85.80px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: var(--text-black);
+  font-size: 30px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 49.50px;
+  word-wrap: break-word;
+}
+
+/* 히어로 설명 */
+.hero-description {
+  width: 612.72px;
+  height: 16px;
+  position: absolute;
+  left: 37px;
+  top: 196.80px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: var(--text-muted);
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 26.40px;
+  word-wrap: break-word;
+}
+
+/* 검색 컨테이너 */
+.search-container {
+  width: 747.59px;
+  height: 45px;
+  position: absolute;
+  left: 37px;
+  top: 234.19px;
+  display: flex;
+  gap: 10px;
+}
+
+.search-input {
+  width: 680.94px;
+  height: 45px;
+  background: white;
+  overflow: hidden;
+  border-radius: 12px;
+  outline: 1px solid var(--border-color);
+  outline-offset: -1px;
+  position: relative;
+}
+
+.search-placeholder {
+  width: 266.13px;
+  height: 15px;
+  position: absolute;
+  left: 17px;
+  top: 14px;
+  overflow: hidden;
+  color: var(--text-light);
+  font-size: 13.30px;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.search-button {
+  width: 58.66px;
+  height: 45px;
+  background: var(--primary-green);
+  border-radius: 12px;
+  position: relative;
+  cursor: pointer;
+}
+
+.button-text {
+  width: 27.02px;
+  height: 15px;
+  position: absolute;
+  left: 16px;
+  top: 14.50px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 13.30px;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+/* 필터 태그들 */
+.filter-tags {
+  position: absolute;
+  left: 37px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.filter-tags-first {
+  top: 295.19px;
+  width: 747.59px;
+  height: 36px;
+}
+
+.filter-tags-second {
+  top: 341.19px;
+  width: 747.59px;
+  height: 36px;
+}
+
+.filter-tag {
+  height: 36px;
+  background: white;
+  border-radius: 999px;
+  outline: 1px solid var(--border-color);
+  outline-offset: -1px;
+  padding: 0 13px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-muted);
+  font-size: 13.30px;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.filter-tag.active {
+  background: var(--light-green);
+  outline: 1px solid var(--light-green-border);
+  color: var(--text-black);
+}
+
+/* 상담 카드 */
+.consultation-card {
+  width: 320.41px;
+  height: 340.19px;
+  position: absolute;
+  left: 802.59px;
+  top: 37px;
+  background: white;
+  box-shadow: 0px 6px 20px rgba(16, 24, 40, 0.08);
+  border-radius: 14px;
+  outline: 1px solid var(--border-color);
+  outline-offset: -1px;
+}
+
+.card-header {
+  width: 318.41px;
+  height: 55.39px;
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.card-title {
+  width: 185.11px;
+  height: 16px;
+  position: absolute;
+  left: 16px;
+  top: 19px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: var(--text-black);
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 26.40px;
+  word-wrap: break-word;
+}
+
+.card-description {
+  width: 278.45px;
+  height: 42.39px;
+  position: absolute;
+  left: 17px;
+  top: 75.39px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: var(--text-black);
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 26.40px;
+  word-wrap: break-word;
+}
+
+.card-buttons {
+  position: absolute;
+  left: 17px;
+  top: 139.17px;
+  display: flex;
+  gap: 8px;
+}
+
+.btn-primary {
+  width: 85.02px;
+  height: 44px;
+  background: var(--primary-green);
+  border-radius: 12px;
+  position: relative;
+  cursor: pointer;
+}
+
+.btn-secondary {
+  width: 96.64px;
+  height: 44px;
+  border-radius: 12px;
+  outline: 1px solid var(--secondary-border);
+  outline-offset: -1px;
+  position: relative;
+  cursor: pointer;
+}
+
+.btn-primary .button-text {
+  width: 57.40px;
+  height: 15px;
+  position: absolute;
+  left: 14px;
+  top: 14px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 13.30px;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.btn-secondary .button-text {
+  width: 66.94px;
+  height: 15px;
+  position: absolute;
+  left: 15px;
+  top: 14px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: var(--primary-green);
+  font-size: 13.30px;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+/* 빠른 시작 가이드 섹션 */
+.quick-start-section {
+  width: 1160px;
+  height: 178.28px;
+  position: relative;
+  background: white;
+  box-shadow: 0px 6px 20px rgba(16, 24, 40, 0.08);
+  border-radius: 14px;
+  outline: 1px solid var(--border-color);
+  outline-offset: -1px;
+  margin: 20px auto 0;
+}
+
+.section-header {
+  width: 840px;
+  height: 62.80px;
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.section-title {
+  width: 173.56px;
+  height: 16px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: var(--text-black);
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 26.40px;
+  word-wrap: break-word;
+}
+
+.section-badge {
+  width: 58px;
+  height: 33.80px;
+  background: var(--light-bg);
+  border-radius: 999px;
+  outline: 1px solid var(--border-color);
+  outline-offset: -1px;
+  position: relative;
+}
+
+.section-badge .badge-text {
+  width: 36.20px;
+  height: 12px;
+  position: absolute;
+  left: 11px;
+  top: 10px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: var(--text-black);
+  font-size: 12px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 19.80px;
+  word-wrap: break-word;
+}
+
+.guide-cards {
+  width: 1158px;
+  height: 113.48px;
+  position: absolute;
+  left: 1px;
+  top: 63.80px;
+  overflow: hidden;
+  display: flex;
+  gap: 12px;
+  padding: 14px 20px;
+}
+
+.guide-card {
+  width: 260px;
+  height: 80.48px;
+  background: var(--light-bg);
+  border-radius: 16px;
+  outline: 1px solid var(--border-color);
+  outline-offset: -1px;
+  position: relative;
+  cursor: pointer;
+  flex-shrink: 0;
+}
+
+.guide-card .card-title {
+  width: 185.11px;
+  height: 16px;
+  position: absolute;
+  left: 15px;
+  top: 20px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: var(--text-black);
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 26.40px;
+  word-wrap: break-word;
+}
+
+.card-subtitle {
+  width: 151.89px;
+  height: 14px;
+  position: absolute;
+  left: 15px;
+  top: 51.39px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: var(--text-muted);
+  font-size: 14px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 23.10px;
+  word-wrap: break-word;
+}
+
+/* 메인 콘텐츠 래퍼 */
+.main-content-wrapper {
+  width: 1160px;
+  height: 1827.14px;
+  position: relative;
+  margin: 20px auto 0;
+  display: flex;
+  gap: 18px;
+}
+
+/* 메인 콘텐츠 영역 */
+.main-content {
+  width: 842px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* 광고 배너 */
+.ad-banner {
+  width: 842px;
+  height: 180px;
+  background: linear-gradient(90deg, #EAF7F1 0%, #F7FBF9 100%);
+  border-radius: 12px;
+  outline: 1px solid var(--border-color);
+  outline-offset: -1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ad-text {
+  text-align: center;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: var(--text-muted);
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 26.40px;
+  word-wrap: break-word;
+}
+
+/* 섹션 공통 스타일 */
+.popular-docs-section,
+.category-finder-section,
+.timeline-finder-section,
+.recent-docs-section {
+  width: 842px;
+  background: white;
+  box-shadow: 0px 6px 20px rgba(16, 24, 40, 0.08);
+  border-radius: 14px;
+  outline: 1px solid var(--border-color);
+  outline-offset: -1px;
+  position: relative;
+}
+
+.popular-docs-section {
+  height: 261.97px;
+}
+
+.category-finder-section {
+  height: 350.80px;
+}
+
+.timeline-finder-section {
+  height: 126.59px;
+}
+
+.recent-docs-section {
+  height: 261.97px;
+}
+
+/* 문서 목록 스타일 */
+.doc-list {
+  width: 808px;
+  position: absolute;
+  left: 17px;
+  top: 77.80px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.doc-item {
+  width: 808px;
+  height: 48.39px;
+  border-radius: 12px;
+  outline: 1px solid var(--border-color);
+  outline-offset: -1px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 13px;
+}
+
+.doc-title {
+  width: 185.11px;
+  height: 16px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: var(--primary-green);
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 26.40px;
+  word-wrap: break-word;
+}
+
+.doc-stats {
+  width: 63.79px;
+  height: 13px;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  color: var(--text-muted);
+  font-size: 13px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 21.45px;
+  word-wrap: break-word;
+}
+
+/* 카테고리 그리드 스타일 */
+.category-grid {
+  position: absolute;
+  left: 17px;
+  top: 77.80px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  width: 808px;
+}
+
+.category-item {
+  width: 194.50px;
+  height: 93.63px;
+  background: var(--light-bg);
+  border-radius: 14px;
+  outline: 1px solid var(--border-color);
+  outline-offset: -1px;
+  position: relative;
+  cursor: pointer;
+}
+
+.category-item:nth-child(n+5) {
+  height: 72.19px;
+}
+
+.category-icon {
+  width: 36px;
+  height: 36px;
+  position: absolute;
+  left: 13px;
+  background: linear-gradient(135deg, #DFF5E9 0%, #BDEBD6 100%);
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #0A3C2A;
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 800;
+  line-height: 26.40px;
+}
+
+.category-item:nth-child(1) .category-icon,
+.category-item:nth-child(3) .category-icon,
+.category-item:nth-child(4) .category-icon,
+.category-item:nth-child(5) .category-icon,
+.category-item:nth-child(6) .category-icon,
+.category-item:nth-child(7) .category-icon,
+.category-item:nth-child(8) .category-icon,
+.category-item:nth-child(9) .category-icon,
+.category-item:nth-child(10) .category-icon,
+.category-item:nth-child(11) .category-icon,
+.category-item:nth-child(12) .category-icon {
+  top: 28.81px;
+}
+
+.category-item:nth-child(2) .category-icon {
+  width: 32.94px;
+  left: 13px;
+  top: 28.81px;
+}
+
+.category-item:nth-child(n+5) .category-icon {
+  top: 18.09px;
+}
+
+.category-name {
+  position: absolute;
+  left: 59px;
+  color: var(--text-black);
+  font-size: 15px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 24.75px;
+  word-wrap: break-word;
+}
+
+.category-item:nth-child(1) .category-name,
+.category-item:nth-child(5) .category-name,
+.category-item:nth-child(6) .category-name,
+.category-item:nth-child(7) .category-name,
+.category-item:nth-child(8) .category-name,
+.category-item:nth-child(9) .category-name,
+.category-item:nth-child(10) .category-name,
+.category-item:nth-child(11) .category-name,
+.category-item:nth-child(12) .category-name {
+  top: 23.71px;
+  width: 100px;
+  height: 24.75px;
+}
+
+.category-item:nth-child(2) .category-name {
+  left: 55.94px;
+  top: 13px;
+  width: 100px;
+  height: 24.75px;
+}
+
+.category-item:nth-child(3) .category-name {
+  top: 23.71px;
+  width: 100px;
+  height: 24.75px;
+}
+
+.category-item:nth-child(4) .category-name {
+  top: 23.71px;
+  width: 100px;
+  height: 24.75px;
+}
+
+.category-desc {
+  position: absolute;
+  left: 59px;
+  color: var(--text-muted);
+  font-size: 13px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 21.45px;
+  word-wrap: break-word;
+}
+
+.category-item:nth-child(1) .category-desc,
+.category-item:nth-child(3) .category-desc,
+.category-item:nth-child(4) .category-desc {
+  top: 52.46px;
+  width: 111.43px;
+  height: 13px;
+}
+
+.category-item:nth-child(2) .category-desc {
+  left: 55.94px;
+  top: 41.75px;
+  width: 124.43px;
+  height: 34.43px;
+}
+
+.category-item:nth-child(5) .category-desc,
+.category-item:nth-child(6) .category-desc,
+.category-item:nth-child(7) .category-desc,
+.category-item:nth-child(8) .category-desc,
+.category-item:nth-child(9) .category-desc,
+.category-item:nth-child(10) .category-desc,
+.category-item:nth-child(11) .category-desc,
+.category-item:nth-child(12) .category-desc {
+  top: 41.75px;
+  width: 98.43px;
+  height: 13px;
+}
+
+.category-item:nth-child(6) .category-desc {
+  width: 107.83px;
+}
+
+.category-item:nth-child(7) .category-desc {
+  width: 68.83px;
+}
+
+.category-item:nth-child(8) .category-desc {
+  width: 68.83px;
+}
+
+.category-item:nth-child(9) .category-desc {
+  width: 55.83px;
+}
+
+.category-item:nth-child(10) .category-desc {
+  width: 55.83px;
+}
+
+.category-item:nth-child(11) .category-desc {
+  width: 52.20px;
+}
+
+.category-item:nth-child(12) .category-desc {
+  width: 55.83px;
+}
+
+/* 타임라인 태그 스타일 */
+.timeline-tags {
+  position: absolute;
+  left: 17px;
+  top: 77.79px;
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.timeline-tag {
+  height: 33.80px;
+  background: var(--light-bg);
+  border-radius: 999px;
+  outline: 1px solid var(--border-color);
+  outline-offset: -1px;
+  padding: 0 11px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--text-black);
+  font-size: 12px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 19.80px;
+  word-wrap: break-word;
+  white-space: nowrap;
+}
+
+.timeline-tag:nth-child(1) {
+  width: 85.34px;
+}
+
+.timeline-tag:nth-child(2),
+.timeline-tag:nth-child(3),
+.timeline-tag:nth-child(4),
+.timeline-tag:nth-child(6) {
+  width: 116.02px;
+}
+
+.timeline-tag:nth-child(5) {
+  width: 88.69px;
+}
+
+/* 최근 수정된 문서 목록 스타일 */
+.recent-doc-list {
+  position: absolute;
+  left: 17px;
+  top: 77.80px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 808px;
+}
+
+.recent-doc-item {
+  width: 808px;
+  height: 48.39px;
+  border-radius: 12px;
+  outline: 1px solid var(--border-color);
+  outline-offset: -1px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 13px;
+}
+
+.recent-doc-title {
+  color: var(--primary-green);
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 26.40px;
+  word-wrap: break-word;
+}
+
+.recent-doc-item:nth-child(1) .recent-doc-title {
+  width: 212.65px;
+  height: 16px;
+}
+
+.recent-doc-item:nth-child(2) .recent-doc-title {
+  width: 169.11px;
+  height: 16px;
+}
+
+.recent-doc-item:nth-child(3) .recent-doc-title {
+  width: 191.34px;
+  height: 16px;
+}
+
+.recent-doc-time {
+  color: var(--text-muted);
+  font-size: 13px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 21.45px;
+  word-wrap: break-word;
+}
+
+.recent-doc-item:nth-child(1) .recent-doc-time {
+  width: 103.51px;
+  height: 13px;
+}
+
+.recent-doc-item:nth-child(2) .recent-doc-time {
+  width: 110.73px;
+  height: 13px;
+}
+
+.recent-doc-item:nth-child(3) .recent-doc-time {
+  width: 116.51px;
+  height: 13px;
+}
+
+/* 하단 섹션들 */
+.bottom-sections {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.bottom-cards {
+  width: 842px;
+  height: 288.36px;
+  display: flex;
+  gap: 18px;
+}
+
+.review-badge-info {
+  width: 842px;
+  height: 76.19px;
+  background: rgba(242.01, 246.97, 242.96, 0.92);
+  border-radius: 12px;
+  outline: 1px solid var(--border-color);
+  outline-offset: -1px;
+  position: relative;
+}
+
+.review-badge-content {
+  width: 792.08px;
+  height: 37.09px;
+  position: absolute;
+  left: 17px;
+  top: 19px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.review-badge-title {
+  color: var(--text-muted);
+  font-size: 14px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 23.10px;
+  word-wrap: break-word;
+}
+
+.review-badge-description {
+  color: var(--text-muted);
+  font-size: 14px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 23.10px;
+  word-wrap: break-word;
+}
+
+.expert-consultation {
+  width: 842px;
+  height: 155.27px;
+  background: linear-gradient(176deg, #11835E 0%, #1AA77A 100%);
+  border-radius: 16px;
+  outline: 1px solid var(--border-color);
+  outline-offset: -1px;
+  position: relative;
+}
+
+.expert-title {
+  width: 216.34px;
+  height: 19px;
+  position: absolute;
+  left: 19px;
+  top: 24px;
+  color: white;
+  font-size: 18.70px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 30.89px;
+  word-wrap: break-word;
+}
+
+.expert-description {
+  width: 467.79px;
+  height: 16px;
+  position: absolute;
+  left: 19px;
+  top: 62.87px;
+  color: white;
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 26.40px;
+  word-wrap: break-word;
+}
+
+.expert-buttons {
+  position: absolute;
+  left: 19px;
+  top: 92.26px;
+  display: flex;
+  gap: 8px;
+}
+
+.expert-btn-primary {
+  width: 111.67px;
+  height: 44px;
+  background: white;
+  border-radius: 12px;
+  position: relative;
+  cursor: pointer;
+}
+
+.expert-btn-secondary {
+  width: 96.64px;
+  height: 44px;
+  border-radius: 12px;
+  outline: 1px solid rgba(255, 255, 255, 0.60);
+  outline-offset: -1px;
+  position: relative;
+  cursor: pointer;
+}
+
+.expert-btn-primary .btn-text {
+  width: 84px;
+  height: 15px;
+  position: absolute;
+  left: 14px;
+  top: 14px;
+  text-align: center;
+  color: #0A3C2A;
+  font-size: 13.30px;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+.expert-btn-secondary .btn-text {
+  width: 66.94px;
+  height: 15px;
+  position: absolute;
+  left: 15px;
+  top: 14px;
+  text-align: center;
+  color: white;
+  font-size: 13.30px;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  word-wrap: break-word;
+}
+
+/* 하단 카드 공통 스타일 */
+.checklist-card,
+.hot-topic-card {
+  width: 412px;
+  height: 288.36px;
+  background: white;
+  box-shadow: 0px 6px 20px rgba(16, 24, 40, 0.08);
+  border-radius: 14px;
+  outline: 1px solid var(--border-color);
+  outline-offset: -1px;
+  position: relative;
+}
+
+.checklist-card .card-header,
+.hot-topic-card .card-header {
+  width: 410px;
+  height: 62.80px;
+  position: absolute;
+  left: 1px;
+  top: 1px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.checklist-card .card-title,
+.hot-topic-card .card-title {
+  position: static;
+  width: auto;
+  height: auto;
+  color: var(--text-black);
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 26.40px;
+  word-wrap: break-word;
+}
+
+.checklist-card .card-badge,
+.hot-topic-card .card-badge {
+  background: var(--light-bg);
+  border-radius: 999px;
+  outline: 1px solid var(--border-color);
+  outline-offset: -1px;
+  height: 33.80px;
+  position: relative;
+}
+
+.checklist-card .card-badge {
+  width: 97.34px;
+}
+
+.hot-topic-card .card-badge {
+  width: 46px;
+}
+
+.checklist-card .badge-text {
+  width: 75.54px;
+  height: 12px;
+  position: absolute;
+  left: 11px;
+  top: 10px;
+  color: var(--text-black);
+  font-size: 12px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 19.80px;
+  word-wrap: break-word;
+}
+
+.hot-topic-card .badge-text {
+  width: 24.20px;
+  height: 12px;
+  position: absolute;
+  left: 11px;
+  top: 10px;
+  color: var(--text-black);
+  font-size: 12px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 19.80px;
+  word-wrap: break-word;
+}
+
+/* 체크리스트 목록 */
+.checklist-list {
+  position: absolute;
+  left: 17px;
+  top: 77.80px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 378px;
+}
+
+.checklist-item {
+  width: 378px;
+  height: 48.39px;
+  border-radius: 12px;
+  outline: 1px solid var(--border-color);
+  outline-offset: -1px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 13px;
+}
+
+.checklist-title {
+  color: var(--primary-green);
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 26.40px;
+  word-wrap: break-word;
+}
+
+.checklist-item:nth-child(1) .checklist-title {
+  width: 237.56px;
+  height: 16px;
+}
+
+.checklist-item:nth-child(2) .checklist-title {
+  width: 223.34px;
+  height: 16px;
+}
+
+.checklist-info {
+  color: var(--text-muted);
+  font-size: 13px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 21.45px;
+  word-wrap: break-word;
+  width: 61.18px;
+  height: 13px;
+}
+
+/* 핫토픽 목록 */
+.hot-topic-list {
+  position: absolute;
+  left: 17px;
+  top: 77.80px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 378px;
+}
+
+.hot-topic-item {
+  width: 378px;
+  height: 48.39px;
+  border-radius: 12px;
+  outline: 1px solid var(--border-color);
+  outline-offset: -1px;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 13px;
+}
+
+.hot-topic-item.large {
+  height: 74.78px;
+}
+
+.hot-topic-title {
+  color: var(--primary-green);
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 26.40px;
+  word-wrap: break-word;
+}
+
+.hot-topic-item:nth-child(1) .hot-topic-title {
+  width: 157.56px;
+  height: 16px;
+}
+
+.hot-topic-item:nth-child(2) .hot-topic-title {
+  width: 214.45px;
+  height: 42.39px;
+}
+
+.hot-topic-item:nth-child(3) .hot-topic-title {
+  width: 153.11px;
+  height: 16px;
+}
+
+.hot-topic-stats {
+  color: var(--text-muted);
+  font-size: 13px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 21.45px;
+  word-wrap: break-word;
+  width: 69.58px;
+  height: 13px;
+}
+
+.hot-topic-update {
+  color: var(--text-muted);
+  font-size: 13px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 21.45px;
+  word-wrap: break-word;
+  width: 122.31px;
+  height: 13px;
+}
+
+.hot-topic-new {
+  color: var(--text-muted);
+  font-size: 12.70px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 21.45px;
+  word-wrap: break-word;
+  width: 26.09px;
+  height: 13px;
+}
+
+/* 사이드바 */
+.sidebar {
+  width: 300px;
+  height: 1173.16px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* 사이드바 카드 공통 스타일 */
+.sponsor-ad,
+.main-lawyer-card,
+.co-authors-card,
+.update-log-card,
+.quick-links-card,
+.native-card {
+  background: white;
+  box-shadow: 0px 6px 20px rgba(16, 24, 40, 0.08);
+  border-radius: 14px;
+  outline: 1px solid var(--border-color);
+  outline-offset: -1px;
+  position: relative;
+}
+
+.sponsor-ad,
+.native-card {
+  background: var(--light-bg);
+  height: 115px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.main-lawyer-card {
+  height: 350px;
+}
+
+.co-authors-card {
+  height: 650px;
+}
+
+.update-log-card {
+  height: 550px;
+}
+
+.quick-links-card {
+  height: 650px;
+}
+
+/* 대표 집필 변호사 카드 */
+.main-lawyer-card .main-lawyer-header {
+  width: 100%;
+  height: 55.39px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.main-lawyer-card .main-lawyer-title {
+  position: static;
+  width: auto;
+  height: auto;
+  color: var(--text-black);
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 26.40px;
+  word-wrap: break-word;
+}
+
+.main-lawyer-info {
+  width: 265px;
+  height: 270px;
+  position: absolute;
+  left: 17px;
+  top: 69.39px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.main-lawyer-photo {
+  width: 72px;
+  height: 73px;
+  border-radius: 57px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.main-lawyer-details {
+  width: 181px;
+  height: 258px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main-lawyer-name {
+  width: 100%;
+  height: 30px;
+  color: var(--text-black);
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 26.40px;
+  word-wrap: break-word;
+}
+
+.main-lawyer-info-text {
+  width: 100%;
+  height: 218px;
+  color: #0B140E;
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 26.40px;
+  word-wrap: break-word;
+}
+
+/* 공동집필진 카드 */
+.co-authors-card .co-authors-header {
+  width: 100%;
+  height: 55.39px;
+  border-bottom: 1px solid #E6F5E9;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.co-authors-card .co-authors-title {
+  width: 159.83px;
+  height: 16px;
+  color: #0B140E;
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 26.40px;
+  word-wrap: break-word;
+}
+
+.co-authors-card .co-authors-badge {
+  width: 54px;
+  height: 25.80px;
+  background: #F3FBF5;
+  border-radius: 999px;
+  outline: 1px solid #E6F5E9;
+  outline-offset: -1px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.co-authors-card .co-authors-badge .co-authors-badge-text {
+  width: 36.20px;
+  height: 12px;
+  color: #617B5A;
+  font-size: 12px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 19.80px;
+  word-wrap: break-word;
+}
+
+.co-authors-list {
+  width: 265px;
+  height: 508px;
+  position: absolute;
+  left: 17px;
+  top: 69.39px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  overflow-y: auto;
+}
+
+.co-author-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+}
+
+.co-author-photo {
+  width: 61px;
+  height: 62px;
+  border-radius: 57px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.co-author-info {
+  width: 196px;
+  height: 48px;
+  border-radius: 12px;
+  outline: 1px solid #E6F5E9;
+  outline-offset: -1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 13px;
+  background: white;
+}
+
+.co-author-name {
+  width: 100.65px;
+  height: 16px;
+  color: #0B140E;
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 26.40px;
+  word-wrap: break-word;
+}
+
+.co-author-contribution {
+  color: #617B5A;
+  font-size: 12px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 23.10px;
+  word-wrap: break-word;
+}
+
+/* 업데이트 로그 카드 */
+.update-log-card .update-log-header {
+  width: 100%;
+  height: 55.39px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.update-log-card .update-log-title {
+  position: static;
+  width: auto;
+  height: auto;
+  color: var(--text-black);
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 26.40px;
+  word-wrap: break-word;
+}
+
+.update-log-list {
+  width: 265px;
+  height: 458px;
+  position: absolute;
+  left: 17px;
+  top: 69.39px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  overflow-y: auto;
+}
+
+.update-log-item {
+  width: 265px;
+  height: 48px;
+  border-radius: 12px;
+  outline: 1px solid var(--border-color);
+  outline-offset: -1px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 13px;
+  background: white;
+}
+
+.update-log-content {
+  color: var(--primary-green);
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 26.40px;
+  word-wrap: break-word;
+}
+
+.update-log-status {
+  color: var(--text-muted);
+  font-size: 13px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 21.45px;
+  word-wrap: break-word;
+}
+
+/* 바로가기 카드 */
+.quick-links-card .quick-links-header {
+  width: 100%;
+  height: 55.39px;
+  border-bottom: 1px solid var(--border-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 16px;
+}
+
+.quick-links-card .quick-links-title {
+  position: static;
+  width: auto;
+  height: auto;
+  color: var(--text-black);
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 26.40px;
+  word-wrap: break-word;
+}
+
+.quick-links-list {
+  width: 265px;
+  height: 558px;
+  position: absolute;
+  left: 17px;
+  top: 69.39px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  overflow-y: auto;
+}
+
+.quick-link-item {
+  width: 265px;
+  height: 48px;
+  border-radius: 12px;
+  outline: 1px solid var(--border-color);
+  outline-offset: -1px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 13px;
+  background: white;
+  cursor: pointer;
+}
+
+.quick-link-title {
+  color: var(--primary-green);
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 26.40px;
+  word-wrap: break-word;
+}
+
+.quick-link-desc {
+  color: var(--text-muted);
+  font-size: 13px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 21.45px;
+  word-wrap: break-word;
+}

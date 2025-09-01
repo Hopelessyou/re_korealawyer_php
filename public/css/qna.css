@@ -76,9 +76,9 @@
   align-items:center; 
   gap:8px; 
   flex-wrap:nowrap; 
-  justify-content:center; 
+  justify-content:flex-start; 
   white-space:nowrap; 
-  overflow-x:auto; 
+  overflow:hidden; 
   -webkit-overflow-scrolling:touch; 
   -ms-overflow-style:none; 
   scrollbar-width:none;
@@ -88,15 +88,19 @@
   font-weight:900; 
   color:#7c3aed; 
   white-space:nowrap;
+  flex-shrink:0;
 }
 
 .kw-chips{
   display:flex; 
   flex-wrap:nowrap; 
   gap:8px; 
-  justify-content:center; 
+  justify-content:flex-start; 
   align-items:center; 
   white-space:nowrap;
+  overflow:hidden;
+  position:relative;
+  flex:1;
 }
 
 .kw-chip{
@@ -114,6 +118,7 @@
   background:transparent; 
   border:0; 
   color:#6b7280;
+  flex-shrink:0;
 }
 
 .kw-row::-webkit-scrollbar{
@@ -259,6 +264,7 @@
 
 .s-right{
   display:flex; 
+  flex-direction:column;
   align-items:center; 
   justify-content:center; 
   gap:8px;
@@ -269,6 +275,13 @@
   height:56px; 
   border-radius:8px; 
   background:#e5e7eb;
+}
+
+.s-lawyer{
+  font-weight:900; 
+  color:#11b39a; 
+  font-size:14px; 
+  text-align:center;
 }
 
 /* 우측 상담안내 카드 */
@@ -303,8 +316,9 @@
   display:flex; 
   align-items:center; 
   justify-content:space-between; 
-  padding:16px 4px; 
+  padding:20px 4px; 
   border-top:1px solid #f1f5f9;
+  min-height:80px;
 }
 
 .c-item:first-child{
@@ -315,6 +329,7 @@
   display:flex; 
   align-items:center; 
   gap:12px;
+  flex:1;
 }
 
 .c-ico{
@@ -323,17 +338,27 @@
   border-radius:50%; 
   background:#eef2ff; 
   box-shadow:inset 0 0 0 1px #dbeafe;
+  flex-shrink:0;
 }
 
 .c-ttl{
   font-weight:900; 
   color:#111827;
+  line-height:1.4;
+}
+
+.c-ttl strong{
+  color:var(--brand);
+  display:block;
+  margin-top:2px;
+  font-size:25px;
 }
 
 .c-arr{
   opacity:.65; 
   font-weight:900; 
   font-size:18px;
+  flex-shrink:0;
 }
 
 .c-item:hover{
@@ -367,9 +392,28 @@
 .bd-left{
   background:#fff; 
   color:#0f172a; 
-  border-radius:12px; 
+  border-radius:14px; 
+  padding:0px; 
+}
+
+/* 섹션별 border 적용 */
+.board-section{
+  background:#fff; 
+  color:#0f172a; 
+  border-radius:14px; 
   padding:16px; 
-  border:1px solid #e5e7eb;
+  border:2px solid #e5e7eb;
+  box-shadow:0 2px 8px rgba(22,193,168,.06);
+  margin-bottom:24px;
+}
+
+.lawfirm-section{
+  background:#fff; 
+  color:#0f172a; 
+  border-radius:14px; 
+  padding:16px; 
+  border:2px solid #e5e7eb;
+  box-shadow:0 2px 8px rgba(22,193,168,.06);
 }
 
 .bd-head{
@@ -379,11 +423,21 @@
   margin:0 0 10px;
 }
 
+.bd-header{
+  display:flex; 
+  align-items:center; 
+  justify-content:space-between; 
+  margin-bottom:12px;
+  min-height:50px;
+  padding:8px 0;
+}
+
 .bd-tabs{
   display:flex; 
   gap:10px; 
   flex-wrap:wrap; 
-  margin-bottom:10px;
+  margin-bottom:0;
+  align-items:center;
 }
 
 .bd-tab{
@@ -395,6 +449,10 @@
   font-weight:800;
   cursor:pointer;
   border:none;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  min-height:36px;
 }
 
 .bd-tab.active{
@@ -407,7 +465,8 @@
   display:flex; 
   align-items:center; 
   gap:8px; 
-  margin-bottom:12px;
+  margin-bottom:0;
+  margin-left:auto;
 }
 
 .bd-search{
@@ -424,6 +483,9 @@
   border:1px solid #e5e7eb; 
   border-radius:999px; 
   padding:8px 12px;
+  height:36px;
+  display:flex;
+  align-items:center;
 }
 
 .bd-search button{
@@ -435,6 +497,10 @@
   font-weight:800;
   cursor:pointer;
   border:none;
+  height:36px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
 }
 
 .posts{
@@ -496,12 +562,14 @@
 .bd-more button{
   background:#fff; 
   color:#374151; 
-  border:1px solid #e5e7eb; 
+  border: 1px solid #9b9c9f;  
   border-radius:8px; 
   padding:8px 14px; 
   font-weight:900;
   cursor:pointer;
   border:none;
+  display:block;
+  width:100%;
 }
 
 /* 우측 사이드바 */
@@ -534,7 +602,7 @@
   border:1px solid #e5e7eb; 
   border-radius:12px; 
   padding:12px; 
-  height:120px;
+  min-height:120px;
 }
 
 .widget{
@@ -573,7 +641,7 @@
   border:1px solid #e5e7eb; 
   border-radius:10px; 
   padding:10px; 
-  height:120px;
+  min-height:120px;
 }
 
 /* 로펌(블루 리스트) 섹션 */
@@ -688,7 +756,7 @@
 
 .fb-thumb{
   width:100%; 
-  height:120px; 
+  min-height:120px; 
   background:#e5e7eb; 
   border-radius:10px;
 }
@@ -712,35 +780,67 @@
 }
 
 .widget-hotlawyers .mini-list{
-  gap:12px;
+  gap:16px;
 }
 
 .widget-hotlawyers .mini-item{
-  padding:8px 0; 
+  padding:12px 0; 
   border-bottom:1px solid #eafaf6;
+  display:flex;
+  align-items:flex-start;
+  gap:12px;
 }
 
 .widget-hotlawyers .mini-item:last-child{
   border-bottom:0;
 }
 
-.widget-hotlawyers .mini-ava{
-  width:44px; 
-  height:44px; 
-  background:#f3f4f6;
-}
-
-/* rank badge via counter */
-.widget-hotlawyers .mini-list{
-  counter-reset:rank;
-}
-
-.widget-hotlawyers .mini-item::before{
-  counter-increment:rank; 
-  content:"👑 " counter(rank) "위"; 
+.rank-badge{
   color:#10b981; 
   font-weight:900; 
-  margin-right:6px;
+  font-size:14px;
+  flex-shrink:0;
+  display:flex;
+  align-items:center;
+  height:60px;
+}
+
+.lawyer-profile{
+  display:flex;
+  align-items:flex-start;
+  gap:12px;
+  flex:1;
+}
+
+.lawyer-avatar{
+  width:60px; 
+  height:60px; 
+  background:#fecdd3;
+  border-radius:50%;
+  flex-shrink:0;
+}
+
+.lawyer-info{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+}
+
+.lawyer-name{
+  font-weight:900;
+  color:#111827;
+  font-size:16px;
+}
+
+.lawyer-desc{
+  color:#6b7280;
+  font-size:14px;
+  line-height:1.4;
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+  overflow:hidden;
 }
 
 .widget-hotlawyers .morelink{
@@ -759,19 +859,43 @@
 }
 
 .widget-similarcases .mini-list{
-  gap:14px;
+  gap:6px;
 }
 
-.widget-similarcases .mini-item{
+.case-item{
   display:flex; 
-  gap:10px; 
-  align-items:flex-start;
+  gap:12px; 
+  align-items:center;
+  padding:8px 0;
 }
 
-.widget-similarcases .mini-ava{
-  width:36px; 
-  height:36px; 
+.case-avatar{
+  width:60px; 
+  height:60px; 
   background:#fecdd3;
+  border-radius:50%;
+  flex-shrink:0;
+}
+
+.case-info{
+  flex:1;
+  display:flex;
+  flex-direction:column;
+  gap:4px;
+  justify-content:center;
+}
+
+.case-title{
+  font-weight:900;
+  color:#111827;
+  font-size:14px;
+  line-height:1.4;
+}
+
+.case-lawyer{
+  color:#6b7280;
+  font-size:13px;
+  font-weight:700;
 }
 
 .widget-similarcases .morelink{
@@ -800,7 +924,7 @@
 
 .widget-cardnews .ctitle{
   font-weight:900; 
-  line-height:1.4;
+  line-height:1.42;
 }
 
 .widget-cardnews .cmeta{
@@ -903,11 +1027,11 @@
 
 .widget-docs .docs-more{
   display:block; 
-  margin-top:10px; 
+  margin-top:6px; 
   text-align:center; 
   border:1px solid #e5e7eb; 
   border-radius:8px; 
-  padding:10px 12px; 
+  padding:5px 6px; 
   font-weight:900; 
   color:#374151;
   text-decoration:none;

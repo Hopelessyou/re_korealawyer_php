@@ -1,0 +1,307 @@
+/* 변호사찾기 페이지 스타일 */
+
+/* 페이지 기본 레이아웃 */
+.lawyer-search-page {
+  padding: 40px 0;
+  background: #fff;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* 섹션 스타일 */
+.tab-switcher-section {
+  margin-bottom: 40px;
+}
+
+.search-content-section {
+  margin-bottom: 60px;
+}
+
+.region-search-section {
+  padding: 40px 0;
+}
+
+/* 탭 스위처 */
+.tab-switcher {
+  width: 395px;
+  height: 53px;
+  margin: 0 auto 60px;
+  position: relative;
+  border-radius: 30px;
+  outline: 2px #EEF1F4 solid;
+  outline-offset: -2px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tab-btn {
+  width: 208px;
+  height: 52px;
+  position: relative;
+  background: rgba(255, 255, 255, 0);
+  border-radius: 30px;
+  border: 2px #464C53 solid;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.13);
+  color: #464C53;
+  font-size: 18px;
+  font-family: Pretendard, sans-serif;
+  font-weight: 700;
+  line-height: 46px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin: 0 2px;
+}
+
+.tab-btn:last-child {
+  border-color: transparent;
+  color: #DCE0E4;
+  box-shadow: none;
+}
+
+.tab-btn.active {
+  border-color: #464C53;
+  color: #464C53;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.13);
+}
+
+.tab-btn:last-child.active {
+  border-color: #464C53;
+  color: #464C53;
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.13);
+}
+
+/* 탭 콘텐츠 */
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+/* 페이지 제목 */
+.page-title {
+  width: 287.23px;
+  height: 28px;
+  margin: 0 0 60px 0;
+  text-align: left;
+  color: #464C53;
+  font-size: 28px;
+  font-family: Pretendard, sans-serif;
+  font-weight: 700;
+  line-height: 28px;
+}
+
+/* 검색 콘텐츠 레이아웃 */
+.search-content {
+  display: flex;
+  gap: 60px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* 좌측 카테고리 네비게이션 */
+.category-nav {
+  width: 196px;
+  flex-shrink: 0;
+}
+
+.nav-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  width: 196px;
+  height: 30px;
+  margin-bottom: 14px;
+  background: none;
+  border: none;
+  color: #DCE0E4;
+  font-size: 18px;
+  font-family: Pretendard, sans-serif;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.nav-item:hover {
+  color: #464C53;
+}
+
+.nav-item.active {
+  color: #464C53;
+}
+
+/* 우측 카테고리 콘텐츠 */
+.category-content {
+  flex: 1;
+  max-width: 808px;
+}
+
+.category-section {
+  display: none;
+}
+
+.category-section.active {
+  display: block;
+}
+
+/* 카테고리 헤더 */
+.category-header {
+  width: 808px;
+  height: 60px;
+  background: #F5F7F9;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  margin-bottom: 0;
+  color: #333333;
+  font-size: 18px;
+  font-family: Pretendard, sans-serif;
+  font-weight: 700;
+  line-height: 18px;
+}
+
+/* 카테고리 그리드 */
+.category-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+
+/* 카테고리 아이템 */
+.category-item {
+  width: 404px;
+  min-height: 39px;
+  padding: 20px;
+  border-left: 1px #EEF1F4 solid;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.category-item:hover {
+  background-color: #f8f9fa;
+}
+
+.category-item:nth-child(odd) {
+  border-left: none;
+}
+
+/* 아이템 제목 */
+.item-title {
+  color: #464C53;
+  font-size: 16px;
+  font-family: Pretendard, sans-serif;
+  font-weight: 400;
+  line-height: 16px;
+  margin-bottom: 8px;
+}
+
+/* 아이템 설명 */
+.item-desc {
+  color: #90969D;
+  font-size: 12px;
+  font-family: Pretendard, sans-serif;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+/* 지역별 찾기 탭 */
+.region-content {
+  text-align: center;
+  padding: 60px 0;
+  color: #666;
+  font-size: 16px;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 1200px) {
+  .search-content {
+    flex-direction: column;
+    gap: 30px;
+  }
+  
+  .category-nav {
+    width: 100%;
+  }
+  
+  .nav-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+  
+  .nav-item {
+    width: auto;
+    padding: 0 15px;
+    margin-bottom: 0;
+  }
+  
+  .category-content {
+    max-width: 100%;
+  }
+  
+  .category-header {
+    width: 100%;
+  }
+  
+  .category-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .category-item {
+    width: 100%;
+    border-left: none;
+    border-bottom: 1px #EEF1F4 solid;
+  }
+  
+  .category-item:nth-child(odd) {
+    border-left: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .container {
+    padding: 0 15px;
+  }
+  
+  .tab-switcher {
+    width: 100%;
+    max-width: 395px;
+  }
+  
+  .tab-btn {
+    width: 50%;
+    left: 0;
+  }
+  
+  .tab-btn:last-child {
+    left: 50%;
+  }
+  
+  .tab-btn:last-child.active {
+    left: 50%;
+  }
+  
+  .page-title {
+    width: 100%;
+    font-size: 24px;
+  }
+  
+  .nav-list {
+    justify-content: center;
+  }
+}

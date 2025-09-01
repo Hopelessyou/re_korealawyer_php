@@ -22,7 +22,7 @@ body{
 /* 헤더 래퍼 */
 .site-header{
   position:sticky; top:0; z-index:50;
-  background:var(--bg);
+  background:#ffffff;
 }
 .container{
   max-width:1280px; margin:0 auto;

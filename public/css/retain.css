@@ -1,0 +1,94 @@
+/* 단계별선임 페이지 스타일 */
+
+:root{
+  --wrap:1200px;
+  --line:#e7ebf0;
+  --text:#0f172a;
+  --muted:#64748b;
+  --brand:#0f58bd;   /* 파랑 */
+  --brand-700:#0b3a8c;
+  --accent:#11b39a;  /* 그린 */
+  --accent-700:#0b8b77;
+  --soft:#f5f7fa;
+}
+
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{font-family:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic","Segoe UI",Roboto,Arial,sans-serif;color:var(--text);background:#fff}
+
+.frame{max-width:var(--wrap); margin:36px auto; padding:28px; border:1px solid var(--line); border-radius:12px; box-shadow:0 10px 30px rgba(15,23,42,.06); background:#fff}
+.title{font-size:24px; font-weight:900; text-align:center; margin:0 0 10px; letter-spacing:-.01em} 
+.subtitle{margin:0 0 18px; text-align:center; color:#8a94a6; font-weight:800; font-size:13px}
+
+/* 탭 */
+.tabs{display:flex; gap:10px; justify-content:center; margin-bottom:18px; background:#f0f3f7; padding:6px; border-radius:12px; border:1px solid var(--line); width:max-content; margin-left:auto; margin-right:auto}
+.tab{min-width:160px; text-align:center; padding:10px 18px; border-radius:8px; border:1px solid transparent; background:transparent; color:#6b7280; font-weight:900; cursor:pointer; transition:.2s ease}
+.tab.active{background:linear-gradient(180deg,#1d4ed8,#0f58bd); color:#fff; border-color:#1b3f8b; box-shadow:0 6px 18px rgba(29,78,216,.18)}
+
+/* 카테고리 아이콘 바(간단 라벨) */
+.cats{display:flex; gap:14px; justify-content:center; flex-wrap:wrap; padding:12px; background:#f8fafc; border-radius:12px; margin-bottom:20px; border:1px solid var(--line)}
+.chip{display:flex; align-items:center; gap:10px; padding:8px 12px; border:1px solid #eef2f6; border-radius:999px; background:#fff; color:#4b5563; font-weight:800; box-shadow:0 1px 2px rgba(2,6,23,.04)}
+.ico{width:28px; height:28px; border-radius:50%; background:#eef2f7; display:inline-block; box-shadow:inset 0 0 0 1px #dbe3eb}
+
+/* 3단 컬럼 */
+.cols{display:grid; grid-template-columns:repeat(3, 1fr); gap:20px}
+.col{background:#fff; border:1px solid var(--line); border-radius:10px; padding:14px; box-shadow:0 6px 16px rgba(15,23,42,.06); position:relative}
+.colhead{display:flex; align-items:center; gap:10px; margin-bottom:12px}
+.badge{width:28px; height:28px; border-radius:50%; background:radial-gradient(circle at 30% 30%, #fff, #e4edff); color:#0b3a8c; display:flex; align-items:center; justify-content:center; font-weight:900; box-shadow:inset 0 0 0 1px #cfe0ff}
+.coltitle{font-weight:900}
+.coldesc{color:var(--muted); font-size:13px}
+
+.group{margin-top:12px}
+.glabel{font-weight:900; margin-bottom:6px}
+.list{display:grid; gap:8px}
+.pill{border:1px solid #e5e9ef; background:#f7f9fb; border-radius:6px; padding:10px 12px; font-weight:800; transition:.15s ease; box-shadow:0 1px 1px rgba(2,6,23,.04)}
+.pill.action{background:linear-gradient(180deg,#11b39a,#0d9d87); color:#fff; border-color:var(--accent-700); box-shadow:0 6px 14px rgba(17,179,154,.25)}
+
+/* 푸터 버튼 */
+.footer{display:flex; justify-content:flex-end; margin-top:18px}
+.next{display:inline-flex; align-items:center; gap:8px; padding:10px 20px; border-radius:6px; background:#3aa86b; color:#fff; font-weight:900; border:0}
+
+.col::before{content:""; position:absolute; left:0; right:0; top:0; height:3px; border-top-left-radius:10px; border-top-right-radius:10px; background:linear-gradient(90deg,#cde1ff,#b7d2ff 60%, #cde1ff)}
+.pill:hover{background:#eef3f7}
+.pill.action::before{content:"✓"; margin-right:8px; font-weight:900}
+.next{display:inline-flex; align-items:center; gap:8px; padding:12px 22px; border-radius:8px; background:linear-gradient(180deg,#22c55e,#16a34a); color:#fff; font-weight:900; border:0; box-shadow:0 10px 24px rgba(22,163,74,.25); cursor:pointer; transition:transform .15s ease}
+.next:hover{transform:translateY(-1px)}
+.pill.option{cursor:pointer}
+.pill.option:focus{outline:2px solid #bdeedc; outline-offset:2px}
+.pill.selected, .pill[aria-checked="true"]{background:linear-gradient(180deg,#11b39a,#0d9d87); color:#fff; border-color:var(--accent-700); box-shadow:0 6px 14px rgba(17,179,154,.25)}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .cols {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+  
+  .frame {
+    margin: 20px auto;
+    padding: 20px;
+  }
+  
+  .title {
+    font-size: 20px;
+  }
+  
+  .tabs {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .tab {
+    min-width: auto;
+  }
+  
+  .cats {
+    gap: 8px;
+  }
+  
+  .chip {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}
+
