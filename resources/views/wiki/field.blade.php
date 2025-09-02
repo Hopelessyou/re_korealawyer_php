@@ -50,27 +50,29 @@
 <div class="field-categories-grid">
   <!-- 형사 -->
   <article class="field-category-card">
-    <h2 class="field-category-title">형사</h2>
-    <p class="field-category-subtitle">초동대응·수사·재판</p>
-    
-    <div class="field-hub-list">
-      <div class="field-hub-item">
-        <span class="hub-name">음주운전 허브</span>
-        <span class="hub-description">처벌·면허·측정거부</span>
+    <a href="{{ route('wiki.criminal') }}" class="field-category-link">
+      <h2 class="field-category-title">형사</h2>
+      <p class="field-category-subtitle">초동대응·수사·재판</p>
+      
+      <div class="field-hub-list">
+        <div class="field-hub-item">
+          <span class="hub-name">음주운전 허브</span>
+          <span class="hub-description">처벌·면허·측정거부</span>
+        </div>
+        <div class="field-hub-item">
+          <span class="hub-name">특수폭행 허브</span>
+          <span class="hub-description">양형·합의전략</span>
+        </div>
+        <div class="field-hub-item">
+          <span class="hub-name">보이스피싱 허브</span>
+          <span class="hub-description">가담유형·불송치</span>
+        </div>
+        <div class="field-hub-item">
+          <span class="hub-name">주거침입 허브</span>
+          <span class="hub-description">구성요건·벌금사례</span>
+        </div>
       </div>
-      <div class="field-hub-item">
-        <span class="hub-name">특수폭행 허브</span>
-        <span class="hub-description">양형·합의전략</span>
-      </div>
-      <div class="field-hub-item">
-        <span class="hub-name">보이스피싱 허브</span>
-        <span class="hub-description">가담유형·불송치</span>
-      </div>
-      <div class="field-hub-item">
-        <span class="hub-name">주거침입 허브</span>
-        <span class="hub-description">구성요건·벌금사례</span>
-      </div>
-    </div>
+    </a>
   </article>
 
   <!-- 민사 -->
