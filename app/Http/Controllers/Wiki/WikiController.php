@@ -37,6 +37,36 @@ class WikiController extends Controller
         return view('wiki.terms');
     }
 
+    public function criminal()
+    {
+        return view('wiki.criminal');
+    }
+
+    public function specialAssault()
+    {
+        return view('wiki.special-assault');
+    }
+
+    public function sentencingFactors()
+    {
+        return view('wiki.sentencing-factors');
+    }
+
+    public function precedentDetail()
+    {
+        return view('wiki.precedent-detail');
+    }
+
+    public function faqDetail()
+    {
+        return view('wiki.faq-detail');
+    }
+
+    public function termsDetail()
+    {
+        return view('wiki.terms-detail');
+    }
+
     public function show($slug)
     {
         return view('wiki.show', compact('slug'));

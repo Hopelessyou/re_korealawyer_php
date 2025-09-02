@@ -80,6 +80,12 @@ Route::get('/wiki/precedent', [WikiController::class, 'precedent'])->name('wiki.
 Route::get('/wiki/form', [WikiController::class, 'form'])->name('wiki.form');
 Route::get('/wiki/faq', [WikiController::class, 'faq'])->name('wiki.faq');
 Route::get('/wiki/terms', [WikiController::class, 'terms'])->name('wiki.terms');
+Route::get('/wiki/criminal', [WikiController::class, 'criminal'])->name('wiki.criminal');
+Route::get('/wiki/special-assault', [WikiController::class, 'specialAssault'])->name('wiki.special-assault');
+Route::get('/wiki/sentencing-factors', [WikiController::class, 'sentencingFactors'])->name('wiki.sentencing-factors');
+Route::get('/wiki/precedent-detail', [WikiController::class, 'precedentDetail'])->name('wiki.precedent-detail');
+Route::get('/wiki/faq-detail', [WikiController::class, 'faqDetail'])->name('wiki.faq-detail');
+Route::get('/wiki/terms-detail', [WikiController::class, 'termsDetail'])->name('wiki.terms-detail');
 Route::get('/wiki/{slug}', [WikiController::class, 'show'])->name('wiki.show');
 
 // ⑧ 커뮤니티

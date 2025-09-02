@@ -12,6 +12,7 @@
   --light-green-border: #C7E4D4;
   --secondary-border: #AECCBD;
   --light-bg: #F2F7F3;
+
   
   /* 반응형 브레이크포인트 */
   --breakpoint-sm: 576px;
@@ -107,6 +108,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+
   gap: var(--spacing-lg);
   padding: var(--spacing-md) 0;
   border-top: 1px solid var(--border-color);
@@ -114,6 +116,7 @@
 }
 
 .nav-tab {
+
   background: none;
   border: none;
   padding: var(--spacing-sm) var(--spacing-md);
@@ -121,6 +124,7 @@
   font-size: 16px;
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   font-weight: 700;
+
   line-height: 1.4;
   cursor: pointer;
   transition: color 0.2s ease;
@@ -135,6 +139,7 @@
   color: var(--primary-green);
 }
 
+
 .nav-tab.active {
   color: var(--primary-green);
 }
@@ -142,8 +147,10 @@
 .nav-tab.active::after {
   content: '';
   position: absolute;
+
   bottom: -1px;
   left: 0;
+
   right: 0;
   height: 3px;
   background: var(--primary-green-light);
@@ -152,9 +159,11 @@
 
 /* 히어로 섹션 */
 .hero-section {
+
   max-width: 1160px;
   width: 100%;
   margin: 0 auto;
+
   padding: var(--spacing-xl);
   background: radial-gradient(ellipse 103.63% 145.56% at 30.00% -40.00%, rgba(10.32, 190.99, 131.97, 0.16) 0%, rgba(10.32, 190.99, 131.97, 0) 55%), linear-gradient(180deg, rgba(242.01, 246.97, 242.96, 0.85) 0%, rgba(242.01, 246.97, 242.96, 0) 100%);
   border-radius: 20px;
@@ -165,15 +174,18 @@
 
 /* 히어로 배지 */
 .hero-badge {
+
   display: inline-block;
   background: rgba(242.01, 246.97, 242.96, 0.94);
   border-radius: 999px;
+
   border: 1px solid var(--border-color);
   padding: var(--spacing-sm) var(--spacing-md);
   margin-bottom: var(--spacing-lg);
 }
 
 .badge-text {
+
   color: var(--text-dark);
   font-size: 13px;
   font-weight: 600;
@@ -182,29 +194,35 @@
 
 /* 히어로 제목과 설명 */
 .hero-title {
+
   font-size: 32px;
   font-weight: 700;
+
   line-height: 1.3;
   color: var(--text-black);
   margin: var(--spacing-lg) 0;
 }
 
 .hero-description {
+
   font-size: 18px;
   line-height: 1.5;
   color: var(--text-muted);
+
   margin-bottom: var(--spacing-xl);
 }
 
 /* 검색 컨테이너 */
 .search-container {
   display: flex;
+
   gap: var(--spacing-sm);
   margin-bottom: var(--spacing-lg);
   max-width: 500px;
 }
 
 .search-input {
+
   flex: 1;
   padding: var(--spacing-md);
   border: 1px solid var(--border-color);
@@ -220,14 +238,17 @@
 }
 
 .search-button {
+
   padding: var(--spacing-md) var(--spacing-lg);
   background: var(--primary-green);
+
   color: white;
   border: none;
   border-radius: 8px;
   font-size: 16px;
   font-weight: 600;
   cursor: pointer;
+
   transition: background-color 0.2s ease;
 }
 
@@ -238,8 +259,10 @@
 /* 필터 태그들 */
 .filter-tags {
   display: flex;
+
   gap: var(--spacing-sm);
   flex-wrap: wrap;
+
   margin-bottom: var(--spacing-lg);
 }
 
@@ -253,12 +276,16 @@
 
 .filter-tag {
   background: white;
+
   border: 1px solid var(--border-color);
   border-radius: 999px;
+
   padding: var(--spacing-sm) var(--spacing-md);
   color: var(--text-muted);
+
   font-size: 13px;
   font-weight: 400;
+
   cursor: pointer;
   transition: all 0.2s ease;
   border: none;
@@ -271,6 +298,7 @@
 
 .filter-tag.active {
   background: var(--light-green);
+
   border-color: var(--light-green-border);
   color: var(--text-black);
 }
@@ -278,12 +306,15 @@
 /* 상담 카드 */
 .consultation-card {
   position: absolute;
+
   top: var(--spacing-xl);
   right: var(--spacing-xl);
   width: 320px;
   background: white;
+
   box-shadow: var(--shadow-md);
   border-radius: 14px;
+
   border: 1px solid var(--border-color);
   overflow: hidden;
 }
@@ -292,6 +323,7 @@
   padding: var(--spacing-md);
   border-bottom: 1px solid var(--border-color);
 }
+
 
 .consultation-card .card-description {
   padding: var(--spacing-md);
@@ -304,6 +336,7 @@
 .consultation-card .card-buttons {
   padding: var(--spacing-md);
   display: flex;
+
   gap: var(--spacing-sm);
 }
 
@@ -326,6 +359,7 @@
   font-size: 24px;
   font-weight: 700;
   color: var(--text-black);
+
   margin: 0;
 }
 
@@ -382,6 +416,7 @@
 .guide-card__title {
   font-size: 16px;
   font-weight: 700;
+
   color: var(--text-black);
   margin: 0 0 var(--spacing-sm) 0;
   line-height: 1.4;
@@ -422,6 +457,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+
 }
 
 .ad-text {
@@ -445,6 +481,7 @@
 .doc-list {
   display: flex;
   flex-direction: column;
+
   gap: var(--spacing-md);
 }
 
@@ -464,6 +501,7 @@
   font-size: 16px;
   font-weight: 600;
   color: var(--text-black);
+
   margin: 0 0 var(--spacing-xs) 0;
 }
 
@@ -508,6 +546,7 @@
 
 .category-name {
   font-size: 16px;
+
   font-weight: 600;
   color: var(--text-black);
   margin: 0 0 var(--spacing-xs) 0;
@@ -523,6 +562,7 @@
 /* 타임라인 태그 */
 .timeline-tags {
   display: flex;
+
   gap: var(--spacing-sm);
   flex-wrap: wrap;
 }
@@ -535,6 +575,7 @@
   color: var(--text-muted);
   font-size: 14px;
   cursor: pointer;
+
   transition: all 0.2s ease;
   border: none;
 }
@@ -592,6 +633,7 @@
 .hot-topic-card {
   background: white;
   border-radius: 12px;
+
   border: 1px solid var(--border-color);
   overflow: hidden;
 }
@@ -643,6 +685,7 @@
   border-radius: 12px;
   padding: var(--spacing-lg);
   text-align: center;
+
 }
 
 .review-badge-title {
@@ -682,6 +725,7 @@
   display: flex;
   gap: var(--spacing-md);
   justify-content: center;
+
 }
 
 /* 사이드바 */
@@ -689,6 +733,7 @@
   width: 300px;
   display: flex;
   flex-direction: column;
+
   gap: var(--spacing-lg);
   flex-shrink: 0;
 }
@@ -700,8 +745,10 @@
   border-radius: 12px;
   padding: var(--spacing-lg);
   text-align: center;
+
   min-height: 250px;
   display: flex;
+
   align-items: center;
   justify-content: center;
 }
@@ -712,6 +759,7 @@
 .update-log-card,
 .quick-links-card {
   background: white;
+
   border-radius: 12px;
   border: 1px solid var(--border-color);
   overflow: hidden;
@@ -723,6 +771,7 @@
 .quick-links-header {
   padding: var(--spacing-md);
   border-bottom: 1px solid var(--border-color);
+
 }
 
 .main-lawyer-title,
@@ -738,8 +787,10 @@
 .main-lawyer-info {
   padding: var(--spacing-md);
   display: flex;
+
   gap: var(--spacing-md);
   align-items: center;
+
 }
 
 .main-lawyer-photo {
@@ -752,12 +803,14 @@
 .main-lawyer-details {
   display: flex;
   flex-direction: column;
+
   gap: var(--spacing-xs);
 }
 
 .main-lawyer-name {
   font-weight: 600;
   color: var(--text-black);
+
 }
 
 .main-lawyer-info-text {
@@ -771,6 +824,7 @@
   padding: var(--spacing-md);
   display: flex;
   flex-direction: column;
+
   gap: var(--spacing-md);
 }
 
@@ -795,6 +849,7 @@
   font-size: 16px;
   font-weight: 600;
   color: var(--text-black);
+
   margin: 0 0 var(--spacing-xs) 0;
 }
 
@@ -824,6 +879,7 @@
 .update-log-content {
   color: var(--primary-green);
   font-size: 12px;
+
   font-weight: 400;
   line-height: 1.4;
   flex: 1;
@@ -1002,6 +1058,7 @@
   font-size: 30px;
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   font-weight: 700;
+
   line-height: 49.5px;
   margin: 0 0 20px 0;
 }
@@ -1017,6 +1074,7 @@
 
 .field-filter-tabs {
   display: flex;
+
   gap: 8px;
   flex-wrap: wrap;
 }
@@ -1053,8 +1111,28 @@
   background: #F2F7F3;
   border: 1px solid var(--border-color);
   border-radius: 16px;
+
   padding: 20px 15px;
   min-height: 240px;
+  transition: all 0.2s ease;
+}
+
+.field-category-card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg);
+}
+
+.field-category-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  height: 100%;
+  cursor: pointer;
+
+}
+
+.field-category-link:hover {
+  text-decoration: none;
 }
 
 .field-category-title {
@@ -1078,6 +1156,7 @@
 .field-hub-list {
   display: flex;
   flex-direction: column;
+
   gap: 10px;
 }
 
@@ -1096,6 +1175,7 @@
   color: var(--primary-green);
   font-size: 16px;
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
   font-weight: 400;
   line-height: 26.4px;
 }
@@ -1129,12 +1209,14 @@
   color: var(--text-secondary);
   font-size: 14px;
   font-weight: 700;
+
 }
 
 .disclaimer-text {
   color: var(--text-secondary);
   font-size: 14px;
   font-weight: 400;
+
 }
 
 .disclaimer-highlight {
@@ -1146,6 +1228,7 @@
 /* 판례 페이지 스타일 */
 .precedent-header {
   width: 1160px;
+
   height: 321.89px;
   margin: 0 auto 20px;
   background: radial-gradient(ellipse 103.63% 187.56% at 30.00% -40.00%, rgba(10.32, 190.99, 131.97, 0.16) 0%, rgba(10.32, 190.99, 131.97, 0) 55%), linear-gradient(180deg, rgba(242.01, 246.97, 242.96, 0.85) 0%, rgba(242.01, 246.97, 242.96, 0) 100%);
@@ -1153,6 +1236,7 @@
   border: 1px solid var(--border-color);
   padding: 37px;
   position: relative;
+
 }
 
 .precedent-title {
@@ -1175,6 +1259,7 @@
 
 .precedent-search-container {
   display: flex;
+
   gap: 10px;
   margin-bottom: 30px;
 }
@@ -1228,10 +1313,12 @@
 }
 
 /* 메인 콘텐츠 영역 */
+
 .precedent-main {
   width: 1160px;
   margin: 0 auto;
   display: flex;
+
   gap: 20px;
 }
 
@@ -1330,6 +1417,7 @@
   background: white;
   border: 1px solid #E5E7EB;
   border-radius: 12px;
+
   padding: 10px 16px;
   color: var(--text-secondary);
   font-size: 14px;
@@ -1388,8 +1476,10 @@
 
 .results-header {
   display: flex;
+
   justify-content: space-between;
   align-items: center;
+
   margin-bottom: 20px;
 }
 
@@ -1422,6 +1512,7 @@
   cursor: pointer;
   min-width: 61.98px;
   text-align: center;
+
 }
 
 .sort-button.active {
@@ -1434,6 +1525,7 @@
 .precedent-cards {
   display: flex;
   flex-direction: column;
+
   gap: 20px;
 }
 
@@ -1512,6 +1604,10 @@
   cursor: pointer;
   border: none;
   min-height: 48.39px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .action-button.primary {
@@ -1545,3 +1641,4762 @@
   min-width: 77.69px;
   min-height: 40px;
 }
+
+/* 서식 페이지 스타일 */
+.form-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.form-header {
+  width: 1160px;
+  height: 271.89px;
+  margin: 0 auto 20px;
+  background: radial-gradient(ellipse 103.63% 222.31% at 30.00% -40.00%, rgba(10.32, 190.99, 131.97, 0.16) 0%, rgba(10.32, 190.99, 131.97, 0) 55%), linear-gradient(180deg, rgba(242.01, 246.97, 242.96, 0.85) 0%, rgba(242.01, 246.97, 242.96, 0) 100%);
+  border-radius: 19.60px;
+  border: 1px solid var(--border-color);
+  padding: 37px;
+  position: relative;
+}
+
+.form-title {
+  color: var(--text-dark);
+  font-size: 30px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 49.50px;
+  margin: 0 0 20px 0;
+}
+
+.form-description {
+  color: var(--text-secondary);
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 26.40px;
+
+  margin: 0 0 30px 0;
+}
+
+.form-search-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.form-search-input {
+  flex: 1;
+  height: 42px;
+  background: white;
+
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 0 15px;
+  font-size: 13.3px;
+  font-family: Arial, sans-serif;
+  color: var(--text-secondary);
+}
+
+.form-search-input::placeholder {
+  color: #757575;
+}
+
+.form-search-button {
+  width: 58.66px;
+  height: 42px;
+  background: var(--primary-green);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 13.3px;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* 메인 콘텐츠 영역 */
+.form-main {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+}
+
+/* 사이드바 스타일 */
+.form-sidebar {
+  width: 285.50px;
+  flex-shrink: 0;
+}
+
+.form-filter-card {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+
+  padding: 0;
+  margin-bottom: 20px;
+  box-shadow: 0px 6px 20px rgba(16, 24, 40, 0.08);
+}
+
+.form-filter-title {
+  padding: 17px 14px;
+  margin: 0;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-dark);
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 26.40px;
+}
+
+.form-filter-options {
+  padding: 15px;
+}
+
+.form-checkbox-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+  padding: 8px 0;
+  transition: all 0.15s ease;
+}
+
+.form-checkbox-option:last-child {
+  margin-bottom: 0;
+}
+
+.form-checkbox-option:hover {
+  background: rgba(10, 190, 132, 0.04);
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin: 0 -12px 10px;
+}
+
+.form-checkbox-option input[type="checkbox"] {
+  margin-right: 15px;
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+  accent-color: var(--primary-green);
+}
+
+.form-option-text {
+  color: var(--text-dark);
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 26.40px;
+  transition: color 0.15s ease;
+}
+
+.form-checkbox-option:hover .form-option-text {
+  color: var(--primary-green);
+}
+
+.form-format-buttons {
+  padding: 15px;
+  display: flex;
+  gap: 8px;
+
+  flex-wrap: wrap;
+}
+
+.form-format-button {
+  background: #EFEFEF;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 3px 8px;
+  color: black;
+  font-size: 13.3px;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+}
+
+.form-format-button:hover {
+  background: var(--primary-green);
+  color: white;
+  border-color: var(--primary-green);
+}
+
+.form-reset-filters {
+  background: #EFEFEF;
+  border: 2px solid black;
+  border-radius: 4px;
+  padding: 4px 8px;
+  color: black;
+  font-size: 13.3px;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  margin: 15px;
+  width: calc(100% - 30px);
+  transition: all 0.2s ease;
+}
+
+.form-reset-filters:hover {
+  background: var(--primary-green);
+  color: white;
+  border-color: var(--primary-green);
+}
+
+/* 콘텐츠 영역 */
+.form-content {
+  flex: 1;
+}
+
+.results-header {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.results-count {
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 21.45px;
+}
+
+.results-count strong {
+  font-weight: 700;
+}
+
+.sort-options {
+  display: flex;
+  gap: 8px;
+}
+
+.sort-button {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  padding: 10px 11px;
+  color: var(--text-dark);
+  font-size: 13.3px;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  min-width: 61.98px;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.sort-button.active {
+  background: var(--primary-green);
+  color: white;
+  border-color: var(--primary-green);
+}
+
+.sort-button:hover:not(.active) {
+  background: #F8FAFC;
+  border-color: #CBD5E1;
+}
+
+/* 서식 카드 */
+.form-cards {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.form-card {
+  background: #F2F7F3;
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 19px 15px;
+  min-height: 204.75px;
+}
+
+.form-meta {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+
+.form-category,
+.form-document-type {
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 21.45px;
+}
+
+.form-title {
+  color: var(--primary-green);
+
+  font-size: 18px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 29.70px;
+  margin: 0 0 15px 0;
+}
+
+.form-tags {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 15px;
+}
+
+.tag {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  padding: 6px 9px;
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+
+  line-height: 19.80px;
+}
+
+
+.form-info {
+  display: flex;
+
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.form-version,
+.form-modified,
+.form-downloads {
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 21.45px;
+
+}
+
+.form-actions {
+  display: flex;
+  gap: 8px;
+
+}
+
+.action-button {
+  border-radius: 10px;
+  padding: 15px 12px;
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 26.40px;
+  cursor: pointer;
+  border: none;
+  min-height: 48.39px;
+  transition: all 0.2s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.action-button.primary {
+  background: var(--primary-green);
+  color: white;
+}
+
+.action-button.primary:hover {
+  background: #0D7A5A;
+  transform: translateY(-1px);
+  box-shadow: 0px 4px 12px rgba(10, 190, 132, 0.3);
+}
+
+.action-button.secondary {
+  background: white;
+  color: var(--primary-green);
+  border: 1px solid var(--light-green-border);
+}
+
+.action-button.secondary:hover {
+  background: #F8FAFC;
+  border-color: var(--primary-green);
+  transform: translateY(-1px);
+  box-shadow: 0px 4px 12px rgba(16, 24, 40, 0.1);
+}
+
+/* 더 보기 버튼 */
+.load-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.load-more-button {
+  background: white;
+  border: 1px solid var(--light-green-border);
+  border-radius: 10px;
+
+  padding: 12px 17px;
+  color: var(--primary-green);
+  font-size: 13.3px;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+  min-width: 77.69px;
+  min-height: 40px;
+  transition: all 0.2s ease;
+}
+
+.load-more-button:hover {
+  background: var(--primary-green);
+  color: white;
+  transform: translateY(-1px);
+  box-shadow: 0px 4px 12px rgba(10, 190, 132, 0.3);
+}
+
+/* FAQ 카드 */
+.faq-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.faq-card {
+  background: #F2F7F3;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 11px 13px;
+  min-height: 48.39px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+
+.faq-card:hover {
+  background: #E6F5E9;
+  border-color: var(--primary-green);
+  transform: translateY(-1px);
+  box-shadow: 0px 4px 12px rgba(10, 190, 132, 0.15);
+}
+
+.faq-category {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  padding: 6px 9px;
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 19.80px;
+  white-space: nowrap;
+  min-width: 42px;
+  text-align: center;
+}
+
+.faq-question {
+  color: var(--text-dark);
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  font-weight: 700;
+  line-height: 26.40px;
+
+  margin: 0;
+  flex: 1;
+}
+
+/* 더 보기 버튼 */
+.load-more {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+.load-more-button {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 12px 17px;
+  color: var(--text-dark);
+  font-size: 13.3px;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  min-width: 77.69px;
+  min-height: 40px;
+  transition: all 0.2s ease;
+}
+
+.load-more-button:hover {
+  background: var(--primary-green);
+  color: white;
+  border-color: var(--primary-green);
+  transform: translateY(-1px);
+  box-shadow: 0px 4px 12px rgba(10, 190, 132, 0.3);
+}
+
+/* ===== FAQ 페이지 스타일 ===== */
+
+/* FAQ 페이지 기본 레이아웃 */
+.faq-page {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.faq-header {
+  width: 1160px;
+  height: 271.89px;
+  margin: 0 auto 20px;
+  background: radial-gradient(ellipse 103.63% 222.31% at 30.00% -40.00%, rgba(10.32, 190.99, 131.97, 0.16) 0%, rgba(10.32, 190.99, 131.97, 0) 55%), linear-gradient(180deg, rgba(242.01, 246.97, 242.96, 0.85) 0%, rgba(242.01, 246.97, 242.96, 0) 100%);
+  border-radius: 19.60px;
+  border: 1px solid var(--border-color);
+  padding: 37px;
+  position: relative;
+}
+
+.faq-title {
+  color: var(--text-dark);
+  font-size: 30px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+
+  line-height: 49.50px;
+  margin: 0 0 20px 0;
+}
+
+.faq-description {
+  color: var(--text-secondary);
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 26.40px;
+  margin: 0 0 30px 0;
+}
+
+.faq-search-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.faq-search-input {
+  flex: 1;
+  height: 42px;
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 0 15px;
+  font-size: 13.3px;
+  font-family: Arial, sans-serif;
+  color: var(--text-secondary);
+}
+
+.faq-search-input::placeholder {
+  color: #757575;
+}
+
+.faq-search-button {
+  width: 58.66px;
+  height: 42px;
+  background: var(--primary-green);
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 13.3px;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* 메인 콘텐츠 영역 */
+.faq-main {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+}
+
+/* 사이드바 스타일 */
+.faq-sidebar {
+  width: 285.50px;
+  flex-shrink: 0;
+}
+
+.faq-filter-card {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 14px;
+  padding: 0;
+  margin-bottom: 20px;
+  box-shadow: 0px 6px 20px rgba(16, 24, 40, 0.08);
+}
+
+.faq-filter-title {
+  padding: 17px 14px;
+  margin: 0;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-dark);
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 26.40px;
+}
+
+.faq-filter-options {
+  padding: 15px;
+}
+
+.faq-checkbox-option {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  cursor: pointer;
+  padding: 8px 0;
+  transition: all 0.15s ease;
+}
+
+.faq-checkbox-option:last-child {
+  margin-bottom: 0;
+}
+
+.faq-checkbox-option:hover {
+  background: rgba(10, 190, 132, 0.04);
+  border-radius: 8px;
+  padding: 8px 12px;
+  margin: 0 -12px 10px;
+}
+
+.faq-checkbox-option input[type="checkbox"] {
+  margin-right: 15px;
+  width: 13px;
+  height: 13px;
+  cursor: pointer;
+  accent-color: var(--primary-green);
+}
+
+.faq-option-text {
+  color: var(--text-dark);
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 26.40px;
+  transition: color 0.15s ease;
+}
+
+.faq-checkbox-option:hover .faq-option-text {
+  color: var(--primary-green);
+}
+
+.faq-topic-buttons {
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+
+  gap: 8px;
+}
+
+.faq-topic-button {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+
+  padding: 10px 13px;
+  color: var(--text-secondary);
+  font-size: 13.3px;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.faq-topic-button:hover {
+  background: var(--primary-green);
+  color: white;
+  border-color: var(--primary-green);
+  transform: translateY(-1px);
+  box-shadow: 0px 4px 12px rgba(10, 190, 132, 0.3);
+}
+
+.faq-action-buttons {
+  padding: 15px;
+  display: flex;
+
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.faq-action-button {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 10px;
+  padding: 12px 13px;
+  color: var(--text-secondary);
+  font-size: 13.3px;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.faq-action-button:hover {
+  background: var(--primary-green);
+  color: white;
+  border-color: var(--primary-green);
+  transform: translateY(-1px);
+  box-shadow: 0px 4px 12px rgba(10, 190, 132, 0.3);
+}
+
+/* 콘텐츠 영역 */
+.faq-content {
+  flex: 1;
+}
+
+.results-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.results-count {
+  color: var(--text-secondary);
+  font-size: 13px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+
+  line-height: 21.45px;
+}
+
+.results-count strong {
+  font-weight: 700;
+}
+
+.sort-options {
+  display: flex;
+  gap: 8px;
+}
+
+.sort-button {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  padding: 10px 11px;
+  color: var(--text-dark);
+  font-size: 13.3px;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  min-width: 48.66px;
+  text-align: center;
+  transition: all 0.2s ease;
+}
+
+.sort-button.active {
+  background: var(--primary-green);
+  color: white;
+  border-color: var(--primary-green);
+}
+
+.sort-button:hover:not(.active) {
+  background: #F8FAFC;
+  border-color: #CBD5E1;
+}
+
+/* FAQ 카드 */
+.faq-cards {
+  display: flex;
+  flex-direction: column;
+
+  gap: 20px;
+}
+
+.faq-card {
+  background: #F2F7F3;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+
+  padding: 11px 13px;
+  min-height: 48.39px;
+  display: flex;
+  align-items: center;
+
+  gap: 8px;
+}
+
+.faq-category {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  padding: 6px 9px;
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 19.80px;
+  white-space: nowrap;
+  min-width: 42px;
+  text-align: center;
+}
+
+.faq-question {
+  color: var(--text-dark);
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  font-weight: 700;
+  line-height: 26.40px;
+
+  margin: 0;
+  flex: 1;
+}
+
+/* ===== 용어 페이지 스타일 ===== */
+
+/* 용어 페이지 기본 레이아웃 */
+.terms-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+/* 용어 헤더 */
+.terms-header {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+  padding: var(--spacing-xl) 0;
+}
+
+.terms-title {
+  color: var(--text-dark);
+  font-size: 32px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  margin: 0 0 var(--spacing-md) 0;
+  line-height: 1.3;
+}
+
+.terms-description {
+  color: var(--text-muted);
+
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+
+  margin: 0 0 var(--spacing-lg) 0;
+  line-height: 1.6;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* 용어 검색 컨테이너 */
+.terms-search-container {
+  display: flex;
+  gap: var(--spacing-sm);
+  max-width: 500px;
+  margin: 0 auto var(--spacing-lg) auto;
+}
+
+.terms-search-input {
+  flex: 1;
+  padding: 12px 16px;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  transition: border-color 0.2s ease;
+}
+
+.terms-search-input:focus {
+  outline: none;
+  border-color: var(--primary-green);
+  box-shadow: 0 0 0 3px rgba(17, 131, 94, 0.1);
+}
+
+.terms-search-button {
+  background: var(--primary-green);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 14px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  white-space: nowrap;
+}
+
+.terms-search-button:hover {
+  background: var(--primary-green-light);
+}
+
+/* 인기 용어 태그 */
+.terms-popular-tags {
+  display: flex;
+
+  flex-wrap: wrap;
+  gap: var(--spacing-sm);
+  justify-content: center;
+}
+
+.terms-popular-tag {
+  background: var(--light-bg);
+  border: 1px solid var(--light-green-border);
+  border-radius: 20px;
+  padding: 8px 16px;
+  color: var(--primary-green);
+  font-size: 13px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.terms-popular-tag:hover {
+  background: var(--light-green);
+  transform: translateY(-1px);
+}
+
+/* 용어 메인 레이아웃 */
+.terms-main {
+  display: flex;
+
+  gap: var(--spacing-xl);
+  align-items: flex-start;
+}
+
+/* 용어 사이드바 */
+.terms-sidebar {
+  flex: 0 0 280px;
+  position: sticky;
+  top: 20px;
+}
+
+.terms-filter-card {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+
+  padding: var(--spacing-lg);
+  margin-bottom: var(--spacing-md);
+  box-shadow: var(--shadow-sm);
+}
+
+.terms-filter-title {
+  color: var(--text-dark);
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 600;
+  margin: 0 0 var(--spacing-md) 0;
+}
+
+.terms-filter-options {
+  display: flex;
+  flex-direction: column;
+
+  gap: var(--spacing-sm);
+}
+
+.terms-checkbox-option,
+.terms-radio-option {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-sm);
+  cursor: pointer;
+  padding: var(--spacing-xs) 0;
+}
+
+.terms-checkbox-option input[type="checkbox"],
+.terms-radio-option input[type="radio"] {
+  margin-right: var(--spacing-sm);
+  width: 16px;
+  height: 16px;
+  accent-color: var(--primary-green);
+}
+
+.terms-option-text {
+  color: var(--text-muted);
+  font-size: 14px;
+
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+}
+
+.terms-reset-filters {
+  background: var(--light-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 8px 16px;
+  color: var(--text-muted);
+  font-size: 13px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-top: var(--spacing-md);
+  width: 100%;
+}
+
+.terms-reset-filters:hover {
+  background: var(--border-color);
+  color: var(--text-dark);
+}
+
+/* 용어 메인 컨텐츠 */
+.terms-content {
+  flex: 1;
+  min-width: 0;
+}
+
+/* 용어 카드 그리드 */
+.terms-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: var(--spacing-lg);
+  margin-bottom: var(--spacing-xl);
+}
+
+.terms-card {
+  background: white;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: var(--spacing-lg);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.2s ease;
+}
+
+.terms-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--light-green-border);
+}
+
+/* 용어 카드 메타 정보 */
+.terms-meta {
+  display: flex;
+  gap: var(--spacing-sm);
+  margin-bottom: var(--spacing-md);
+}
+
+.terms-category,
+.terms-difficulty {
+  background: var(--light-bg);
+  border: 1px solid var(--light-green-border);
+  border-radius: 6px;
+  padding: 4px 8px;
+  color: var(--primary-green);
+  font-size: 11px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.terms-difficulty {
+  background: #FFF3E0;
+  border-color: #FFB74D;
+  color: #E65100;
+}
+
+/* 용어 제목 */
+.terms-term {
+  color: var(--text-dark);
+  font-size: 18px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+
+  margin: 0 0 var(--spacing-sm) 0;
+  line-height: 1.4;
+}
+
+
+/* 용어 정의 */
+.terms-definition {
+  color: var(--text-muted);
+  font-size: 14px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+
+  line-height: 1.6;
+  margin: 0 0 var(--spacing-md) 0;
+}
+
+/* 용어 태그 */
+.terms-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--spacing-xs);
+  margin-bottom: var(--spacing-md);
+}
+
+.terms-tag {
+  background: var(--light-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  padding: 4px 8px;
+  color: var(--text-muted);
+  font-size: 11px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 500;
+}
+
+/* 용어 액션 버튼 */
+.terms-actions {
+  display: flex;
+  gap: var(--spacing-sm);
+}
+
+.action-button {
+  background: var(--light-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  padding: 8px 12px;
+  color: var(--text-muted);
+  font-size: 12px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  flex: 1;
+}
+
+.action-button:hover {
+  background: var(--primary-green);
+  color: white;
+  border-color: var(--primary-green);
+}
+
+/* 반응형 디자인 */
+@media (max-width: 1200px) {
+  .terms-main {
+    gap: var(--spacing-lg);
+  }
+  
+  .terms-sidebar {
+    flex: 0 0 260px;
+  }
+}
+
+@media (max-width: 992px) {
+  .terms-main {
+    flex-direction: column;
+  }
+  
+  .terms-sidebar {
+    flex: none;
+    position: static;
+    width: 100%;
+  }
+  
+  .terms-cards {
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .terms-page {
+    padding: 0 var(--spacing-sm);
+  }
+  
+  .terms-title {
+    font-size: 28px;
+  }
+  
+  .terms-description {
+    font-size: 15px;
+  }
+  
+  .terms-search-container {
+    flex-direction: column;
+  }
+  
+  .terms-cards {
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+  }
+  
+  .terms-popular-tags {
+    gap: var(--spacing-xs);
+  }
+  
+  .terms-popular-tag {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .terms-header {
+    padding: var(--spacing-lg) 0;
+  }
+  
+  .terms-title {
+    font-size: 24px;
+  }
+  
+  .terms-filter-card {
+    padding: var(--spacing-md);
+  }
+  
+  .terms-card {
+    padding: var(--spacing-md);
+  }
+  
+  .terms-actions {
+    flex-direction: column;
+  }
+}
+
+/* ===== 형사 분야 허브 페이지 스타일 ===== */
+
+/* 형사 허브 페이지 기본 레이아웃 */
+.criminal-hub-page {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* 헤더 배너 */
+.criminal-header-banner {
+  width: 1160px;
+  height: 271.89px;
+  margin: 0 auto 20px;
+  background: radial-gradient(ellipse 103.63% 222.31% at 30.00% -40.00%, rgba(10.32, 190.99, 131.97, 0.16) 0%, rgba(10.32, 190.99, 131.97, 0) 55%), linear-gradient(180deg, rgba(242.01, 246.97, 242.96, 0.85) 0%, rgba(242.01, 246.97, 242.96, 0) 100%);
+  border-radius: 19.60px;
+  outline: 1px #E6ECE8 solid;
+  outline-offset: -1px;
+
+  padding: 37px;
+  position: relative;
+}
+
+
+.criminal-title {
+  width: 196.89px;
+  height: 49.50px;
+  color: #0B0F14;
+  font-size: 30px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+
+  line-height: 49.50px;
+  margin: 0 0 20px 0;
+}
+
+
+.criminal-description {
+  width: 763.12px;
+  height: 16px;
+
+  color: #5A6B7B;
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 26.40px;
+
+  margin: 0 0 30px 0;
+}
+
+/* 검색 컨테이너 */
+.criminal-search-container {
+  width: 1086px;
+  height: 42px;
+  display: flex;
+
+  gap: 10px;
+}
+
+.criminal-search-input {
+  width: 1019.34px;
+  height: 42px;
+  background: white;
+
+  overflow: hidden;
+  border-radius: 12px;
+
+  outline: 1px #E6ECE8 solid;
+  outline-offset: -1px;
+
+  border: none;
+  padding: 0 15px;
+  font-size: 13.30px;
+  font-family: Arial, sans-serif;
+
+  color: #757575;
+}
+
+.criminal-search-input::placeholder {
+  color: #757575;
+}
+
+.criminal-search-button {
+  width: 58.66px;
+  height: 42px;
+  background: #11835E;
+  border: none;
+  border-radius: 12px;
+  color: white;
+  font-size: 13.30px;
+  font-family: Arial, sans-serif;
+  font-weight: 700;
+
+  cursor: pointer;
+}
+
+/* 메인 컨텐츠 영역 */
+.criminal-main-content {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+}
+
+/* 왼쪽 컨텐츠 */
+.criminal-content-left {
+  width: 842px;
+}
+
+/* 섹션 카드 */
+.criminal-section-card {
+  background: white;
+  box-shadow: 0px 6px 20px rgba(16, 24, 40, 0.08);
+  border-radius: 14px;
+
+  outline: 1px #E6ECE8 solid;
+  outline-offset: -1px;
+
+  margin-bottom: 20px;
+}
+
+.criminal-section-header {
+  border-bottom: 1px #E6ECE8 solid;
+  padding: 19px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.criminal-section-title {
+  color: #0B0F14;
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 26.40px;
+
+  margin: 0;
+}
+
+.criminal-section-subtitle {
+  color: #5A6B7B;
+  font-size: 13px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 21.45px;
+}
+
+/* 하위 허브 */
+.criminal-sub-hubs {
+  padding: 17px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.criminal-sub-hub {
+  background: #F2F7F3;
+  border-radius: 16px;
+  outline: 1px #E6ECE8 solid;
+  outline-offset: -1px;
+  padding: 20px 15px;
+  min-height: 221.36px;
+}
+
+.criminal-sub-hub:nth-child(4) {
+  grid-column: 1;
+  min-height: 198.27px;
+}
+
+.sub-hub-title {
+  color: #0B0F14;
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+
+  line-height: 26.40px;
+  margin: 0 0 15px 0;
+}
+
+.sub-hub-description {
+  color: #5A6B7B;
+  font-size: 14px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  font-weight: 400;
+  line-height: 23.10px;
+  margin: 0 0 20px 0;
+}
+
+.sub-hub-actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 8px;
+}
+
+
+.hub-main-button {
+  grid-column: 1 / -1; /* 첫 번째 행 전체 차지 */
+  width: 100%;
+  height: 48.39px;
+
+  background: #11835E;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 26.40px;
+  cursor: pointer;
+
+}
+
+.hub-sub-button {
+  width: 110.45px;
+  height: 48.39px;
+  background: white;
+  border: 1px solid #E6ECE8;
+  border-radius: 10px;
+  color: #11835E;
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 26.40px;
+
+  cursor: pointer;
+}
+
+.hub-sub-button:last-child {
+  width: 80px;
+  align-self: flex-end;
+}
+
+/* 절차별 필터 */
+.criminal-procedure-filter {
+  background: white;
+  border-radius: 12px;
+  outline: 1px #E6ECE8 solid;
+  outline-offset: -1px;
+  padding: 9px;
+  margin-bottom: 20px;
+  display: flex;
+  gap: 8px;
+}
+
+.procedure-filter-btn {
+  width: 52.66px;
+  height: 36px;
+  background: #F2F7F3;
+  border: 1px solid #E6ECE8;
+  border-radius: 999px;
+  color: #0B0F14;
+  font-size: 13.30px;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.procedure-filter-btn.active {
+  background: #11835E;
+  color: white;
+  border-color: #11835E;
+}
+
+/* 문서 아이템 */
+.criminal-documents,
+.criminal-forms,
+.criminal-precedents,
+.criminal-faq-terms {
+  padding: 17px;
+}
+
+.criminal-document-item,
+.criminal-form-item,
+.criminal-precedent-item,
+.criminal-faq-term-item {
+  width: 768px;
+  height: 48.39px;
+  border-radius: 12px;
+
+  outline: 1px #E6ECE8 solid;
+  outline-offset: -1px;
+
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  padding: 0 13px;
+}
+
+
+.criminal-document-item:last-child,
+.criminal-form-item:last-child,
+.criminal-precedent-item:last-child,
+.criminal-faq-term-item:last-child {
+  margin-bottom: 0;
+}
+
+.document-title,
+.form-title,
+.precedent-title,
+.faq-term-title {
+  color: #11835E;
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 26.40px;
+
+}
+
+.document-category,
+.form-type,
+.precedent-category,
+.faq-term-type {
+  color: #5A6B7B;
+  font-size: 13px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 21.45px;
+
+}
+
+/* 더보기 버튼 */
+.more-button {
+  width: 74px;
+  height: 48.39px;
+  background: white;
+  border: 1px solid #E6ECE8;
+  border-radius: 10px;
+  color: #11835E;
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  font-weight: 700;
+  line-height: 26.40px;
+  cursor: pointer;
+}
+
+/* 오른쪽 사이드바 */
+.criminal-sidebar {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+
+.criminal-sidebar-card {
+  background: white;
+  box-shadow: 0px 6px 20px rgba(16, 24, 40, 0.08);
+  border-radius: 14px;
+
+  outline: 1px #E6ECE8 solid;
+  outline-offset: -1px;
+  position: relative;
+}
+
+
+.criminal-sidebar-card.author-card {
+  outline: 1px #E6F5E9 solid;
+}
+
+.sidebar-card-header {
+  border-bottom: 1px solid #E6ECE8;
+  padding: 19px 16px;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+
+}
+
+.author-card .sidebar-card-header {
+  border-bottom: 1px solid #E6F5E9;
+}
+
+.sidebar-card-title {
+  color: #0B0F14;
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 26.40px;
+  margin: 0;
+}
+
+.author-card .sidebar-card-title {
+  color: #0B140E;
+}
+
+.sidebar-card-description {
+  color: #0B0F14;
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 26.40px;
+  margin: 20px 17px;
+}
+
+.sidebar-card-actions {
+  display: flex;
+
+  gap: 8px;
+  padding: 0 17px 20px;
+}
+
+.consultation-button {
+  width: 94.45px;
+  height: 48.39px;
+  background: #11835E;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  font-weight: 400;
+  line-height: 26.40px;
+
+  cursor: pointer;
+}
+
+.checklist-button {
+  width: 106px;
+  height: 48.39px;
+  background: white;
+  border: 1px solid #E6ECE8;
+  border-radius: 10px;
+  color: #11835E;
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 26.40px;
+  cursor: pointer;
+}
+
+/* 대표 집필 변호사 */
+.author-profile {
+  display: flex;
+
+  gap: 20px;
+  padding: 20px 17px;
+}
+
+
+.author-avatar {
+  width: 72px;
+  height: 73px;
+  border-radius: 57px;
+  flex-shrink: 0;
+}
+
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+
+  gap: 4px;
+}
+
+.author-name {
+  color: #0B140E;
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 26.40px;
+}
+
+
+.author-title {
+  color: #0B140E;
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 26.40px;
+
+}
+
+/* 공동집필진 */
+.contribution-button {
+  width: 54px;
+  height: 25.80px;
+  background: #F3FBF5;
+
+  border: 1px solid #E6F5E9;
+  border-radius: 999px;
+  color: #617B5A;
+  font-size: 12px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 19.80px;
+
+  cursor: pointer;
+}
+
+.co-authors {
+  padding: 20px 17px;
+}
+
+.co-author-item {
+  display: flex;
+  gap: 8px;
+
+  margin-bottom: 16px;
+  align-items: center;
+}
+
+.co-author-item:last-child {
+  margin-bottom: 0;
+}
+
+.co-author-avatar {
+  width: 61px;
+  height: 62px;
+  border-radius: 57px;
+  flex-shrink: 0;
+}
+
+.co-author-info {
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  flex: 1;
+  background: white;
+
+  border: 1px solid #E6F5E9;
+  border-radius: 12px;
+  padding: 16px 13px;
+}
+
+.co-author-name {
+  color: #0B140E;
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 26.40px;
+}
+
+.co-author-contribution {
+  color: #617B5A;
+  font-size: 12px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 23.10px;
+
+}
+
+/* 스폰서 광고 */
+.criminal-sponsor-ad {
+  background: #F2F7F3;
+  border-radius: 12px;
+  outline: 1px #E6ECE8 solid;
+  outline-offset: -1px;
+  height: 53.09px;
+  display: flex;
+  align-items: center;
+
+  justify-content: center;
+}
+
+.sponsor-text {
+  color: #5A6B7B;
+  font-size: 14px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 23.10px;
+}
+
+/* 형사 허브 페이지 반응형 디자인 */
+@media (max-width: 1200px) {
+  .criminal-hub-page {
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  .criminal-header-banner,
+  .criminal-main-content {
+    width: 100%;
+    max-width: 1160px;
+  }
+  
+  .criminal-content-left {
+    width: 100%;
+    max-width: 842px;
+  }
+  
+  .criminal-sidebar {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 992px) {
+  .criminal-main-content {
+    flex-direction: column;
+  }
+  
+  .criminal-sidebar {
+    max-width: none;
+  }
+  
+  .criminal-sub-hubs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .criminal-header-banner {
+    padding: 20px;
+    height: auto;
+  }
+  
+  .criminal-title {
+    font-size: 24px;
+    line-height: 1.3;
+  width: auto;
+  height: auto;
+
+  }
+  
+  .criminal-description {
+    width: auto;
+    height: auto;
+    font-size: 14px;
+  }
+  
+  .criminal-search-container {
+    width: 100%;
+    flex-direction: column;
+  }
+  
+  .criminal-search-input {
+    width: 100%;
+  }
+  
+  .criminal-sub-hubs {
+    grid-template-columns: 1fr;
+  }
+  
+  .criminal-procedure-filter {
+    flex-wrap: wrap;
+  }
+  
+  .criminal-document-item,
+  .criminal-form-item,
+  .criminal-precedent-item,
+  .criminal-faq-term-item {
+    width: 100%;
+    flex-direction: column;
+    height: auto;
+    padding: 12px;
+    gap: 8px;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 576px) {
+  .criminal-hub-page {
+    padding: 0 10px;
+  }
+  
+  .criminal-header-banner {
+    padding: 15px;
+  }
+  
+  .criminal-title {
+    font-size: 20px;
+  }
+  
+  .criminal-description {
+    font-size: 13px;
+  }
+  
+  .criminal-section-header {
+    padding: 15px;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+  
+  .criminal-sub-hubs {
+    padding: 15px;
+  }
+  
+  .criminal-sub-hub {
+    padding: 15px;
+  }
+  
+  .sub-hub-actions {
+    gap: 6px;
+  }
+  
+  .hub-main-button,
+  .hub-sub-button {
+    width: 100%;
+    height: 40px;
+    font-size: 14px;
+  }
+}
+
+/* ===== 특수폭행 허브 페이지 스타일 ===== */
+
+/* 특수폭행 허브 페이지 기본 레이아웃 */
+.special-assault-hub-page {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* 헤더 배너 */
+.special-assault-header-banner {
+  width: 1160px;
+  height: 213.30px;
+  margin: 0 auto 20px;
+  background: radial-gradient(ellipse 103.63% 283.96% at 30.00% -40.00%, rgba(10.32, 190.99, 131.97, 0.16) 0%, rgba(10.32, 190.99, 131.97, 0) 55%), linear-gradient(180deg, rgba(242.01, 246.97, 242.96, 0.85) 0%, rgba(242.01, 246.97, 242.96, 0) 100%);
+  border-radius: 19.60px;
+  outline: 1px #E6ECE8 solid;
+  outline-offset: -1px;
+  padding: 37px;
+  position: relative;
+}
+
+.special-assault-title {
+  width: 273.58px;
+  height: 49.50px;
+  color: #0B0F14;
+  font-size: 30px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 49.50px;
+  margin: 0 0 20px 0;
+}
+
+/* 상태 태그 */
+.status-tags {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 20px;
+}
+
+.status-tag {
+  height: 29.80px;
+  border-radius: 999px;
+  outline: 1px #E6ECE8 solid;
+  outline-offset: -1px;
+  padding: 8px 9px;
+  font-size: 12px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 19.80px;
+  color: #5A6B7B;
+  background: white;
+}
+
+.status-tag.completed {
+  background: rgba(34.08, 159.99, 106.98, 0.10);
+  color: #1F6146;
+}
+
+/* 허브 네비게이션 탭 */
+.hub-navigation-tabs {
+  display: flex;
+  gap: 8px;
+}
+
+.hub-nav-tab {
+  height: 36px;
+  border-radius: 999px;
+  border: 1px solid #E6ECE8;
+  background: white;
+  color: #5A6B7B;
+  font-size: 13.30px;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  padding: 10px 13px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.hub-nav-tab.active {
+  background: #11835E;
+  color: white;
+  border-color: #11835E;
+}
+
+/* 메인 컨텐츠 영역 */
+.special-assault-main-content {
+  width: 1160px;
+  margin: 0 auto;
+  display: flex;
+  gap: 20px;
+}
+
+/* 왼쪽 컨텐츠 */
+.special-assault-content-left {
+  width: 842px;
+}
+
+/* 섹션 카드 */
+.special-assault-section-card {
+  background: white;
+  box-shadow: 0px 6px 20px rgba(16, 24, 40, 0.08);
+  border-radius: 14px;
+  outline: 1px #E6ECE8 solid;
+  outline-offset: -1px;
+  margin-bottom: 20px;
+}
+
+.special-assault-section-header {
+  border-bottom: 1px #E6ECE8 solid;
+  padding: 19px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.special-assault-section-title {
+  color: #0B0F14;
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 26.40px;
+
+  margin: 0;
+}
+
+.special-assault-section-subtitle {
+  color: #5A6B7B;
+  font-size: 13px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 21.45px;
+}
+
+/* 쟁점 지도 그리드 */
+.issue-map-grid {
+  padding: 17px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+
+}
+
+.issue-map-card {
+  background: #F2F7F3;
+  border-radius: 14px;
+  outline: 1px #E6ECE8 solid;
+  outline-offset: -1px;
+  padding: 20px 15px;
+  min-height: 134.97px;
+  transition: all 0.2s ease;
+}
+
+.issue-map-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0px 8px 25px rgba(16, 24, 40, 0.12);
+}
+
+.issue-map-title {
+  color: #0B0F14;
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 26.40px;
+  margin: 0 0 15px 0;
+}
+
+.issue-map-description {
+  color: #5A6B7B;
+  font-size: 14px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 23.10px;
+  margin: 0;
+}
+
+.issue-map-link {
+  color: #11835E;
+  font-weight: 400;
+  text-decoration: none;
+  display: block;
+  height: 100%;
+  cursor: pointer;
+}
+
+.issue-map-link:hover {
+  text-decoration: none;
+}
+
+/* 절차 플로우 */
+.procedure-flow {
+  padding: 17px;
+}
+
+.procedure-step {
+  width: 808px;
+  height: 52.39px;
+  background: rgba(242.01, 246.97, 242.96, 0.88);
+  border-radius: 12px;
+
+  outline: 1px #E6ECE8 solid;
+  outline-offset: -1px;
+
+  margin-bottom: 12px;
+  display: flex;
+  align-items: center;
+
+  padding: 0 13px;
+}
+
+.procedure-step:last-child {
+  margin-bottom: 0;
+}
+
+.step-number {
+  color: #0B0F14;
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 26.40px;
+  margin-right: 8px;
+}
+
+.step-description {
+  color: #0B0F14;
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 26.40px;
+}
+
+/* 문서 체크리스트 */
+.document-checklist {
+  padding: 17px;
+}
+
+.document-checklist-item {
+  width: 808px;
+  height: 48.39px;
+  border-radius: 12px;
+  outline: 1px #E6ECE8 solid;
+  outline-offset: -1px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+  padding: 0 13px;
+
+}
+
+.document-checklist-item:last-child {
+  margin-bottom: 0;
+}
+
+.document-name {
+  color: #0B0F14;
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 26.40px;
+}
+
+
+.document-category {
+  color: #5A6B7B;
+  font-size: 13px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 21.45px;
+
+}
+
+/* 핵심 서식 */
+.key-forms {
+  padding: 17px;
+}
+
+.key-form-item {
+  width: 808px;
+  height: 48.39px;
+  border-radius: 12px;
+  outline: 1px #E6ECE8 solid;
+  outline-offset: -1px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 0 13px;
+}
+
+.key-form-item:last-child {
+  margin-bottom: 0;
+}
+
+.form-name {
+  color: #11835E;
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+
+  font-weight: 400;
+  line-height: 26.40px;
+
+}
+
+.form-type {
+  color: #5A6B7B;
+  font-size: 13px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 21.45px;
+}
+
+/* 대표 판례 */
+.representative-precedents {
+  padding: 17px;
+}
+
+.precedent-item {
+  width: 808px;
+  height: 48.39px;
+  border-radius: 12px;
+  outline: 1px #E6ECE8 solid;
+  outline-offset: -1px;
+  margin-bottom: 10px;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 13px;
+}
+
+.precedent-item:last-child {
+  margin-bottom: 0;
+}
+
+.precedent-name {
+  color: #11835E;
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 26.40px;
+}
+
+.precedent-aspects {
+  color: #5A6B7B;
+  font-size: 13px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 21.45px;
+}
+
+/* FAQ & 용어 */
+.faq-terms {
+  padding: 17px;
+}
+
+.faq-term-item {
+  width: 808px;
+  height: 48.39px;
+  border-radius: 12px;
+
+  outline: 1px #E6ECE8 solid;
+  outline-offset: -1px;
+
+  margin-bottom: 10px;
+  display: flex;
+
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 13px;
+
+}
+
+.faq-term-item:last-child {
+  margin-bottom: 0;
+}
+
+.faq-term-name {
+  color: #11835E;
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 26.40px;
+}
+
+.faq-term-type {
+  color: #5A6B7B;
+  font-size: 13px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 21.45px;
+}
+
+/* 오른쪽 사이드바 */
+.special-assault-sidebar {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.special-assault-sidebar-card {
+  background: white;
+
+  box-shadow: 0px 6px 20px rgba(16, 24, 40, 0.08);
+  border-radius: 14px;
+  outline: 1px #E6ECE8 solid;
+  outline-offset: -1px;
+  position: relative;
+}
+
+.sidebar-card-header {
+  border-bottom: 1px #E6ECE8 solid;
+  padding: 19px 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sidebar-card-title {
+  color: #0B0F14;
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 26.40px;
+  margin: 0;
+}
+
+.sidebar-card-description {
+  color: #5A6B7B;
+  font-size: 13px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 700;
+  line-height: 21.45px;
+  margin: 20px 17px;
+}
+
+.sidebar-card-actions {
+  display: flex;
+  gap: 8px;
+  padding: 0 17px 20px;
+}
+
+.consultation-button {
+  width: 94.45px;
+  height: 44.39px;
+  background: white;
+  border: 1px solid #E6ECE8;
+  border-radius: 999px;
+  color: #5A6B7B;
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 26.40px;
+  cursor: pointer;
+}
+
+
+.checklist-button {
+  width: 106px;
+  height: 44.39px;
+  background: white;
+  border: 1px solid #E6ECE8;
+  border-radius: 999px;
+  color: #5A6B7B;
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 26.40px;
+
+}
+
+/* 문서 상태 */
+.document-status {
+  padding: 20px 17px;
+}
+
+.status-item {
+  width: 266px;
+  height: 48.39px;
+  border-radius: 12px;
+  outline: 1px #E6ECE8 solid;
+  outline-offset: -1px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 13px;
+}
+
+.status-item:last-child {
+  margin-bottom: 0;
+}
+
+.status-label {
+  color: #0B0F14;
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 26.40px;
+}
+
+.status-value {
+  color: #5A6B7B;
+  font-size: 13px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 21.45px;
+
+}
+
+/* 스폰서 광고 */
+.special-assault-sponsor-ad {
+  background: #F2F7F3;
+  border-radius: 12px;
+  outline: 1px #E6ECE8 solid;
+  outline-offset: -1px;
+  height: 56.39px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sponsor-text {
+  color: #5A6B7B;
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 26.40px;
+}
+
+/* 특수폭행 허브 페이지 반응형 디자인 */
+@media (max-width: 1200px) {
+  .special-assault-hub-page {
+    width: 100%;
+    padding: 0 20px;
+  }
+  
+  .special-assault-header-banner,
+  .special-assault-main-content {
+    width: 100%;
+    max-width: 1160px;
+  }
+  
+  .special-assault-content-left {
+    width: 100%;
+    max-width: 842px;
+  }
+  
+  .special-assault-sidebar {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 992px) {
+  .special-assault-main-content {
+    flex-direction: column;
+  }
+  
+  .special-assault-sidebar {
+    max-width: none;
+  }
+  
+  .issue-map-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .special-assault-header-banner {
+    padding: 20px;
+    height: auto;
+  }
+  
+  .special-assault-title {
+    font-size: 24px;
+    line-height: 1.3;
+    width: auto;
+    height: auto;
+  }
+  
+  .status-tags {
+    flex-wrap: wrap;
+  }
+  
+  .hub-navigation-tabs {
+    flex-wrap: wrap;
+  }
+  
+  .issue-map-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .procedure-step,
+  .document-checklist-item,
+  .key-form-item,
+  .precedent-item,
+  .faq-term-item,
+  .status-item {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    padding: 12px;
+    gap: 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .special-assault-hub-page {
+    padding: 0 10px;
+  }
+  
+  .special-assault-header-banner {
+    padding: 15px;
+  }
+  
+  .special-assault-title {
+    font-size: 20px;
+  }
+  
+  .special-assault-section-header {
+    padding: 15px;
+    flex-direction: column;
+    gap: 8px;
+    align-items: flex-start;
+  }
+  
+  .issue-map-grid {
+    padding: 15px;
+  }
+  
+  .issue-map-card {
+    padding: 15px;
+  }
+}
+
+/* 특수폭행 양형 요소와 선처 포인트 페이지 스타일 */
+.sentencing-factors-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* 헤더 배너 */
+.sentencing-factors-header-banner {
+  background: linear-gradient(135deg, var(--primary-green) 0%, var(--primary-green-light) 100%);
+  border-radius: 16px;
+  padding: 40px;
+  margin-bottom: 32px;
+  color: white;
+  text-align: center;
+}
+
+.sentencing-factors-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 24px;
+  line-height: 1.3;
+}
+
+/* 상태 태그 */
+.status-tags {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-bottom: 24px;
+  flex-wrap: wrap;
+}
+
+.status-tag {
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.status-tag.completed {
+  background: rgba(34, 160, 107, 0.8);
+  border-color: rgba(34, 160, 107, 0.9);
+}
+
+/* 소개 텍스트 박스 */
+.intro-text-box {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 12px;
+  padding: 24px;
+  backdrop-filter: blur(10px);
+}
+
+.intro-text-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.intro-text-item {
+  font-size: 16px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* 메인 컨텐츠 영역 */
+.sentencing-factors-main-content {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.sentencing-factors-content-left {
+  flex: 1;
+  max-width: 800px;
+}
+
+.sentencing-factors-sidebar {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+/* 컨텐츠 섹션 */
+.content-section {
+  background: white;
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--text-black);
+  margin-bottom: 16px;
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--primary-green);
+}
+
+.section-content {
+  font-size: 16px;
+  line-height: 1.6;
+  color: var(--text-dark);
+  margin: 0;
+}
+
+/* 양형 요소 테이블 */
+.sentencing-factors-table {
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  overflow: hidden;
+  margin-top: 16px;
+}
+
+.table-header {
+  display: grid;
+  grid-template-columns: 80px 1fr 1fr;
+  background: var(--light-bg);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.header-cell {
+  padding: 16px;
+  font-weight: 600;
+  color: var(--text-black);
+  text-align: center;
+  border-right: 1px solid var(--border-color);
+}
+
+.header-cell:last-child {
+  border-right: none;
+}
+
+.table-row {
+  display: grid;
+  grid-template-columns: 80px 1fr 1fr;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.table-cell {
+  padding: 16px;
+  border-right: 1px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.table-cell:last-child {
+  border-right: none;
+}
+
+.category-text {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--primary-green);
+  line-height: 1.2;
+}
+
+.example-text {
+  font-size: 14px;
+  line-height: 1.4;
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+
+.practical-text {
+  font-size: 13px;
+  line-height: 1.4;
+  color: var(--text-muted);
+  font-style: italic;
+}
+
+/* 절차 요약 */
+.procedure-summary {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.procedure-step {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px;
+  background: var(--light-bg);
+  border-radius: 8px;
+  border-left: 4px solid var(--primary-green);
+}
+
+.step-number {
+  color: var(--primary-green);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.step-description {
+  color: var(--text-dark);
+  line-height: 1.5;
+}
+
+/* 준비서류 체크리스트 */
+.document-checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 16px;
+  background: var(--light-bg);
+  border-radius: 8px;
+  border: 1px solid var(--border-color);
+}
+
+.checkbox {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--primary-green);
+  border-radius: 4px;
+  flex-shrink: 0;
+}
+
+.checklist-text {
+  color: var(--text-dark);
+  line-height: 1.5;
+}
+
+/* 선처 전략 */
+.leniency-strategy {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.strategy-item {
+  padding: 12px 16px;
+  background: var(--light-green);
+  border: 1px solid var(--light-green-border);
+  border-radius: 8px;
+  color: var(--text-dark);
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* 자주 하는 실수 */
+.common-mistakes {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.mistake-item {
+  padding: 12px 16px;
+  background: #FFF5F5;
+  border: 1px solid #FECACA;
+  border-radius: 8px;
+  color: #DC2626;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* 관련 판례 */
+.related-precedents {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.precedent-item {
+  padding: 12px 16px;
+  background: var(--light-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  color: var(--text-dark);
+  line-height: 1.5;
+  margin: 0;
+}
+
+.precedent-case {
+  color: var(--primary-green);
+  font-weight: 600;
+}
+
+/* 참고/출처 */
+.references {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 16px;
+}
+
+.reference-item {
+  padding: 8px 12px;
+  background: var(--light-bg);
+  border-radius: 6px;
+  color: var(--text-muted);
+  font-size: 14px;
+  margin: 0;
+}
+
+/* 면책 공지 */
+.disclaimer-notice {
+  background: #FFF7ED;
+  border: 1px solid #FED7AA;
+  border-radius: 8px;
+  padding: 16px;
+  margin-top: 24px;
+}
+
+.disclaimer-text {
+  color: #EA580C;
+  font-size: 14px;
+  line-height: 1.5;
+  margin: 0;
+  text-align: center;
+}
+
+/* 사이드바 */
+.sidebar-card {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.sidebar-card-header {
+  background: var(--light-bg);
+  padding: 16px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.sidebar-card-title {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--text-black);
+  margin: 0;
+}
+
+/* 작성자 및 에디터 */
+.authors-editors {
+  padding: 16px;
+}
+
+.author-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.author-item:last-child {
+  border-bottom: none;
+}
+
+.author-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.author-name {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-black);
+}
+
+.author-role {
+  font-size: 12px;
+  color: var(--text-muted);
+}
+
+/* 문서 정보 */
+.document-info,
+.document-details {
+  padding: 16px;
+}
+
+.info-item,
+.detail-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 0;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.info-item:last-child,
+.detail-item:last-child {
+  border-bottom: none;
+}
+
+.detail-label {
+  font-size: 14px;
+  color: var(--text-muted);
+}
+
+.detail-value {
+  font-size: 14px;
+  color: var(--text-black);
+  font-weight: 500;
+}
+
+/* 목차 */
+.table-of-contents {
+  padding: 16px;
+}
+
+.toc-item {
+  padding: 8px 0;
+  color: var(--text-dark);
+  font-size: 14px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.toc-item:last-child {
+  border-bottom: none;
+}
+
+.toc-item:hover {
+  color: var(--primary-green);
+}
+
+/* 바로가기 */
+.quick-links {
+  padding: 16px;
+}
+
+.quick-link {
+  display: block;
+  padding: 8px 0;
+  color: var(--primary-green);
+  text-decoration: none;
+  font-size: 14px;
+  transition: color 0.2s ease;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.quick-link:last-child {
+  border-bottom: none;
+}
+
+.quick-link:hover {
+  color: var(--primary-green-light);
+}
+
+/* 반응형 디자인 */
+@media (max-width: 1200px) {
+  .sentencing-factors-page {
+    padding: 16px;
+  }
+  
+  .sentencing-factors-main-content {
+    gap: 24px;
+  }
+  
+  .sentencing-factors-sidebar {
+    width: 280px;
+  }
+}
+
+@media (max-width: 992px) {
+  .sentencing-factors-main-content {
+    flex-direction: column;
+  }
+  
+  .sentencing-factors-sidebar {
+    width: 100%;
+    max-width: none;
+  }
+  
+  .sentencing-factors-table {
+    font-size: 14px;
+  }
+  
+  .table-header,
+  .table-row {
+    grid-template-columns: 70px 1fr 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .sentencing-factors-header-banner {
+    padding: 24px 20px;
+  }
+  
+  .sentencing-factors-title {
+    font-size: 24px;
+  }
+  
+  .status-tags {
+    gap: 8px;
+  }
+  
+  .status-tag {
+    font-size: 12px;
+    padding: 6px 12px;
+  }
+  
+  .intro-text-box {
+    padding: 16px;
+  }
+  
+  .content-section {
+    padding: 20px;
+  }
+  
+  .section-title {
+    font-size: 18px;
+  }
+  
+  .table-header,
+  .table-row {
+    grid-template-columns: 60px 1fr 1fr;
+  }
+  
+  .header-cell,
+  .table-cell {
+    padding: 12px 8px;
+  }
+}
+
+@media (max-width: 576px) {
+  .sentencing-factors-page {
+    padding: 12px;
+  }
+  
+  .sentencing-factors-header-banner {
+    padding: 20px 16px;
+  }
+  
+  .sentencing-factors-title {
+    font-size: 20px;
+  }
+  
+  .content-section {
+    padding: 16px;
+  }
+  
+  .table-header,
+  .table-row {
+    grid-template-columns: 1fr;
+    gap: 8px;
+  }
+  
+  .header-cell,
+  .table-cell {
+    border-right: none;
+    border-bottom: 1px solid var(--border-color);
+    padding: 12px;
+  }
+  
+  .header-cell:last-child,
+  .table-cell:last-child {
+    border-bottom: none;
+  }
+}
+
+/* 판례 상세 페이지 스타일 */
+.precedent-detail-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* 헤더 배너 */
+.precedent-detail-header-banner {
+  background: white;
+  border-radius: 16.8px;
+  padding: 29px 19px;
+  margin-bottom: 22px;
+  box-shadow: 0px 6px 20px rgba(16, 24, 40, 0.08);
+  border: 1px solid var(--border-color);
+}
+
+.precedent-detail-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--text-black);
+  margin-bottom: 10px;
+  line-height: 50.4px;
+}
+
+/* 메타 정보 바 */
+.meta-info-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.status-tag {
+  background: rgba(34.08, 159.99, 106.98, 0.10);
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  padding: 9px 9px;
+  font-size: 12px;
+  color: #1F6146;
+  font-weight: 400;
+  line-height: 20.16px;
+}
+
+.meta-info {
+  font-size: 14px;
+  color: var(--text-muted);
+  font-weight: 400;
+  line-height: 23.52px;
+}
+
+/* 요약 박스 */
+.summary-box {
+  background: rgba(242.01, 246.97, 242.96, 0.85);
+  border-radius: 12px;
+  border-left: 4px solid var(--primary-green);
+  padding: 22px 36px;
+}
+
+.summary-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.summary-item {
+  font-size: 16px;
+  color: var(--text-black);
+  font-weight: 400;
+  line-height: 26.88px;
+  margin: 0;
+  padding-left: 40px;
+  position: relative;
+}
+
+.summary-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 6.2px;
+  height: 26.88px;
+}
+
+/* 메인 컨텐츠 영역 */
+.precedent-detail-main-content {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.precedent-detail-content-left {
+  flex: 1;
+  max-width: 842px;
+}
+
+.precedent-detail-sidebar {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+/* 컨텐츠 섹션 */
+.content-section {
+  background: white;
+  border-radius: 14px;
+  padding: 0;
+  margin-bottom: 18px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0px 6px 20px rgba(16, 24, 40, 0.08);
+  overflow: hidden;
+}
+
+.section-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-black);
+  margin: 0;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border-color);
+  line-height: 26.88px;
+}
+
+.section-content {
+  font-size: 16px;
+  line-height: 26.88px;
+  color: var(--text-black);
+  margin: 0;
+  padding: 30px 17px;
+}
+
+/* 사건 개요 테이블 */
+.case-overview-table {
+  padding: 0;
+}
+
+.table-row {
+  display: flex;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.table-cell {
+  padding: 13.5px 12.5px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  line-height: 16px;
+}
+
+.table-cell.label {
+  width: 213.19px;
+  background: var(--light-bg);
+  font-weight: 700;
+  color: var(--text-black);
+  flex-shrink: 0;
+}
+
+.table-cell.value {
+  flex: 1;
+  font-weight: 400;
+  color: var(--text-black);
+}
+
+/* 주요 쟁점 */
+.key-issues {
+  padding: 30px 17px;
+}
+
+.issue-item {
+  font-size: 16px;
+  line-height: 26.88px;
+  color: var(--text-black);
+  margin: 0;
+  padding-left: 40px;
+  position: relative;
+}
+
+.issue-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 18px;
+  height: 26.88px;
+}
+
+/* 실무 포인트 */
+.practical-points {
+  padding: 30px 17px;
+}
+
+.point-item {
+  font-size: 16px;
+  line-height: 26.88px;
+  color: var(--text-black);
+  margin: 0;
+  padding-left: 40px;
+  position: relative;
+}
+
+.point-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 6.2px;
+  height: 26.88px;
+}
+
+/* 절차 타임라인 */
+.procedure-timeline {
+  padding: 15px 16px;
+}
+
+.timeline-step {
+  padding: 16px 13px;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  margin-bottom: 8px;
+  font-size: 16px;
+  line-height: 26.88px;
+  color: var(--text-black);
+}
+
+.timeline-step:last-child {
+  margin-bottom: 0;
+}
+
+/* 연관 문서 */
+.related-documents {
+  padding: 30px 17px;
+}
+
+.document-item {
+  margin-bottom: 13px;
+  line-height: 26.88px;
+}
+
+.document-item:last-child {
+  margin-bottom: 0;
+}
+
+.document-link {
+  color: var(--primary-green);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.document-type {
+  color: var(--text-black);
+  font-size: 16px;
+  font-weight: 400;
+  margin-left: 4px;
+}
+
+/* 참고/출처 */
+.references {
+  padding: 30px 17px;
+}
+
+.reference-item {
+  font-size: 16px;
+  line-height: 26.88px;
+  color: var(--text-black);
+  margin: 0;
+  padding-left: 40px;
+  position: relative;
+}
+
+.reference-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 18px;
+  height: 26.88px;
+}
+
+/* 사이드바 */
+.sidebar-card {
+  background: white;
+  border-radius: 14px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0px 6px 20px rgba(16, 24, 40, 0.08);
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.sidebar-card:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar-card-header {
+  background: var(--light-bg);
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.sidebar-card-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-black);
+  margin: 0;
+  line-height: 26.88px;
+}
+
+/* 목차 */
+.table-of-contents {
+  padding: 0;
+}
+
+.toc-item {
+  padding: 13px 10px;
+  color: var(--text-muted);
+  font-size: 16px;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  line-height: 26.88px;
+  border-radius: 8px;
+}
+
+.toc-item:hover {
+  color: var(--primary-green);
+}
+
+/* 작성자 및 에디터 */
+.authors-editors {
+  padding: 17px;
+}
+
+.author-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.author-item:last-child {
+  margin-bottom: 0;
+}
+
+.author-avatar {
+  width: 61px;
+  height: 62px;
+  border-radius: 57px;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+}
+
+.author-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 69px;
+  padding: 16px 13px;
+  border: 1px solid #E6F5E9;
+  border-radius: 12px;
+  background: white;
+  width: 196px;
+}
+
+.author-name {
+  font-size: 16px;
+  font-weight: 400;
+  color: #0B140E;
+  line-height: 26.4px;
+}
+
+.author-role {
+  font-size: 12px;
+  font-weight: 400;
+  color: #617B5A;
+  line-height: 23.1px;
+  margin-top: 2px;
+}
+
+/* 문서 정보 */
+.document-info {
+  padding: 17px 15px;
+}
+
+.info-item {
+  font-size: 16px;
+  line-height: 26.88px;
+  color: #0B140E;
+  margin: 0;
+}
+
+/* 바로가기 */
+.quick-links {
+  padding: 17px;
+}
+
+.quick-link {
+  display: block;
+  padding: 5px 0;
+  color: var(--primary-green);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26.88px;
+  transition: color 0.2s ease;
+}
+
+.quick-link:hover {
+  color: var(--primary-green-light);
+}
+
+/* 반응형 디자인 */
+@media (max-width: 1200px) {
+  .precedent-detail-page {
+    padding: 16px;
+  }
+  
+  .precedent-detail-main-content {
+    gap: 16px;
+  }
+  
+  .precedent-detail-sidebar {
+    width: 280px;
+  }
+}
+
+@media (max-width: 992px) {
+  .precedent-detail-main-content {
+    flex-direction: column;
+  }
+  
+  .precedent-detail-sidebar {
+    width: 100%;
+    max-width: none;
+  }
+  
+  .meta-info-bar {
+    gap: 12px;
+  }
+  
+  .table-cell.label {
+    width: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .precedent-detail-header-banner {
+    padding: 20px 16px;
+  }
+  
+  .precedent-detail-title {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+  
+  .meta-info-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .summary-box {
+    padding: 16px 20px;
+  }
+  
+  .content-section {
+    margin-bottom: 16px;
+  }
+  
+  .table-row {
+    flex-direction: column;
+  }
+  
+  .table-cell.label,
+  .table-cell.value {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+@media (max-width: 576px) {
+  .precedent-detail-page {
+    padding: 12px;
+  }
+  
+  .precedent-detail-header-banner {
+    padding: 16px 12px;
+  }
+  
+  .precedent-detail-title {
+    font-size: 20px;
+  }
+  
+  .meta-info-bar {
+    padding: 8px 0;
+  }
+  
+  .status-tag {
+    font-size: 11px;
+    padding: 6px 8px;
+  }
+  
+  .meta-info {
+    font-size: 13px;
+  }
+  
+  .summary-box {
+    padding: 12px 16px;
+  }
+  
+  .summary-item {
+    font-size: 15px;
+    padding-left: 30px;
+  }
+  
+  .section-title {
+    font-size: 15px;
+    padding: 10px 12px;
+  }
+  
+  .section-content {
+    font-size: 15px;
+    padding: 20px 14px;
+  }
+}
+
+/* FAQ 상세 페이지 스타일 */
+.faq-detail-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* 헤더 배너 */
+.faq-detail-header-banner {
+  background: white;
+  border-radius: 16.8px;
+  padding: 29px 19px;
+  margin-bottom: 22px;
+  box-shadow: 0px 6px 20px rgba(16, 24, 40, 0.08);
+  border: 1px solid var(--border-color);
+}
+
+.faq-detail-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--text-black);
+  margin-bottom: 10px;
+  line-height: 50.4px;
+}
+
+/* 메타 정보 바 */
+.faq-detail-page .meta-info-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.faq-detail-page .status-tag {
+  background: rgba(34.08, 159.99, 106.98, 0.10);
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  padding: 9px 9px;
+  font-size: 12px;
+  color: #1F6146;
+  font-weight: 400;
+  line-height: 20.16px;
+}
+
+.faq-detail-page .meta-info {
+  font-size: 14px;
+  color: var(--text-muted);
+  font-weight: 400;
+  line-height: 23.52px;
+}
+
+/* 요약 박스 */
+.faq-detail-page .summary-box {
+  background: rgba(242.01, 246.97, 242.96, 0.85);
+  border-radius: 12px;
+  border-left: 4px solid var(--primary-green);
+  padding: 22px 18px;
+}
+
+.faq-detail-page .summary-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.faq-detail-page .summary-item {
+  font-size: 16px;
+  color: var(--text-black);
+  font-weight: 400;
+  line-height: 26.88px;
+  margin: 0;
+}
+
+/* 메인 컨텐츠 영역 */
+.faq-detail-main-content {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.faq-detail-content-left {
+  flex: 1;
+  max-width: 760px;
+}
+
+.faq-detail-sidebar {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+/* 컨텐츠 섹션 */
+.faq-detail-page .content-section {
+  background: white;
+  border-radius: 14px;
+  padding: 0;
+  margin-bottom: 18px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0px 6px 20px rgba(16, 24, 40, 0.08);
+  overflow: hidden;
+}
+
+.faq-detail-page .section-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-black);
+  margin: 0;
+  padding: 8px 0;
+  line-height: 40.32px;
+}
+
+.faq-detail-page .section-content {
+  font-size: 16px;
+  line-height: 26.88px;
+  color: var(--text-black);
+  margin: 0;
+  padding: 30px 17px;
+}
+
+/* 답변 내용 */
+.answer-content {
+  padding: 30px 17px;
+}
+
+.answer-text {
+  font-size: 16px;
+  line-height: 26.88px;
+  color: var(--text-black);
+  margin: 0 0 20px 0;
+}
+
+.answer-text:last-child {
+  margin-bottom: 0;
+}
+
+/* 실무 팁 */
+.practical-tips {
+  padding: 30px 17px;
+}
+
+.tip-item {
+  font-size: 16px;
+  line-height: 26.88px;
+  color: var(--text-black);
+  margin: 0;
+  padding-left: 40px;
+  position: relative;
+}
+
+.tip-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 6.2px;
+  height: 26.88px;
+}
+
+/* 추가로 알아보기 */
+.related-links {
+  padding: 30px 17px;
+}
+
+.link-item {
+  margin-bottom: 13px;
+  line-height: 26.88px;
+}
+
+.link-item:last-child {
+  margin-bottom: 0;
+}
+
+.related-link {
+  color: var(--primary-green);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  transition: color 0.2s ease;
+}
+
+.related-link:hover {
+  color: var(--primary-green-light);
+}
+
+/* 유의사항 */
+.disclaimer-box {
+  background: rgba(242.01, 246.97, 242.96, 0.88);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  padding: 18px 13px;
+  margin: 0 17px 17px 17px;
+}
+
+.disclaimer-text {
+  font-size: 16px;
+  line-height: 26.88px;
+  color: var(--text-black);
+  margin: 0;
+}
+
+/* 사이드바 */
+.faq-detail-page .sidebar-card {
+  background: white;
+  border-radius: 14px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0px 6px 20px rgba(16, 24, 40, 0.08);
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.faq-detail-page .sidebar-card:last-child {
+  margin-bottom: 0;
+}
+
+.faq-detail-page .sidebar-card-header {
+  background: var(--light-bg);
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.faq-detail-page .sidebar-card-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-black);
+  margin: 0;
+  line-height: 26.88px;
+}
+
+/* 상담하기 */
+.consultation-content {
+  padding: 17px;
+}
+
+.consultation-text {
+  font-size: 16px;
+  line-height: 26.88px;
+  color: var(--text-black);
+  margin: 0 0 20px 0;
+}
+
+.consultation-links {
+  display: flex;
+  gap: 16px;
+}
+
+.consultation-link {
+  color: var(--primary-green);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26.88px;
+  transition: color 0.2s ease;
+}
+
+.consultation-link:hover {
+  color: var(--primary-green-light);
+}
+
+/* 작성자 및 에디터 */
+.faq-detail-page .authors-editors {
+  padding: 17px;
+}
+
+.faq-detail-page .author-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.faq-detail-page .author-item:last-child {
+  margin-bottom: 0;
+}
+
+.faq-detail-page .author-avatar {
+  width: 61px;
+  height: 62px;
+  border-radius: 57px;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+}
+
+.faq-detail-page .author-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 69px;
+  padding: 16px 13px;
+  border: 1px solid #E6F5E9;
+  border-radius: 12px;
+  background: white;
+  width: 196px;
+}
+
+.faq-detail-page .author-name {
+  font-size: 16px;
+  font-weight: 400;
+  color: #0B140E;
+  line-height: 26.4px;
+}
+
+.faq-detail-page .author-role {
+  font-size: 12px;
+  font-weight: 400;
+  color: #617B5A;
+  line-height: 23.1px;
+  margin-top: 2px;
+}
+
+/* 문서 정보 */
+.faq-detail-page .document-info {
+  padding: 17px 15px;
+}
+
+.faq-detail-page .info-item {
+  font-size: 16px;
+  line-height: 26.88px;
+  color: #0B140E;
+  margin: 0;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 1200px) {
+  .faq-detail-page {
+    padding: 16px;
+  }
+  
+  .faq-detail-main-content {
+    gap: 16px;
+  }
+  
+  .faq-detail-sidebar {
+    width: 280px;
+  }
+}
+
+@media (max-width: 992px) {
+  .faq-detail-main-content {
+    flex-direction: column;
+  }
+  
+  .faq-detail-sidebar {
+    width: 100%;
+    max-width: none;
+  }
+  
+  .faq-detail-page .meta-info-bar {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .faq-detail-header-banner {
+    padding: 20px 16px;
+  }
+  
+  .faq-detail-title {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+  
+  .faq-detail-page .meta-info-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .faq-detail-page .summary-box {
+    padding: 16px 20px;
+  }
+  
+  .faq-detail-page .content-section {
+    margin-bottom: 16px;
+  }
+  
+  .faq-detail-page .section-title {
+    font-size: 20px;
+    padding: 12px 0;
+  }
+  
+  .answer-content,
+  .practical-tips,
+  .related-links {
+    padding: 20px 14px;
+  }
+  
+  .disclaimer-box {
+    margin: 0 14px 14px 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .faq-detail-page {
+    padding: 12px;
+  }
+  
+  .faq-detail-header-banner {
+    padding: 16px 12px;
+  }
+  
+  .faq-detail-title {
+    font-size: 20px;
+  }
+  
+  .faq-detail-page .meta-info-bar {
+    padding: 8px 0;
+  }
+  
+  .faq-detail-page .status-tag {
+    font-size: 11px;
+    padding: 6px 8px;
+  }
+  
+  .faq-detail-page .meta-info {
+    font-size: 13px;
+  }
+  
+  .faq-detail-page .summary-box {
+    padding: 12px 16px;
+  }
+  
+  .faq-detail-page .summary-item {
+    font-size: 15px;
+  }
+  
+  .faq-detail-page .section-title {
+    font-size: 18px;
+    padding: 10px 0;
+  }
+  
+  .answer-content,
+  .practical-tips,
+  .related-links {
+    padding: 16px 12px;
+  }
+  
+  .answer-text,
+  .tip-item {
+    font-size: 15px;
+  }
+  
+  .disclaimer-box {
+    margin: 0 12px 12px 12px;
+    padding: 14px 10px;
+  }
+  
+  .disclaimer-text {
+    font-size: 15px;
+  }
+}
+
+/* 용어 상세 페이지 스타일 */
+.terms-detail-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+/* 헤더 배너 */
+.terms-detail-header-banner {
+  background: white;
+  border-radius: 16.8px;
+  padding: 29px 19px;
+  margin-bottom: 22px;
+  box-shadow: 0px 6px 20px rgba(16, 24, 40, 0.08);
+  border: 1px solid var(--border-color);
+}
+
+.terms-detail-title {
+  font-size: 30px;
+  font-weight: 700;
+  color: var(--text-black);
+  margin-bottom: 10px;
+  line-height: 50.4px;
+}
+
+/* 메타 정보 바 */
+.terms-detail-page .meta-info-bar {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 0;
+  border-bottom: 1px solid var(--border-color);
+  margin-bottom: 15px;
+  flex-wrap: wrap;
+}
+
+.terms-detail-page .status-tag {
+  background: rgba(34.08, 159.99, 106.98, 0.10);
+  border: 1px solid var(--border-color);
+  border-radius: 999px;
+  padding: 9px 9px;
+  font-size: 12px;
+  color: #1F6146;
+  font-weight: 400;
+  line-height: 20.16px;
+}
+
+.terms-detail-page .meta-info {
+  font-size: 14px;
+  color: var(--text-muted);
+  font-weight: 400;
+  line-height: 23.52px;
+}
+
+/* 요약 박스 */
+.terms-detail-page .summary-box {
+  background: rgba(242.01, 246.97, 242.96, 0.85);
+  border-radius: 12px;
+  border-left: 4px solid var(--primary-green);
+  padding: 22px 18px;
+  margin-bottom: 20px;
+}
+
+.terms-detail-page .summary-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.terms-detail-page .summary-item {
+  font-size: 16px;
+  color: var(--text-black);
+  font-weight: 400;
+  line-height: 26.88px;
+  margin: 0;
+}
+
+/* 액션 버튼 */
+.action-buttons {
+  display: flex;
+  gap: 12px;
+}
+
+.action-buttons .action-button {
+  border-radius: 10px;
+  padding: 16px 13px;
+  font-size: 13.3px;
+  font-family: Arial, sans-serif;
+  font-weight: 400;
+  cursor: pointer;
+  min-height: 48.88px;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--border-color);
+  transition: all 0.2s ease;
+}
+
+.action-buttons .action-button.secondary {
+  background: white;
+  color: black;
+  min-width: 83.02px;
+}
+
+.action-buttons .action-button.primary {
+  background: white;
+  color: var(--primary-green);
+  min-width: 94.45px;
+  font-size: 16px;
+  font-family: Pretendard, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-weight: 400;
+  line-height: 26.88px;
+}
+
+.action-buttons .action-button:hover {
+  transform: translateY(-1px);
+  box-shadow: 0px 4px 12px rgba(16, 24, 40, 0.15);
+}
+
+/* 메인 컨텐츠 영역 */
+.terms-detail-main-content {
+  display: flex;
+  gap: 18px;
+  align-items: flex-start;
+}
+
+.terms-detail-content-left {
+  flex: 1;
+  max-width: 760px;
+}
+
+.terms-detail-sidebar {
+  width: 300px;
+  flex-shrink: 0;
+}
+
+/* 컨텐츠 섹션 */
+.terms-detail-page .content-section {
+  background: white;
+  border-radius: 14px;
+  padding: 0;
+  margin-bottom: 18px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0px 6px 20px rgba(16, 24, 40, 0.08);
+  overflow: hidden;
+}
+
+.terms-detail-page .section-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--text-black);
+  margin: 0;
+  padding: 8px 0;
+  line-height: 40.32px;
+}
+
+/* 정의 내용 */
+.definition-content {
+  padding: 30px 17px;
+}
+
+.definition-text {
+  font-size: 16px;
+  line-height: 26.88px;
+  color: var(--text-black);
+  margin: 0 0 20px 0;
+}
+
+.note-box {
+  background: rgba(242.01, 246.97, 242.96, 0.88);
+  border-radius: 12px;
+  border: 1px solid var(--border-color);
+  padding: 18px 13px;
+  margin-top: 20px;
+}
+
+.note-text {
+  font-size: 16px;
+  line-height: 26.88px;
+  color: var(--text-black);
+  margin: 0;
+}
+
+/* 법적 기준 테이블 */
+.legal-standards-table {
+  padding: 0;
+  margin: 0;
+}
+
+.table-header {
+  display: flex;
+  background: #F2F7F3;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.table-row {
+  display: flex;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.table-row:last-child {
+  border-bottom: none;
+}
+
+.table-cell {
+  padding: 13.5px 12.5px;
+  font-size: 16px;
+  line-height: 26.88px;
+  color: var(--text-black);
+  display: flex;
+  align-items: center;
+}
+
+.table-cell.header {
+  font-weight: 700;
+  background: #F2F7F3;
+}
+
+.table-cell:first-child {
+  width: 65.47px;
+  flex-shrink: 0;
+  justify-content: center;
+}
+
+.table-cell:last-child {
+  flex: 1;
+  width: 693.53px;
+}
+
+/* 관련 조문·판례 */
+.related-statutes {
+  padding: 30px 17px;
+}
+
+.statute-item {
+  font-size: 16px;
+  line-height: 26.88px;
+  color: var(--text-black);
+  margin: 0 0 13px 0;
+  padding-left: 40px;
+  position: relative;
+}
+
+.statute-item:last-child {
+  margin-bottom: 0;
+}
+
+.statute-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 6.2px;
+  height: 26.88px;
+}
+
+/* 오해 주의 */
+.misconceptions {
+  padding: 30px 17px;
+}
+
+.misconception-item {
+  font-size: 16px;
+  line-height: 26.88px;
+  color: var(--text-black);
+  margin: 0 0 13px 0;
+  padding-left: 40px;
+  position: relative;
+}
+
+.misconception-item:last-child {
+  margin-bottom: 0;
+}
+
+.misconception-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 6.2px;
+  height: 26.88px;
+}
+
+/* 연관 문서 */
+.related-documents {
+  padding: 30px 17px;
+}
+
+.document-item {
+  margin-bottom: 13px;
+  line-height: 26.88px;
+}
+
+.document-item:last-child {
+  margin-bottom: 0;
+}
+
+.document-link {
+  color: var(--primary-green);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  transition: color 0.2s ease;
+}
+
+.document-link:hover {
+  color: var(--primary-green-light);
+}
+
+/* FAQ */
+.faq-items {
+  padding: 30px 17px;
+}
+
+.faq-item {
+  font-size: 16px;
+  line-height: 26.88px;
+  color: var(--text-black);
+  margin: 0 0 13px 0;
+  padding-left: 40px;
+  position: relative;
+}
+
+.faq-item:last-child {
+  margin-bottom: 0;
+}
+
+.faq-item::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 5px;
+  width: 6.2px;
+  height: 26.88px;
+}
+
+/* 사이드바 */
+.terms-detail-page .sidebar-card {
+  background: white;
+  border-radius: 14px;
+  border: 1px solid var(--border-color);
+  box-shadow: 0px 6px 20px rgba(16, 24, 40, 0.08);
+  margin-bottom: 16px;
+  overflow: hidden;
+}
+
+.terms-detail-page .sidebar-card:last-child {
+  margin-bottom: 0;
+}
+
+.terms-detail-page .sidebar-card-header {
+  background: var(--light-bg);
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.terms-detail-page .sidebar-card-title {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--text-black);
+  margin: 0;
+  line-height: 26.88px;
+}
+
+/* 목차 */
+.table-of-contents {
+  padding: 11px;
+}
+
+.toc-item {
+  padding: 13px 10px;
+  font-size: 16px;
+  color: var(--text-muted);
+  font-weight: 400;
+  line-height: 26.88px;
+  border-radius: 8px;
+  margin-bottom: 0;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.toc-item:hover {
+  background-color: rgba(242.01, 246.97, 242.96, 0.5);
+}
+
+/* 작성자 및 에디터 */
+.terms-detail-page .authors-editors {
+  padding: 17px;
+}
+
+.terms-detail-page .author-item {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.terms-detail-page .author-item:last-child {
+  margin-bottom: 0;
+}
+
+.terms-detail-page .author-avatar {
+  width: 61px;
+  height: 62px;
+  border-radius: 57px;
+  object-fit: cover;
+  position: absolute;
+  left: 0;
+}
+
+.terms-detail-page .author-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 69px;
+  padding: 16px 13px;
+  border: 1px solid #E6F5E9;
+  border-radius: 12px;
+  background: white;
+  width: 196px;
+}
+
+.terms-detail-page .author-name {
+  font-size: 16px;
+  font-weight: 400;
+  color: #0B140E;
+  line-height: 26.4px;
+}
+
+.terms-detail-page .author-role {
+  font-size: 12px;
+  font-weight: 400;
+  color: #617B5A;
+  line-height: 23.1px;
+  margin-top: 2px;
+}
+
+/* 문서 정보 */
+.terms-detail-page .document-info {
+  padding: 17px 15px;
+}
+
+.terms-detail-page .info-item {
+  font-size: 16px;
+  line-height: 26.88px;
+  color: #0B140E;
+  margin: 0;
+}
+
+/* 바로가기 */
+.quick-links {
+  padding: 17px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.quick-link {
+  color: var(--primary-green);
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26.88px;
+  transition: color 0.2s ease;
+}
+
+.quick-link:hover {
+  color: var(--primary-green-light);
+}
+
+/* 반응형 디자인 */
+@media (max-width: 1200px) {
+  .terms-detail-page {
+    padding: 16px;
+  }
+  
+  .terms-detail-main-content {
+    gap: 16px;
+  }
+  
+  .terms-detail-sidebar {
+    width: 280px;
+  }
+}
+
+@media (max-width: 992px) {
+  .terms-detail-main-content {
+    flex-direction: column;
+  }
+  
+  .terms-detail-sidebar {
+    width: 100%;
+    max-width: none;
+  }
+  
+  .terms-detail-page .meta-info-bar {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 768px) {
+  .terms-detail-header-banner {
+    padding: 20px 16px;
+  }
+  
+  .terms-detail-title {
+    font-size: 24px;
+    line-height: 1.3;
+  }
+  
+  .terms-detail-page .meta-info-bar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .terms-detail-page .summary-box {
+    padding: 16px 20px;
+  }
+  
+  .action-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .terms-detail-page .content-section {
+    margin-bottom: 16px;
+  }
+  
+  .terms-detail-page .section-title {
+    font-size: 20px;
+    padding: 12px 0;
+  }
+  
+  .definition-content,
+  .related-statutes,
+  .misconceptions,
+  .related-documents,
+  .faq-items {
+    padding: 20px 14px;
+  }
+  
+  .note-box {
+    margin: 0 14px 14px 14px;
+  }
+}
+
+@media (max-width: 576px) {
+  .terms-detail-page {
+    padding: 12px;
+  }
+  
+  .terms-detail-header-banner {
+    padding: 16px 12px;
+  }
+  
+  .terms-detail-title {
+    font-size: 20px;
+  }
+  
+  .terms-detail-page .meta-info-bar {
+    padding: 8px 0;
+  }
+  
+  .terms-detail-page .status-tag {
+    font-size: 11px;
+    padding: 6px 8px;
+  }
+  
+  .terms-detail-page .meta-info {
+    font-size: 13px;
+  }
+  
+  .terms-detail-page .summary-box {
+    padding: 12px 16px;
+  }
+  
+  .terms-detail-page .summary-item {
+    font-size: 15px;
+  }
+  
+  .action-buttons .action-button {
+    font-size: 12px;
+    padding: 12px 10px;
+  }
+  
+  .terms-detail-page .section-title {
+    font-size: 18px;
+    padding: 10px 0;
+  }
+  
+  .definition-content,
+  .related-statutes,
+  .misconceptions,
+  .related-documents,
+  .faq-items {
+    padding: 16px 12px;
+  }
+  
+  .definition-text,
+  .statute-item,
+  .misconception-item,
+  .faq-item {
+    font-size: 15px;
+  }
+  
+  .note-box {
+    margin: 0 12px 12px 12px;
+    padding: 14px 10px;
+  }
+  
+  .note-text {
+    font-size: 15px;
+  }
+}
+

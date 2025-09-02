@@ -66,7 +66,7 @@
         </div>
         <p class="precedent-summary">측정 요구의 적법성과 고지 내용, 거부 범위 및 채혈 절차의 적법성에 관해 판시.</p>
         <div class="precedent-actions">
-          <button type="button" class="action-button primary">해설 보기</button>
+          <a href="{{ route('wiki.precedent-detail') }}" class="action-button primary">해설 보기</a>
           <button type="button" class="action-button secondary">원문 보기</button>
           <button type="button" class="action-button secondary">허브로 이동</button>
         </div>
