@@ -75,6 +75,11 @@ Route::prefix('cases')->group(function () {
 
 // ⑦ 위키
 Route::get('/wiki', [WikiController::class, 'index'])->name('wiki.index');
+Route::get('/wiki/field', [WikiController::class, 'field'])->name('wiki.field');
+Route::get('/wiki/precedent', [WikiController::class, 'precedent'])->name('wiki.precedent');
+Route::get('/wiki/form', [WikiController::class, 'form'])->name('wiki.form');
+Route::get('/wiki/faq', [WikiController::class, 'faq'])->name('wiki.faq');
+Route::get('/wiki/terms', [WikiController::class, 'terms'])->name('wiki.terms');
 Route::get('/wiki/{slug}', [WikiController::class, 'show'])->name('wiki.show');
 
 // ⑧ 커뮤니티
