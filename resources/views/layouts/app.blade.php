@@ -22,6 +22,9 @@
     @if(request()->routeIs('lawyers.*'))
         <link rel="stylesheet" href="{{ asset('css/lawyers.css') }}?v={{ filemtime(public_path('css/lawyers.css')) }}">
     @endif
+    @if(request()->routeIs('community.*'))
+        <link rel="stylesheet" href="{{ asset('css/community.css') }}?v={{ filemtime(public_path('css/community.css')) }}">
+    @endif
     @yield('styles')
 </head>
 <body>

@@ -950,7 +950,7 @@
 
 @media (max-width: 992px) {
   .main-content-wrapper {
-    flex-direction: column;
+  flex-direction: column;
   }
   
   .sidebar {
@@ -986,7 +986,7 @@
   }
   
   .hero-description {
-    font-size: 16px;
+  font-size: 16px;
   }
   
   .search-container {
@@ -994,7 +994,7 @@
   }
   
   .filter-tags {
-    justify-content: center;
+  justify-content: center;
   }
   
   .category-grid {
@@ -1006,7 +1006,7 @@
   }
   
   .expert-buttons {
-    flex-direction: column;
+  flex-direction: column;
     align-items: center;
   }
 }
@@ -1014,7 +1014,7 @@
 @media (max-width: 576px) {
   .hero-section,
   .quick-start-section,
-  .main-content-wrapper {
+.main-content-wrapper {
     margin-left: var(--spacing-sm);
     margin-right: var(--spacing-sm);
   }
@@ -4146,8 +4146,8 @@
   .special-assault-title {
     font-size: 24px;
     line-height: 1.3;
-    width: auto;
-    height: auto;
+  width: auto;
+  height: auto;
   }
   
   .status-tags {
@@ -4704,7 +4704,7 @@
   }
   
   .sentencing-factors-sidebar {
-    width: 100%;
+  width: 100%;
     max-width: none;
   }
   
@@ -6354,7 +6354,7 @@
   }
   
   .terms-detail-page .meta-info {
-    font-size: 13px;
+  font-size: 13px;
   }
   
   .terms-detail-page .summary-box {
