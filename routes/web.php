@@ -7,6 +7,7 @@ use App\Http\Controllers\Lawfirms\LawfirmController;
 use App\Http\Controllers\Cases\CaseController;
 use App\Http\Controllers\Wiki\WikiController;
 use App\Http\Controllers\Forms\FormController;
+use App\Http\Controllers\Community\CommunityController;
 
 // 인증 라우트
 Route::get('/login', function () {
@@ -89,9 +90,8 @@ Route::get('/wiki/terms-detail', [WikiController::class, 'termsDetail'])->name('
 Route::get('/wiki/{slug}', [WikiController::class, 'show'])->name('wiki.show');
 
 // ⑧ 커뮤니티
-Route::get('/community', function () {
-    return view('community.index');
-})->name('community.index');
+Route::get('/community', [CommunityController::class, 'index'])->name('community.index');
+Route::get('/community/board', [CommunityController::class, 'board'])->name('community.board');
 
 // 메인 페이지
 Route::get('/', function () {
