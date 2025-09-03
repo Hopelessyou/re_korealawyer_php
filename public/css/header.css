@@ -57,6 +57,7 @@ nav[aria-label="주요"]{
   white-space:nowrap;  /* 모바일에서 가로 스크롤 가능 */
   overflow:auto;
   scrollbar-width:none;
+  height: 40px;
 }
 .menu::-webkit-scrollbar{display:none}
 .menu a{
@@ -67,6 +68,8 @@ nav[aria-label="주요"]{
   display:inline-flex; align-items:center; gap:8px;
   border-bottom:2px solid transparent;
   transition:color .15s ease,border-color .15s ease;
+  height: 40px;
+  line-height: 1;
 }
 .menu a:hover{ color:var(--hover) }
 .menu a[aria-current="page"]{
