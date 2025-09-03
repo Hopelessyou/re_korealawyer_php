@@ -67,87 +67,324 @@
 
     <!-- 메인 컬럼 -->
     <main class="maincol">
-        <h1 class="page-title">커뮤니티</h1>
-        
-        <!-- 투표 섹션 -->
-        <div class="card poll">
-            <div class="card__body">
-                <h2 class="lead">이번 주 법률 토론 주제</h2>
-                <p class="desc">음주운전 단속 강화에 대한 여러분의 의견을 들려주세요. 현재 법률의 적절성과 개선 방안에 대해 토론해보겠습니다.</p>
-                <div class="vote-grid">
-                    <div class="vote">
-                        <h3>강화해야 한다</h3>
-                        <p class="desc">현재 처벌이 너무 약하다고 생각합니다. 더 강력한 제재가 필요합니다.</p>
-                        <button class="btn btn--green">투표하기</button>
-                    </div>
-                    <div class="vote">
-                        <h3>현재 수준이 적절하다</h3>
-                        <p class="desc">현재 처벌 수준이 적절하다고 생각합니다. 추가 강화는 불필요합니다.</p>
-                        <button class="btn btn--green">투표하기</button>
-                    </div>
-                </div>
+      <!-- 투표 섹션 -->
+      <div class="card poll">
+        <div class="card__body">
+          <h2 class="lead">이번 주 법률 상담 주제</h2>
+          <p class="desc">가장 도움이 필요한 법률 분야는 무엇인가요?</p>
+          <div class="vote-grid">
+            <div class="vote">
+              <h3>형사 사건</h3>
+              <p class="desc">수사 과정에서의 권리 보호와 변호사 선임</p>
+              <button class="btn btn--green">투표하기</button>
             </div>
+            <div class="vote">
+              <h3>가족법 분쟁</h3>
+              <p class="desc">이혼, 상속, 친권 등 가족 관련 법률 문제</p>
+              <button class="btn btn--green">투표하기</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 토론 및 신문고 -->
+      <div class="boards">
+        <div class="board">
+          <div class="board__header">
+            <h3 class="board__title">토론하기</h3>
+          </div>
+          <div class="card__body">
+            <h4>최근 법률 이슈</h4>
+            <p class="desc">새로운 법안이나 판례에 대한 의견을 나누어보세요</p>
+            <a href="{{ route('community.board') }}" class="btn">참여하기</a>
+          </div>
+        </div>
+        <div class="board">
+          <div class="board__header">
+            <h3 class="board__title">신문고</h3>
+          </div>
+          <div class="card__body">
+            <h4>불법 행위 신고</h4>
+            <p class="desc">법적으로 문제가 되는 상황을 신고하고 상담받으세요</p>
+            <a href="{{ route('community.board') }}" class="btn">신고하기</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- HOT 리스트 -->
+      <div class="card hot">
+        <div class="card__header">
+          <h3 class="section-title">HOT 게시글</h3>
+          <a href="{{ route('community.board') }}" class="more">더보기</a>
+        </div>
+        <div class="card__body">
+          <div class="item">
+            <a href="#" class="title">형사 사건에서 변호사 동행의 중요성</a>
+            <div class="meta">
+              <span class="badge badge--field">형사</span>
+              <span>조회 1,234</span>
+            </div>
+          </div>
+          <div class="item">
+            <a href="#" class="title">이혼 절차와 준비사항 가이드</a>
+            <div class="meta">
+              <span class="badge badge--field">가족법</span>
+              <span>조회 987</span>
+            </div>
+          </div>
+          <div class="item">
+            <a href="#" class="title">교통사고 후처리와 보험 청구</a>
+            <div class="meta">
+              <span class="badge badge--field">교통사고</span>
+              <span>조회 756</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 광고 영역 -->
+      <div class="ad-banner">
+        <div class="ad-banner-text">광고 영역</div>
+      </div>
+
+      <!-- 게시판 카테고리 그리드 -->
+      <div class="board-categories-grid">
+        <!-- 첫 번째 행 -->
+        <div class="board-categories-row">
+          <div class="board-categories-container">
+            <!-- 형사/범죄 카드 -->
+            <div class="board-category-card">
+              <div class="board-category-header">
+                <div class="board-category-title-section">
+                  <div class="board-category-icon"></div>
+                  <div class="board-category-name">형사/범죄</div>
+                </div>
+                <div class="board-category-more">더보기 ></div>
+              </div>
+              <div class="board-posts-list">
+                @for ($i = 1; $i <= 5; $i++)
+                <div class="board-post-item">
+                  <div class="board-post-title-container">
+                    <div class="board-post-title">게시판 제목입니다. 게시판 제목입니다. 게시판 제목입니다.</div>
+                  </div>
+                  <div class="board-post-stats">
+                    <div class="board-post-stats-container">
+                      <img class="board-post-icon" src="https://placehold.co/16x16" alt="조회수" />
+                    </div>
+                    <div class="board-post-count">30</div>
+                  </div>
+                </div>
+                @endfor
+              </div>
+            </div>
+
+            <!-- 가족/이혼 카드 -->
+            <div class="board-category-card">
+              <div class="board-category-header">
+                <div class="board-category-title-section">
+                  <div class="board-category-icon"></div>
+                  <div class="board-category-name">가족/이혼</div>
+                </div>
+                <div class="board-category-more">더보기 ></div>
+              </div>
+              <div class="board-posts-list">
+                @for ($i = 1; $i <= 5; $i++)
+                <div class="board-post-item">
+                  <div class="board-post-title-container">
+                    <div class="board-post-title">게시판 제목입니다. 게시판 제목입니다. 게시판 제목입니다.</div>
+                  </div>
+                  <div class="board-post-stats">
+                    <div class="board-post-stats-container">
+                      <img class="board-post-icon" src="https://placehold.co/16x16" alt="조회수" />
+                    </div>
+                    <div class="board-post-count">30</div>
+                  </div>
+                </div>
+                @endfor
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!-- 토론 및 신문고 -->
-        <div class="boards">
-            <div class="board">
-                <div class="board__header">
-                    <h3 class="board__title">찬반토론</h3>
+        <!-- 두 번째 행 -->
+        <div class="board-categories-row">
+          <div class="board-categories-container">
+            <!-- 기타 민사 카드 -->
+            <div class="board-category-card">
+              <div class="board-category-header">
+                <div class="board-category-title-section">
+                  <div class="board-category-icon"></div>
+                  <div class="board-category-name">기타 민사</div>
                 </div>
-                <div class="card__body">
-                    <h4>형사사건에서 피해자 진술의 증거능력</h4>
-                    <p class="desc">피해자의 진술이 얼마나 신뢰할 수 있는지, 어떤 경우에 증거로 채택되어야 하는지에 대한 의견을 나누어보세요.</p>
-                    <a href="#" class="btn">참여하기</a>
+                <div class="board-category-more">더보기 ></div>
+              </div>
+              <div class="board-posts-list">
+                @for ($i = 1; $i <= 5; $i++)
+                <div class="board-post-item">
+                  <div class="board-post-title-container">
+                    <div class="board-post-title">게시판 제목입니다. 게시판 제목입니다. 게시판 제목입니다.</div>
+                  </div>
+                  <div class="board-post-stats">
+                    <div class="board-post-stats-container">
+                      <img class="board-post-icon" src="https://placehold.co/16x16" alt="조회수" />
+                    </div>
+                    <div class="board-post-count">30</div>
+                  </div>
                 </div>
+                @endfor
+              </div>
             </div>
-            <div class="board">
-                <div class="board__header">
-                    <h3 class="board__title">신문고</h3>
+
+            <!-- 노동/노무 카드 -->
+            <div class="board-category-card">
+              <div class="board-category-header">
+                <div class="board-category-title-section">
+                  <div class="board-category-icon"></div>
+                  <div class="board-category-name">노동/노무</div>
                 </div>
-                <div class="card__body">
-                    <h4>법원 업무 처리 지연 문제</h4>
-                    <p class="desc">재판 지연으로 인한 피해와 개선 방안에 대해 의견을 수렴합니다.</p>
-                    <a href="{{ route('community.board') }}" class="btn">자세히 보기</a>
+                <div class="board-category-more">더보기 ></div>
+              </div>
+              <div class="board-posts-list">
+                @for ($i = 1; $i <= 5; $i++)
+                <div class="board-post-item">
+                  <div class="board-post-title-container">
+                    <div class="board-post-title">게시판 제목입니다. 게시판 제목입니다. 게시판 제목입니다.</div>
+                  </div>
+                  <div class="board-post-stats">
+                    <div class="board-post-stats-container">
+                      <img class="board-post-icon" src="https://placehold.co/16x16" alt="조회수" />
+                    </div>
+                    <div class="board-post-count">30</div>
+                  </div>
                 </div>
+                @endfor
+              </div>
             </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 하단 광고 영역 -->
+      <div class="ad-banner">
+        <div class="ad-banner-text">광고 영역</div>
+      </div>
+
+      <!-- 하단 게시판 카테고리 그리드 -->
+      <div class="board-categories-grid">
+        <!-- 첫 번째 행 -->
+        <div class="board-categories-row">
+          <div class="board-categories-container">
+            <!-- 부동산 카드 -->
+            <div class="board-category-card">
+              <div class="board-category-header">
+                <div class="board-category-title-section">
+                  <div class="board-category-icon"></div>
+                  <div class="board-category-name">부동산</div>
+                </div>
+                <div class="board-category-more">더보기 ></div>
+              </div>
+              <div class="board-posts-list">
+                @for ($i = 1; $i <= 5; $i++)
+                <div class="board-post-item">
+                  <div class="board-post-title-container">
+                    <div class="board-post-title">게시판 제목입니다. 게시판 제목입니다. 게시판 제목입니다.</div>
+                  </div>
+                  <div class="board-post-stats">
+                    <div class="board-post-stats-container">
+                      <img class="board-post-icon" src="https://placehold.co/16x16" alt="조회수" />
+                    </div>
+                    <div class="board-post-count">30</div>
+                  </div>
+                </div>
+                @endfor
+              </div>
+            </div>
+
+            <!-- 교통사고 카드 -->
+            <div class="board-category-card">
+              <div class="board-category-header">
+                <div class="board-category-title-section">
+                  <div class="board-category-icon"></div>
+                  <div class="board-category-name">교통사고</div>
+                </div>
+                <div class="board-category-more">더보기 ></div>
+              </div>
+              <div class="board-posts-list">
+                @for ($i = 1; $i <= 5; $i++)
+                <div class="board-post-item">
+                  <div class="board-post-title-container">
+                    <div class="board-post-title">게시판 제목입니다. 게시판 제목입니다. 게시판 제목입니다.</div>
+                  </div>
+                  <div class="board-post-stats">
+                    <div class="board-post-stats-container">
+                      <img class="board-post-icon" src="https://placehold.co/16x16" alt="조회수" />
+                    </div>
+                    <div class="board-post-count">30</div>
+                  </div>
+                </div>
+                @endfor
+              </div>
+            </div>
+          </div>
         </div>
 
-        <!-- HOT 리스트 -->
-        <div class="card">
-            <div class="card__header">
-                <h3 class="section-title">HOT 게시글</h3>
-                <a href="{{ route('community.board') }}" class="more">더보기</a>
-            </div>
-            <div class="card__body">
-                <div class="hot">
-                    <div class="item">
-                        <a href="#" class="title">형사사건에서 변호사 선임의 중요성</a>
-                        <div class="meta">
-                            <span class="badge badge--field">형사</span>
-                            <span>김변호사</span>
-                            <span>2024.01.15</span>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <a href="#" class="title">이혼 절차와 준비사항 완벽 가이드</a>
-                        <div class="meta">
-                            <span class="badge badge--field">가족</span>
-                            <span>이변호사</span>
-                            <span>2024.01.14</span>
-                        </div>
-                    </div>
-                    <div class="item">
-                        <a href="#" class="title">교통사고 합의 시 주의사항</a>
-                        <div class="meta">
-                            <span class="badge badge--field">교통</span>
-                            <span>박변호사</span>
-                            <span>2024.01.13</span>
-                        </div>
-                    </div>
+        <!-- 두 번째 행 -->
+        <div class="board-categories-row">
+          <div class="board-categories-container">
+            <!-- 의료사고 카드 -->
+            <div class="board-category-card">
+              <div class="board-category-header">
+                <div class="board-category-title-section">
+                  <div class="board-category-icon"></div>
+                  <div class="board-category-name">의료사고</div>
                 </div>
+                <div class="board-category-more">더보기 ></div>
+              </div>
+              <div class="board-posts-list">
+                @for ($i = 1; $i <= 5; $i++)
+                <div class="board-post-item">
+                  <div class="board-post-title-container">
+                    <div class="board-post-title">게시판 제목입니다. 게시판 제목입니다. 게시판 제목입니다.</div>
+                  </div>
+                  <div class="board-post-stats">
+                    <div class="board-post-stats-container">
+                      <img class="board-post-icon" src="https://placehold.co/16x16" alt="조회수" />
+                    </div>
+                    <div class="board-post-count">30</div>
+                  </div>
+                </div>
+                @endfor
+              </div>
             </div>
+
+            <!-- 코인/NFT 카드 -->
+            <div class="board-category-card">
+              <div class="board-category-header">
+                <div class="board-category-title-section">
+                  <div class="board-category-icon"></div>
+                  <div class="board-category-name">코인/NFT</div>
+                </div>
+                <div class="board-category-more">더보기 ></div>
+              </div>
+              <div class="board-posts-list">
+                @for ($i = 1; $i <= 5; $i++)
+                <div class="board-post-item">
+                  <div class="board-post-title-container">
+                    <div class="board-post-title">게시판 제목입니다. 게시판 제목입니다. 게시판 제목입니다.</div>
+                  </div>
+                  <div class="board-post-stats">
+                    <div class="board-post-stats-container">
+                      <img class="board-post-icon" src="https://placehold.co/16x16" alt="조회수" />
+                    </div>
+                    <div class="board-post-count">30</div>
+                  </div>
+                </div>
+                @endfor
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </main>
 
     <!-- 우측 사이드바 -->

@@ -2,7 +2,7 @@
      공통 푸터 (헤더 없음, 1행 2열)
      ===================== -->
 <footer class="site-footer" role="contentinfo">
-  <div class="container">
+  <div class="footer-container">
 
         <!-- 메인 푸터 콘텐츠: 2열 레이아웃 (링크 + 연락처 / 공지사항) -->
     <div class="footer-grid">

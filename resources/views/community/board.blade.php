@@ -1,7 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
-<div class="container layout">
+<div class="container layout board-page">
     <!-- 좌측 사이드바 -->
     <aside class="aside-left">
         <div class="nav-block card">

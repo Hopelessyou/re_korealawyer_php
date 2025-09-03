@@ -1,0 +1,878 @@
+/* 법률문서 작성 페이지 스타일 */
+:root {
+  --primary: #44D7B6;
+  --primary-dark: #3BC4A3;
+  --secondary: #1F3D7A;
+  --text-primary: #1F2225;
+  --text-secondary: #4B5563;
+  --text-muted: #6B7280;
+  --text-light: #64748B;
+  --border: #E2E8F0;
+  --border-light: #F3F4F6;
+  --background: #F9FAFB;
+  --white: #FFFFFF;
+  --shadow: rgba(0, 0, 0, 0.05);
+  --shadow-strong: rgba(0, 0, 0, 0.10);
+  
+  /* 카테고리 색상 */
+  --labor: #DBEAFE;
+  --labor-text: #1E40AF;
+  --realestate: #F3E8FF;
+  --realestate-text: #6B21A8;
+  --family: #DCFCE7;
+  --family-text: #166534;
+  --civil: #F3F4F6;
+  --civil-text: #1F2937;
+  --criminal: #FEE2E2;
+  --criminal-text: #991B1B;
+  
+  /* 가격 배지 색상 */
+  --free: #F0FDF4;
+  --free-text: #166534;
+  --free-border: #BBF7D0;
+  --paid: #EFF6FF;
+  --paid-text: #1E40AF;
+  --paid-border: #BFDBFE;
+}
+
+/* 전체 컨테이너 */
+.forms-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: 'Noto Sans KR', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+/* 메인 제목 */
+.forms-main-title {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.forms-main-title h1 {
+  color: var(--text-primary);
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 40px;
+  margin: 0;
+}
+
+/* 문서 타입 아이콘 */
+.document-type-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  margin-bottom: 40px;
+}
+
+.icon-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  transition: transform 0.2s ease;
+}
+
+.icon-item:hover {
+  transform: translateY(-2px);
+}
+
+.icon-wrapper {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.icon-content {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.icon-label {
+  color: var(--text-secondary);
+  font-size: 12px;
+  font-weight: 350;
+  line-height: 16px;
+  text-align: center;
+}
+
+/* 아이콘 스타일 (간단한 형태로) */
+.icon-document {
+  width: 26px;
+  height: 32px;
+  background: var(--border-light);
+  position: absolute;
+  left: 7px;
+  top: 4px;
+}
+
+.icon-magnifier {
+  width: 16px;
+  height: 16px;
+  border: 1.6px solid var(--text-muted);
+  border-radius: 50%;
+  position: absolute;
+  right: 2px;
+  top: 8px;
+}
+
+.icon-payment {
+  width: 32px;
+  height: 12px;
+  background: var(--border-light);
+  position: absolute;
+  left: 4px;
+  top: 19px;
+}
+
+.icon-w {
+  width: 8px;
+  height: 11px;
+  background: var(--text-muted);
+  position: absolute;
+  left: 4px;
+  top: 22px;
+}
+
+.icon-contract {
+  width: 39px;
+  height: 39px;
+  background: var(--text-primary);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.icon-pen {
+  width: 27px;
+  height: 33px;
+  background: var(--white);
+  position: absolute;
+  left: 3px;
+  top: 3px;
+}
+
+.icon-agreement {
+  width: 39px;
+  height: 39px;
+  background: var(--text-primary);
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.icon-hands {
+  width: 27px;
+  height: 32px;
+  background: var(--white);
+  position: absolute;
+  left: 5px;
+  top: 4px;
+}
+
+.icon-complaint {
+  width: 27px;
+  height: 32px;
+  background: var(--white);
+  position: absolute;
+  left: 5px;
+  top: 4px;
+}
+
+.icon-exclamation {
+  width: 14px;
+  height: 14px;
+  background: var(--text-muted);
+  position: absolute;
+  right: 2px;
+  top: 23px;
+}
+
+.icon-labor {
+  width: 27px;
+  height: 30px;
+  background: var(--white);
+  position: absolute;
+  left: 6px;
+  top: 6px;
+}
+
+.icon-person {
+  width: 14px;
+  height: 14px;
+  background: var(--text-muted);
+  position: absolute;
+  left: 13px;
+  top: 10px;
+}
+
+.icon-promissory {
+  width: 27px;
+  height: 30px;
+  background: var(--white);
+  position: absolute;
+  left: 6px;
+  top: 6px;
+}
+
+/* 검색 및 헤더 - 메인페이지 스타일 참고 */
+.forms-header {
+  background: var(--white);
+  border-radius: 16px;
+  padding: 24px;
+  margin-bottom: 24px;
+  box-shadow: 0 4px 20px var(--shadow-strong);
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 24px;
+}
+
+.user-selector {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 16px;
+  background: var(--text-primary);
+  border-radius: 30px;
+  color: var(--white);
+  font-size: 18px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  min-width: 80px;
+  justify-content: center;
+}
+
+.user-selector:hover {
+  background: var(--text-secondary);
+  transform: translateY(-1px);
+}
+
+.dropdown-arrow {
+  width: 16px;
+  height: 8px;
+  border: 2px solid var(--white);
+  border-top: none;
+  border-left: none;
+  transform: rotate(45deg);
+  transition: transform 0.2s ease;
+}
+
+.user-selector:hover .dropdown-arrow {
+  transform: rotate(45deg) translateY(-1px);
+}
+
+.search-container {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.search-bar {
+  flex: 1;
+  height: 60px;
+  background: var(--white);
+  border: 2px solid var(--border);
+  border-radius: 16px;
+  box-shadow: 0 4px 20px var(--shadow-strong);
+  display: flex;
+  align-items: center;
+  padding: 0 24px;
+  transition: all 0.3s ease;
+}
+
+.search-bar:hover {
+  border-color: var(--primary);
+  box-shadow: 0 6px 25px var(--shadow-strong);
+}
+
+.search-bar:focus-within {
+  border-color: var(--primary);
+  box-shadow: 0 0 0 3px rgba(68, 215, 182, 0.1);
+}
+
+.search-placeholder {
+  color: var(--text-light);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.search-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.add-button {
+  width: 40px;
+  height: 40px;
+  color: var(--text-primary);
+  font-size: 28px;
+  font-weight: 400;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: all 0.2s ease;
+}
+
+.add-button:hover {
+  background: var(--background);
+  transform: scale(1.1);
+}
+
+.filter-button {
+  width: 40px;
+  height: 40px;
+  background: var(--text-light);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-button:hover {
+  background: var(--text-secondary);
+  transform: scale(1.05);
+}
+
+.filter-icon {
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--white);
+  border-left: none;
+  border-right: none;
+  transform: rotate(90deg);
+}
+
+.frequent-documents {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.frequent-label {
+  color: var(--text-light);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  white-space: nowrap;
+}
+
+.document-tags {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.doc-tag {
+  padding: 6px 16px;
+  border: 1px solid var(--text-light);
+  border-radius: 20px;
+  color: var(--text-light);
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+}
+
+.doc-tag:hover {
+  background: var(--text-light);
+  color: var(--white);
+  transform: translateY(-1px);
+  box-shadow: 0 2px 8px var(--shadow);
+}
+
+/* 문서 타입 필터 - category-filters 위에 배치 */
+.document-type-filters {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.type-filter {
+  padding: 8px 20px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  border-radius: 20px;
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px var(--shadow);
+}
+
+.type-filter:hover {
+  background: var(--background);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px var(--shadow);
+}
+
+.type-filter.active {
+  background: var(--primary);
+  color: var(--white);
+  border-color: var(--primary);
+  box-shadow: 0 4px 12px rgba(68, 215, 182, 0.3);
+}
+
+/* 카테고리 필터 */
+.category-filters {
+  background: var(--white);
+  border-radius: 8px;
+  padding: 16px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 2px var(--shadow);
+}
+
+.filter-tabs {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.filter-tab {
+  padding: 8px 12px;
+  border-radius: 6px;
+  background: var(--white);
+  border: 1px solid var(--border);
+  color: var(--text-primary);
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.filter-tab:hover {
+  background: var(--background);
+}
+
+.filter-tab.active {
+  background: var(--primary);
+  color: var(--white);
+  border-color: var(--primary);
+}
+
+.filter-tab.filter-button {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-left: auto;
+}
+
+/* 문서 카드 그리드 */
+.document-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 20px;
+}
+
+.document-card {
+  background: var(--white);
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  overflow: hidden;
+  box-shadow: 0 1px 2px var(--shadow);
+  transition: all 0.3s ease;
+}
+
+.document-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px var(--shadow-strong);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 21px 21px 0;
+}
+
+.category-badge {
+  padding: 3px 12px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+}
+
+.category-badge.labor {
+  background: var(--labor);
+  color: var(--labor-text);
+}
+
+.category-badge.realestate {
+  background: var(--realestate);
+  color: var(--realestate-text);
+}
+
+.category-badge.family {
+  background: var(--family);
+  color: var(--family-text);
+}
+
+.category-badge.civil {
+  background: var(--civil);
+  color: var(--civil-text);
+}
+
+.category-badge.criminal {
+  background: var(--criminal);
+  color: var(--criminal-text);
+}
+
+.price-badge {
+  padding: 3px 11px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 16px;
+}
+
+.price-badge.free {
+  background: var(--free);
+  color: var(--free-text);
+  border: 1px solid var(--free-border);
+}
+
+.price-badge.paid {
+  background: var(--paid);
+  color: var(--paid-text);
+  border: 1px solid var(--paid-border);
+}
+
+.card-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0 21px;
+  margin-bottom: 16px;
+}
+
+.title-icon {
+  width: 20px;
+  height: 20px;
+  background: var(--primary);
+  border-radius: 4px;
+  position: relative;
+}
+
+.title-icon::before {
+  content: '';
+  position: absolute;
+  width: 13px;
+  height: 17px;
+  background: var(--white);
+  left: 3.5px;
+  top: 1.5px;
+}
+
+.title-icon::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: var(--white);
+  left: 11.5px;
+  top: 1.5px;
+}
+
+.card-title h3 {
+  color: var(--secondary);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  margin: 0;
+}
+
+.document-type {
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 350;
+  line-height: 16px;
+  padding: 0 21px;
+  margin-bottom: 16px;
+}
+
+.document-description {
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 350;
+  line-height: 20px;
+  padding: 0 21px;
+  margin-bottom: 16px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.document-tags {
+  display: flex;
+  gap: 8px;
+  padding: 0 21px;
+  margin-bottom: 16px;
+}
+
+.tag {
+  padding: 1px 8px;
+  background: var(--border-light);
+  border-radius: 9999px;
+  color: var(--text-primary);
+  font-size: 12px;
+  font-weight: 350;
+  line-height: 16px;
+}
+
+.document-stats {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 21px;
+  margin-bottom: 16px;
+}
+
+.download-count {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 350;
+  line-height: 16px;
+}
+
+.download-icon {
+  width: 12px;
+  height: 12px;
+  position: relative;
+}
+
+.download-icon::before {
+  content: '';
+  position: absolute;
+  width: 9px;
+  height: 3px;
+  border: 1px solid var(--text-muted);
+  left: 1.5px;
+  top: 7.5px;
+}
+
+.download-icon::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 2.5px;
+  border: 1px solid var(--text-muted);
+  left: 3.5px;
+  top: 5px;
+}
+
+.update-date {
+  color: var(--text-muted);
+  font-size: 12px;
+  font-weight: 350;
+  line-height: 16px;
+}
+
+.card-actions {
+  border-top: 1px solid var(--border-light);
+  padding: 13px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.btn-primary {
+  width: 100%;
+  height: 40px;
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.btn-primary:hover {
+  background: var(--primary-dark);
+}
+
+.btn-secondary {
+  width: 100%;
+  height: 40px;
+  background: var(--white);
+  color: var(--primary);
+  border: 1px solid var(--primary);
+  border-radius: 6px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.btn-secondary:hover {
+  background: var(--primary);
+  color: var(--white);
+}
+
+/* 법률 문서 이용 가이드 */
+.usage-guide {
+  background: var(--white);
+  border-radius: 8px;
+  padding: 24px;
+  box-shadow: 0 1px 2px var(--shadow);
+}
+
+.guide-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.guide-icon {
+  width: 20px;
+  height: 20px;
+  border: 1.67px solid var(--secondary);
+  border-radius: 4px;
+  position: relative;
+}
+
+.guide-icon::before {
+  content: '';
+  position: absolute;
+  width: 13px;
+  height: 17px;
+  background: var(--primary);
+  left: 3.5px;
+  top: 1.5px;
+}
+
+.guide-icon::after {
+  content: '';
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  background: var(--primary);
+  left: 11.5px;
+  top: 1.5px;
+}
+
+.guide-header h2 {
+  color: var(--secondary);
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 28px;
+  margin: 0;
+}
+
+.guide-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.guide-card {
+  background: var(--background);
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+}
+
+.guide-card h3 {
+  color: var(--secondary);
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  margin: 0 0 16px 0;
+}
+
+.guide-card p {
+  color: var(--text-secondary);
+  font-size: 14px;
+  font-weight: 350;
+  line-height: 20px;
+  margin: 0;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 1200px) {
+  .document-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .guide-cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .forms-container {
+    padding: 20px 16px;
+  }
+  
+  .forms-main-title h1 {
+    font-size: 32px;
+    line-height: 32px;
+  }
+  
+  .document-type-icons {
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .header-content {
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .search-container {
+    width: 100%;
+  }
+  
+  .document-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .guide-cards {
+    grid-template-columns: 1fr;
+  }
+  
+  .filter-tabs {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  
+  .filter-tab.filter-button {
+    margin-left: 0;
+  }
+  
+  .document-type-filters {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+  }
+}

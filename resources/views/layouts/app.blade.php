@@ -25,6 +25,9 @@
     @if(request()->routeIs('community.*'))
         <link rel="stylesheet" href="{{ asset('css/community.css') }}?v={{ filemtime(public_path('css/community.css')) }}">
     @endif
+    @if(request()->routeIs('cases.*'))
+        <link rel="stylesheet" href="{{ asset('css/resolution.css') }}?v={{ filemtime(public_path('css/resolution.css')) }}">
+    @endif
     @yield('styles')
 </head>
 <body>
