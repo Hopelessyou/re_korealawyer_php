@@ -512,8 +512,8 @@
 
 /* 카테고리 그리드 */
 .category-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: var(--spacing-md);
 }
 
@@ -624,8 +624,8 @@
 }
 
 .bottom-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: var(--spacing-lg);
 }
 
@@ -998,11 +998,9 @@
   }
   
   .category-grid {
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
   }
   
   .bottom-cards {
-    grid-template-columns: 1fr;
   }
   
   .expert-buttons {
@@ -1102,8 +1100,8 @@
 .field-categories-grid {
   width: 1160px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 14px;
 }
 
@@ -2664,8 +2662,8 @@
 
 /* 용어 카드 그리드 */
 .terms-cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: var(--spacing-lg);
   margin-bottom: var(--spacing-xl);
 }
@@ -2803,7 +2801,6 @@
   }
   
   .terms-cards {
-    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
   }
 }
 
@@ -2825,7 +2822,6 @@
   }
   
   .terms-cards {
-    grid-template-columns: 1fr;
     gap: var(--spacing-md);
   }
   
@@ -3012,8 +3008,8 @@
 /* 하위 허브 */
 .criminal-sub-hubs {
   padding: 17px;
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 16px;
 }
 
@@ -3052,15 +3048,13 @@
 }
 
 .sub-hub-actions {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto auto;
+  display: flex;
+  flex-direction: column;
   gap: 8px;
 }
 
 
 .hub-main-button {
-  grid-column: 1 / -1; /* 첫 번째 행 전체 차지 */
   width: 100%;
   height: 48.39px;
 
@@ -3468,7 +3462,6 @@
   }
   
   .criminal-sub-hubs {
-    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -3502,7 +3495,6 @@
   }
   
   .criminal-sub-hubs {
-    grid-template-columns: 1fr;
   }
   
   .criminal-procedure-filter {
@@ -3703,8 +3695,8 @@
 /* 쟁점 지도 그리드 */
 .issue-map-grid {
   padding: 17px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 16px;
 
 }
@@ -4133,7 +4125,6 @@
   }
   
   .issue-map-grid {
-    grid-template-columns: 1fr;
   }
 }
 
@@ -4159,7 +4150,6 @@
   }
   
   .issue-map-grid {
-    grid-template-columns: 1fr;
   }
   
   .procedure-step,
@@ -4327,8 +4317,8 @@
 }
 
 .table-header {
-  display: grid;
-  grid-template-columns: 80px 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   background: var(--light-bg);
   border-bottom: 1px solid var(--border-color);
 }
@@ -4346,8 +4336,8 @@
 }
 
 .table-row {
-  display: grid;
-  grid-template-columns: 80px 1fr 1fr;
+  display: flex;
+  flex-direction: column;
   border-bottom: 1px solid var(--border-color);
 }
 
@@ -4714,7 +4704,6 @@
   
   .table-header,
   .table-row {
-    grid-template-columns: 70px 1fr 1fr;
   }
 }
 
@@ -4750,7 +4739,6 @@
   
   .table-header,
   .table-row {
-    grid-template-columns: 60px 1fr 1fr;
   }
   
   .header-cell,
@@ -4778,7 +4766,6 @@
   
   .table-header,
   .table-row {
-    grid-template-columns: 1fr;
     gap: 8px;
   }
   

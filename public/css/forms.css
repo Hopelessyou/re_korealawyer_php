@@ -500,8 +500,8 @@
 
 /* 문서 카드 그리드 */
 .document-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 24px;
   margin-bottom: 20px;
 }
@@ -815,8 +815,8 @@
 }
 
 .guide-cards {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  display: flex;
+  flex-direction: column;
   gap: 24px;
 }
 
@@ -852,11 +852,9 @@
 /* 반응형 디자인 */
 @media (max-width: 1200px) {
   .document-grid {
-    grid-template-columns: repeat(2, 1fr);
   }
   
   .guide-cards {
-    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -885,11 +883,9 @@
   }
   
   .document-grid {
-    grid-template-columns: 1fr;
   }
   
   .guide-cards {
-    grid-template-columns: 1fr;
   }
   
   .filter-tabs {

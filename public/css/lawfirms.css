@@ -214,7 +214,8 @@
 
 /* 사이드바 스타일 */
 .bd-right{
-  display: grid; 
+  display: flex; 
+  flex-direction: column;
   gap: 16px; 
   height: max-content;
 }
@@ -275,7 +276,8 @@
 }
 
 .mini-list{
-  display:grid; 
+  display:flex; 
+  flex-direction: column;
   gap:8px;
 }
 
@@ -287,8 +289,8 @@
 }
 
 .mini-item{
-  display:grid; 
-  grid-template-columns:28px 1fr; 
+  display:flex; 
+  flex-direction: column;
   gap:8px; 
   align-items:center;
 }
@@ -1148,8 +1150,8 @@
 
 /* 2열 레이아웃(메인 + 사이드바) */
 .layout{
-  display: grid; 
-  grid-template-columns: minmax(0,1fr) 360px; 
+  display: flex; 
+  flex-direction: column;
   gap: 24px; 
   align-items: start; 
   margin-top: 24px;
@@ -1157,7 +1159,6 @@
 
 @media (max-width: 1024px){ 
   .layout{
-    grid-template-columns: 1fr;
     gap: 20px;
   } 
 }
@@ -1181,7 +1182,8 @@
 }
 
 .side{
-  display: grid; 
+  display: flex; 
+  flex-direction: column;
   gap: 16px;
 }
 
@@ -1467,8 +1469,8 @@
 
 /* 로펌 그리드 */
 .lawfirm-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  display: flex;
+  flex-direction: column;
   gap: 24px;
   margin-bottom: 40px;
 }
@@ -1697,7 +1699,6 @@
   }
   
   .lawfirm-grid {
-    grid-template-columns: 1fr;
   }
   
   .card-footer {
