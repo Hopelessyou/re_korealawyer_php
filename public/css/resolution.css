@@ -1,8 +1,24 @@
+
 /* 해결사례 페이지 스타일 */
+
+/* 메인 CSS 컨셉 통일을 위한 CSS 변수 */
 :root {
+  --bg: #f3f4f6;         /* 히어로 배경(라이트 그레이) */
+  --bg-2: #ffffff;       /* 기본 배경 */
+  --text: #0f172a;       /* 제목 컬러 */
+  --muted: #6b7280;      /* 보조 텍스트 */
+  --red: #ef4444;        /* 강조(형사 문제) */
+  --line: #e5e7eb;       /* 경계선 */
+  --chip: #f8fafc;       /* 칩 배경 */
+  --shadow: 0 1px 2px rgba(0,0,0,.06), 0 8px 24px rgba(0,0,0,.06);
+  --content-max: 1150px; /* 검색영역/퀵액션 동일 가로 폭 */
+  --success: #10b981;    /* 성공/긍정적 색상 */
+  --warning: #f59e0b;    /* 경고 색상 */
+  --info: #2563eb;       /* 정보 색상 */
+  
+  /* 기존 변수들 */
   --primary: #11835E;
   --primary-light: #22C55E;
-  --muted: #6B7280;
   --border: #E5E7EB;
   --background: #F9FAFB;
   --card-background: #FFFFFF;
@@ -18,7 +34,7 @@
 
 /* 전체 페이지 컨테이너 */
 .resolution-cases-container {
-  background: white;
+  background: var(--bg-2);
   min-height: 100vh;
   padding: 0;
 }
@@ -27,11 +43,12 @@
 .resolution-header {
   text-align: center;
   padding: var(--s6) var(--s4);
-  background: white;
+  background: var(--bg-2);
+  border-bottom: 1px solid var(--line);
 }
 
 .resolution-title {
-  color: black;
+  color: var(--text);
   font-size: 2rem;
   font-weight: 700;
   line-height: 1.4;
@@ -43,7 +60,7 @@
 
 /* 메인 레이아웃 */
 .resolution-layout {
-  max-width: 1400px;
+  max-width: var(--content-max);
   margin: 0 auto;
   padding: 0 var(--s4);
   display: grid;
@@ -64,6 +81,10 @@
   align-items: center;
   margin-bottom: var(--s4);
   padding: var(--s3) 0;
+  background: var(--bg-2);
+  border-radius: 16px;
+  padding: var(--s3) var(--s4);
+  box-shadow: var(--shadow);
 }
 
 .resolution-filter {
@@ -74,11 +95,17 @@
 
 .resolution-filter select {
   padding: var(--s2) var(--s3);
-  border: 1px solid var(--border);
-  border-radius: 8px;
-  background: white;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--bg-2);
   font-size: 0.9rem;
-  color: var(--text-primary);
+  color: var(--text);
+  transition: all .15s ease;
+}
+
+.resolution-filter select:focus {
+  border-color: var(--info);
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
 }
 
 .resolution-sort {
@@ -91,14 +118,15 @@
   text-decoration: none;
   font-size: 0.9rem;
   padding: var(--s2) var(--s3);
-  border-radius: 6px;
-  transition: all 0.2s ease;
+  border-radius: 12px;
+  transition: all .15s ease;
 }
 
 .resolution-sort a:hover,
 .resolution-sort a.active {
-  color: var(--primary);
-  background: rgba(17, 131, 94, 0.1);
+  color: var(--success);
+  background: var(--chip);
+  transform: translateY(-1px);
 }
 
 /* 피처드 해결사례 그리드 */
@@ -114,18 +142,20 @@
 }
 
 .featured-case-card {
-  background: white;
+  background: var(--bg-2);
   border-radius: 16px;
   padding: var(--s4);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--line);
+  transition: all .15s ease;
   position: relative;
   overflow: hidden;
 }
 
 .featured-case-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,.1);
+  border-color: var(--info);
 }
 
 .case-tag {
@@ -133,19 +163,19 @@
   top: var(--s3);
   left: var(--s3);
   padding: var(--s1) var(--s2);
-  border-radius: 20px;
+  border-radius: 16px;
   font-size: 0.8rem;
   font-weight: 700;
-  color: white;
+  color: var(--bg-2);
   text-transform: uppercase;
 }
 
 .case-tag.new {
-  background: #3B82F6;
+  background: var(--info);
 }
 
 .case-tag.hot {
-  background: #F59E0B;
+  background: var(--warning);
 }
 
 .case-category {
@@ -156,7 +186,7 @@
 }
 
 .case-title {
-  color: var(--text-primary);
+  color: var(--text);
   font-size: 1.1rem;
   font-weight: 700;
   line-height: 1.4;
@@ -171,16 +201,16 @@
   display: flex;
   align-items: center;
   gap: var(--s2);
-  color: var(--text-secondary);
+  color: var(--muted);
   font-size: 0.9rem;
 }
 
 .case-author-avatar {
   width: 32px;
   height: 32px;
-  border-radius: 50%;
-  background: var(--primary);
-  color: white;
+  border-radius: 16px;
+  background: var(--success);
+  color: var(--bg-2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -190,20 +220,21 @@
 
 /* 해결사례 리스트 */
 .cases-list {
-  background: white;
+  background: var(--bg-2);
   border-radius: 16px;
   padding: var(--s4);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--line);
 }
 
 .cases-list-header {
-  border-bottom: 2px solid var(--border);
+  border-bottom: 2px solid var(--line);
   padding-bottom: var(--s3);
   margin-bottom: var(--s4);
 }
 
 .cases-list-title {
-  color: var(--text-primary);
+  color: var(--text);
   font-size: 1.3rem;
   font-weight: 700;
   margin: 0;
@@ -214,8 +245,8 @@
   flex-direction: column;
   gap: 12px;
   padding: var(--s4) 0;
-  border-bottom: 1px solid var(--border);
-  transition: all 0.2s ease;
+  border-bottom: 1px solid var(--line);
+  transition: all .15s ease;
 }
 
 .case-list-item:last-child {
@@ -223,11 +254,11 @@
 }
 
 .case-list-item:hover {
-  background: var(--background);
+  background: var(--chip);
   margin: 0 calc(-1 * var(--s3));
   padding-left: var(--s3);
   padding-right: var(--s3);
-  border-radius: 8px;
+  border-radius: 12px;
 }
 
 /* 카테고리 메타 정보 */
@@ -244,7 +275,7 @@
 
 .case-list-category,
 .case-list-category-separator .text {
-  color: #6E757C;
+  color: var(--muted);
   font-size: 13px;
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 400;
@@ -253,7 +284,7 @@
 }
 
 .case-list-category-separator .dot {
-  color: #EEF1F4;
+  color: var(--line);
   font-size: 13px;
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 400;
@@ -267,7 +298,7 @@
 }
 
 .case-list-title {
-  color: #1F2225;
+  color: var(--text);
   font-size: 18px;
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 700;
@@ -286,7 +317,7 @@
 }
 
 .case-list-snippet {
-  color: #6E757C;
+  color: var(--muted);
   font-size: 14px;
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 400;
@@ -322,7 +353,7 @@
 }
 
 .by-text {
-  color: #464C53;
+  color: var(--text);
   font-size: 12px;
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 700;
@@ -331,7 +362,7 @@
 }
 
 .author-name {
-  color: #6E757C;
+  color: var(--muted);
   font-size: 12px;
   font-family: Pretendard, -apple-system, BlinkMacSystemFont, sans-serif;
   font-weight: 400;
@@ -341,20 +372,20 @@
 
 .view-more-btn {
   display: inline-block;
-  background: var(--primary);
-  color: white;
+  background: var(--success);
+  color: var(--bg-2);
   text-decoration: none;
   padding: var(--s3) var(--s4);
-  border-radius: 8px;
+  border-radius: 12px;
   font-weight: 600;
   text-align: center;
   margin-top: var(--s4);
-  transition: all 0.3s ease;
+  transition: all .15s ease;
 }
 
 .view-more-btn:hover {
-  background: var(--primary-light);
-  transform: translateY(-2px);
+  background: #059669;
+  transform: translateY(-1px);
 }
 
 /* 우측 사이드바 */
@@ -363,38 +394,51 @@
 }
 
 .sidebar-card {
-  background: white;
+  background: var(--bg-2);
   border-radius: 16px;
   padding: var(--s4);
   margin-bottom: var(--s4);
-  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow);
+  border: 1px solid var(--line);
+  transition: all .15s ease;
+}
+
+.sidebar-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,.1);
 }
 
 .sidebar-card h3 {
-  color: var(--text-primary);
+  color: var(--text);
   font-size: 1.1rem;
   font-weight: 700;
   margin: 0 0 var(--s3) 0;
-  border-bottom: 2px solid var(--border);
+  border-bottom: 2px solid var(--line);
   padding-bottom: var(--s2);
 }
 
 /* 프로모션 배너 */
 .promo-banner {
-  background: linear-gradient(135deg, #2d3748 0%, #4a5568 100%);
-  color: white;
+  background: linear-gradient(135deg, var(--text) 0%, var(--muted) 100%);
+  color: var(--bg-2);
   padding: var(--s4);
   border-radius: 16px;
   margin-bottom: var(--s4);
   display: flex;
   align-items: center;
   gap: var(--s3);
+  transition: all .15s ease;
+}
+
+.promo-banner:hover {
+  transform: translateY(-1px);
+  box-shadow: var(--shadow);
 }
 
 .promo-banner img {
   width: 80px;
   height: 80px;
-  border-radius: 50%;
+  border-radius: 16px;
   object-fit: cover;
 }
 
@@ -417,7 +461,16 @@
   align-items: center;
   gap: var(--s2);
   padding: var(--s2) 0;
-  border-bottom: 1px solid var(--border);
+  border-bottom: 1px solid var(--line);
+  transition: all .15s ease;
+}
+
+.lawyer-list li:hover {
+  background: var(--chip);
+  margin: 0 calc(-1 * var(--s2));
+  padding-left: var(--s2);
+  padding-right: var(--s2);
+  border-radius: 8px;
 }
 
 .lawyer-list li:last-child {
@@ -427,9 +480,9 @@
 .lawyer-avatar {
   width: 40px;
   height: 40px;
-  border-radius: 50%;
-  background: #FFB6C1;
-  color: white;
+  border-radius: 16px;
+  background: var(--success);
+  color: var(--bg-2);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -443,14 +496,14 @@
 }
 
 .lawyer-name {
-  color: var(--text-primary);
+  color: var(--text);
   font-weight: 600;
   font-size: 0.9rem;
   margin-bottom: 2px;
 }
 
 .lawyer-desc {
-  color: var(--text-secondary);
+  color: var(--muted);
   font-size: 0.8rem;
   line-height: 1.4;
 }
@@ -618,18 +671,19 @@
 .more-link {
   display: block;
   text-align: center;
-  color: var(--primary);
+  color: var(--success);
   text-decoration: none;
   font-size: 0.9rem;
   font-weight: 600;
   margin-top: var(--s3);
   padding: var(--s2);
-  border-radius: 6px;
-  transition: all 0.2s ease;
+  border-radius: 12px;
+  transition: all .15s ease;
 }
 
 .more-link:hover {
-  background: rgba(17, 131, 94, 0.1);
+  background: var(--chip);
+  transform: translateY(-1px);
 }
 
 /* 반응형 디자인 */
@@ -642,6 +696,8 @@
   .featured-cases {
     grid-template-columns: 1fr;
     gap: var(--s3);
+    margin-left: 0;
+    margin-right: 0;
   }
 }
 
@@ -662,6 +718,39 @@
   
   .case-title {
     font-size: 1rem;
+  }
+  
+  .featured-cases {
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .resolution-header {
+    padding: var(--s4) var(--s3);
+  }
+  
+  .resolution-title {
+    font-size: 1.25rem;
+  }
+  
+  .resolution-controls {
+    padding: var(--s2) var(--s3);
+  }
+  
+  .featured-case-card {
+    padding: var(--s2);
+  }
+  
+  .case-title {
+    font-size: 0.9rem;
+  }
+  
+  .sidebar-card {
+    padding: var(--s3);
   }
 }
 
