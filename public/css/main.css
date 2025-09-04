@@ -302,8 +302,8 @@ button.qcard:hover{
 }
 
 .next-grid{
-  display:grid; 
-  grid-template-columns: 1fr 360px; 
+  display:flex; 
+  flex-direction: column;
   gap:18px;
 }
 
@@ -393,7 +393,8 @@ button.qcard:hover{
 
 /* 우측 스택 카드 */
 .side-stack{
-  display:grid; 
+  display:flex; 
+  flex-direction: column;
   gap:14px;
 }
 
@@ -446,25 +447,25 @@ button.qcard:hover{
 }
 
 .cats{
-  display:grid; 
-  grid-template-columns:repeat(10,1fr); 
+  display:flex; 
+  flex-direction: column;
   gap:18px 8px;
 }
 
 @media (max-width:1200px){ 
-  .cats{grid-template-columns:repeat(8,1fr)} 
+  .cats{} 
 }
 
 @media (max-width:1024px){ 
-  .cats{grid-template-columns:repeat(6,1fr)} 
+  .cats{} 
 }
 
 @media (max-width:768px){ 
-  .cats{grid-template-columns:repeat(4,1fr)} 
+  .cats{} 
 }
 
 @media (max-width:480px){ 
-  .cats{grid-template-columns:repeat(3,1fr)} 
+  .cats{} 
 }
 
 .cat{
@@ -533,13 +534,13 @@ button.qcard:hover{
 }
 
 .cases-grid{
-  display:grid; 
-  grid-template-columns:repeat(2,1fr); 
+  display:flex; 
+  flex-direction: column;
   gap:18px;
 }
 
 @media (max-width:980px){ 
-  .cases-grid{grid-template-columns:1fr} 
+  .cases-grid{} 
 }
 
 .case-card{
@@ -687,13 +688,13 @@ button.qcard:hover{
 }
 
 .tips-grid{
-  display:grid; 
-  grid-template-columns:repeat(2,1fr); 
+  display:flex; 
+  flex-direction: column;
   gap:16px;
 }
 
 @media (max-width:980px){ 
-  .tips-grid{grid-template-columns:1fr} 
+  .tips-grid{} 
 }
 
 .tip-card{
@@ -799,17 +800,17 @@ button.qcard:hover{
 }
 
 .rev-grid{
-  display:grid; 
-  grid-template-columns:repeat(3,1fr); 
+  display:flex; 
+  flex-direction: column;
   gap:16px;
 }
 
 @media (max-width:1120px){ 
-  .rev-grid{grid-template-columns:repeat(2,1fr)} 
+  .rev-grid{} 
 }
 
 @media (max-width:720px){ 
-  .rev-grid{grid-template-columns:1fr} 
+  .rev-grid{} 
 }
 
 .rcard{
@@ -878,13 +879,13 @@ button.qcard:hover{
 }
 
 .media-grid{
-  display:grid; 
-  grid-template-columns:2fr 1fr; 
+  display:flex; 
+  flex-direction: column;
   gap:16px;
 }
 
 @media (max-width:980px){ 
-  .media-grid{grid-template-columns:1fr} 
+  .media-grid{} 
 }
 
 /* 공통 헤더 */
@@ -914,13 +915,13 @@ button.qcard:hover{
 }
 
 .video-list{
-  display:grid; 
-  grid-template-columns:repeat(3,1fr); 
+  display:flex; 
+  flex-direction: column;
   gap:16px;
 }
 
 @media (max-width:700px){ 
-  .video-list{grid-template-columns:1fr} 
+  .video-list{} 
 }
 
 .vitem .thumb{
@@ -1060,7 +1061,8 @@ button.qcard:hover{
 }
 
 .firm-list{
-  display:grid; 
+  display:flex; 
+  flex-direction: column;
   gap:16px;
 }
 
@@ -1070,14 +1072,14 @@ button.qcard:hover{
   border-radius:16px; 
   padding:14px; 
   box-shadow:var(--shadow); 
-  display:grid; 
-  grid-template-columns:1fr 360px; 
+  display:flex; 
+  flex-direction: column;
   gap:14px; 
   align-items:center;
 }
 
 @media (max-width:980px){ 
-  .firm-row{grid-template-columns:1fr} 
+  .firm-row{} 
 }
 
 .fleft .ftitle{
@@ -1134,8 +1136,8 @@ button.qcard:hover{
 }
 
 .fright .thumbs{
-  display:grid; 
-  grid-template-columns:repeat(3,1fr); 
+  display:flex; 
+  flex-direction: column;
   gap:10px;
 }
 
@@ -1311,13 +1313,13 @@ button.qcard:hover{
 }
 
 .live-grid{
-  display:grid; 
-  grid-template-columns:repeat(2,1fr); 
+  display:flex; 
+  flex-direction: column;
   gap:16px;
 }
 
 @media (max-width:980px){ 
-  .live-grid{grid-template-columns:1fr} 
+  .live-grid{} 
 }
 
 .lcard{
@@ -1329,8 +1331,8 @@ button.qcard:hover{
 }
 
 .lrow{
-  display:grid; 
-  grid-template-columns:72px 1fr; 
+  display:flex; 
+  flex-direction: column;
   gap:12px;
 }
 
@@ -1427,25 +1429,25 @@ button.qcard:hover{
 }
 
 .regions{
-  display:grid; 
-  grid-template-columns:repeat(7,1fr); 
+  display:flex; 
+  flex-direction: column;
   gap:12px;
 }
 
 @media (max-width:1200px){ 
-  .regions{grid-template-columns:repeat(6,1fr)} 
+  .regions{} 
 }
 
 @media (max-width:1024px){ 
-  .regions{grid-template-columns:repeat(5,1fr)} 
+  .regions{} 
 }
 
 @media (max-width:768px){ 
-  .regions{grid-template-columns:repeat(4,1fr)} 
+  .regions{} 
 }
 
 @media (max-width:480px){ 
-  .regions{grid-template-columns:repeat(3,1fr)} 
+  .regions{} 
 }
 
 .rchip{

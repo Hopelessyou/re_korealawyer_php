@@ -24,9 +24,8 @@
 
 /* 2행 × 10열 레이아웃 (데스크톱) */
 .cats{
-  display:grid; 
-  grid-template-columns:repeat(10,1fr); 
-  grid-auto-rows:auto; 
+  display:flex; 
+  flex-direction: column;
   row-gap:24px; 
   column-gap:8px;
 }
@@ -43,19 +42,19 @@
 
 /* 반응형 (태블릿/모바일) */
 @media (max-width:1200px){ 
-  .cats{grid-template-columns:repeat(8,1fr)} 
+  .cats{} 
 }
 
 @media (max-width:1024px){ 
-  .cats{grid-template-columns:repeat(6,1fr)} 
+  .cats{} 
 }
 
 @media (max-width:768px){ 
-  .cats{grid-template-columns:repeat(4,1fr)} 
+  .cats{} 
 }
 
 @media (max-width:480px){ 
-  .cats{grid-template-columns:repeat(3,1fr)} 
+  .cats{} 
 }
 
 /* 자주 검색 되는 키워드 바 */
@@ -145,13 +144,13 @@
 }
 
 .strategy-grid{
-  display:grid; 
-  grid-template-columns:1fr 360px; 
+  display:flex; 
+  flex-direction: column;
   gap:18px;
 }
 
 @media (max-width:980px){ 
-  .strategy-grid{grid-template-columns:1fr} 
+  .strategy-grid{} 
 }
 
 /* 좌측 카드 */
@@ -209,18 +208,18 @@
 
 .s-list{
   padding:0 12px 12px; 
-  display:grid; 
-  grid-template-columns:1fr 1fr; 
+  display:flex; 
+  flex-direction: column;
   gap:12px;
 }
 
 @media (max-width:980px){ 
-  .s-list{grid-template-columns:1fr} 
+  .s-list{} 
 }
 
 .s-item{
-  display:grid; 
-  grid-template-columns:1fr 120px; 
+  display:flex; 
+  flex-direction: column;
   gap:10px; 
   padding:10px; 
   border:1px solid #e5e7eb; 
@@ -229,7 +228,8 @@
 }
 
 .s-left{
-  display:grid; 
+  display:flex; 
+  flex-direction: column;
   gap:6px;
 }
 
@@ -308,7 +308,8 @@
 }
 
 .c-list{
-  display:grid; 
+  display:flex; 
+  flex-direction: column;
   gap:0;
 }
 
@@ -379,13 +380,13 @@
 }
 
 .board-grid{
-  display:grid; 
-  grid-template-columns:2fr 360px; 
+  display:flex; 
+  flex-direction: column;
   gap:18px;
 }
 
 @media (max-width:980px){ 
-  .board-grid{grid-template-columns:1fr} 
+  .board-grid{} 
 }
 
 /* 좌측 다크 보드 */
@@ -504,7 +505,8 @@
 }
 
 .posts{
-  display:grid; 
+  display:flex; 
+  flex-direction: column;
   gap:16px;
 }
 
@@ -574,7 +576,8 @@
 
 /* 우측 사이드바 */
 .bd-right{
-  display:grid; 
+  display:flex; 
+  flex-direction: column;
   gap:14px; 
   height:max-content;
 }
@@ -618,7 +621,8 @@
 }
 
 .mini-list{
-  display:grid; 
+  display:flex; 
+  flex-direction: column;
   gap:8px;
 }
 
@@ -630,8 +634,8 @@
 }
 
 .mini-item{
-  display:grid; 
-  grid-template-columns:28px 1fr; 
+  display:flex; 
+  flex-direction: column;
   gap:8px; 
   align-items:center;
 }
@@ -663,7 +667,8 @@
 }
 
 .fb-list{
-  display:grid; 
+  display:flex; 
+  flex-direction: column;
   gap:14px;
 }
 
@@ -672,15 +677,15 @@
   border:1px solid #e6e7eb; 
   border-radius:12px; 
   box-shadow:0 1px 2px rgba(2,6,23,.05); 
-  display:grid; 
-  grid-template-columns:1fr 220px; 
+  display:flex; 
+  flex-direction: column; 
   gap:12px; 
   padding:14px; 
   align-items:center;
 }
 
 @media (max-width:980px){ 
-  .fb-row{grid-template-columns:1fr} 
+  .fb-row{} 
 }
 
 .fb-left .fb-h1{
