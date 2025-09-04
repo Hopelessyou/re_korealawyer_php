@@ -72,24 +72,49 @@
           </div>
         </div>
 
-                <!-- 서비스 목록 -->
-        <div class="ls-wrap">
-          <x-ls-section 
-            title="전화 상담" 
-            :services="[
-              ['title' => '10분 전화상담', 'price' => '25,000원'],
-              ['title' => '방문상담', 'price' => '50,000원'],
-              ['title' => '가선임', 'price' => '150,000원']
-            ]" 
-          />
+        <!-- 전화 상담 섹션 -->
+        <div class="ls-phone-consultation">
+          <div class="ls-phone-header">
+            <h2 class="ls-phone-title">전화 상담</h2>
+            <p class="ls-phone-description">빠르고 정확한 전화 상담으로 법률 문제를 해결하세요</p>
+          </div>
+          
+          <div class="ls-phone-services">
+            <div class="ls-phone-service-card">
+              <div class="ls-phone-service-info">
+                <h3 class="ls-phone-service-title">10분 전화상담</h3>
+                <p class="ls-phone-service-desc">간단한 법률 질문에 대한 빠른 답변</p>
+              </div>
+              <button class="ls-phone-service-btn">예약하기</button>
+            </div>
+            
+            <div class="ls-phone-service-card">
+              <div class="ls-phone-service-info">
+                <h3 class="ls-phone-service-title">방문상담</h3>
+                <p class="ls-phone-service-desc">사무실에서 직접 만나 상세한 상담</p>
+              </div>
+              <button class="ls-phone-service-btn">예약하기</button>
+            </div>
+            
+            <div class="ls-phone-service-card">
+              <div class="ls-phone-service-info">
+                <h3 class="ls-phone-service-title">가선임</h3>
+                <p class="ls-phone-service-desc">사건 초기 단계부터 변호사 선임</p>
+              </div>
+              <button class="ls-phone-service-btn">예약하기</button>
+            </div>
+          </div>
+        </div>
 
+        <!-- 기타 서비스 목록 -->
+        <div class="ls-wrap">
           <x-ls-section 
             title="서류작성" 
             :services="[
-              ['title' => '소장작성', 'price' => '500,000원'],
-              ['title' => '답변서 작성', 'price' => '500,000원'],
-              ['title' => '변호사 의견서 작성', 'price' => '300,000원'],
-              ['title' => '기타 양형 자료', 'price' => '300,000원']
+              ['title' => '소장작성'],
+              ['title' => '답변서 작성'],
+              ['title' => '변호사 의견서 작성'],
+              ['title' => '기타 양형 자료']
             ]" 
           />
 
@@ -128,6 +153,15 @@
               ['title' => '검찰 조사 단계 조력']
             ]" 
           />
+          
+          <!-- 견적 문의하기 버튼 -->
+          <div class="ls-quote-inquiry">
+            <div class="ls-quote-content">
+              <h3 class="ls-quote-title">맞춤형 견적이 필요하신가요?</h3>
+              <p class="ls-quote-description">복잡한 사건이나 특별한 요구사항이 있으시면 견적을 문의해 주세요.</p>
+            </div>
+            <button class="ls-quote-btn">견적 문의하기</button>
+          </div>
         </div>
       </div>
       <div class="lp-right">
@@ -142,6 +176,7 @@
             </div>
           </div>
           <div class="lp-profile-cta">
+            <button class="lp-cta-button">상담예약</button>
           </div>
         </div>
       </div>

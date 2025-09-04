@@ -33,119 +33,119 @@
     <!-- ▼ 하위 섹션을 여기에 추가하세요 (메인 + 사이드바 분리) -->
     <div class="layout" aria-label="본문 레이아웃">
       <section class="main" aria-label="메인">
-                     <div data-layer="lawfirm-content-wrapper" class="lawfirm-content-wrapper">
-          <div data-layer="ad-banner" class="ad-banner">
-            <div data-layer="ad-badge" class="ad-badge">
-              <div data-layer="ad-label" class="ad-label">광고</div>
+                                           <div class="lawfirm-content-wrapper">
+           <div class="ad-banner">
+             <div class="ad-badge">
+               <div class="ad-label">광고</div>
+             </div>
+             <div class="ad-title">AD LAWYERS</div>
+           </div>
+           <div class="lawfirm-main-content">
+             <div class="lawfirm-header">
+               <div class="lawfirm-title">로펌</div>
+               <div class="category-filter">분야별 ▼</div>
+             </div>
+             <div class="lawfirm-section">
+               <div class="lawfirm-info-container">
+                 <div class="lawfirm-name-container">
+                   <div class="lawfirm-name">[로티피] 법률상담부터 사건종결까지 직접 진행합니다.</div>
+                 </div>
+                 <div class="lawfirm-description-container">
+                   <div class="lawfirm-description">의뢰인의 눈높이에서 쉽고 친절한 상담을 약속합니다</div>
+                 </div>
+                 <div class="lawfirm-tags">
+                   <div class="lawyer-tag">
+                     <div class="lawyer-name">최광희 변호사</div>
+                   </div>
+                   <div class="case-type-tag">
+                     <div class="case-type">민사사건</div>
+                   </div>
+                   <div class="specialty-tag">
+                                       <div class="specialty">이혼/상속사건</div>
+                 </div>
+                 <div class="area-tag">
+                   <div class="area">지역주택조합</div>
+                   </div>
+                 </div>
+                 <div class="image-gallery-container">
+                   <div class="image-gallery">
+                     <img class="gallery-image-1" src="https://placehold.co/167x125" />
+                     <img class="gallery-image-2" src="https://placehold.co/224x125" />
+                     <img class="gallery-image-3" src="https://placehold.co/165x125" />
+                     <img class="gallery-image-4" src="https://placehold.co/166x125" />
+                     <img class="gallery-image-5" src="https://placehold.co/166x125" />
+                   </div>
+                   <div class="gallery-nav-button">
+                     <div class="nav-icon">
+                       <div class="nav-arrow"></div>
+                     </div>
+                   </div>
+                 </div>
+                 <div class="consultation-banner">
+                   <img class="consultation-icon" src="https://placehold.co/28x28" />
+                   <div class="consultation-title">로펌에 간편 상담을 신청해 보세요</div>
+                   <div class="consultation-button">
+                     <div class="consultation-button-text">간편 상담 신청</div>
+                   </div>
+                 </div>
+                 <div class="address-container">
+                   <div class="location-icon">
+                     <div class="location-pin"></div>
+                   </div>
+                   <div class="address-text-container">
+                     <div class="address-text">서울특별시 서초구 반포대로30길 61 (서초동) 4층, 로티피 법률사무소</div>
+                   </div>
+                 </div>
+               </div>
+             </div>
+            <div class="lawfirm-details-section">
+              <div class="lawfirm-info-container">
+                <div class="lawfirm-name">[로티피] 법률상담부터 사건종결까지 직접 진행합니다.</div>
+              </div>
+              <div class="lawfirm-info-container">
+                <div class="lawfirm-description">의뢰인의 눈높이에서 쉽고 친절한 상담을 약속합니다</div>
+              </div>
+              <div class="lawfirm-tags-section">
+                <div class="lawfirm-tag-item">
+                  <div class="lawyer-name">최광희 변호사</div>
+                </div>
+                <div class="lawfirm-tag-item">
+                  <div class="case-type">민사사건</div>
+                </div>
+                <div class="lawfirm-tag-item">
+                  <div class="specialty">이혼/상속사건</div>
+                </div>
+                <div class="lawfirm-tag-item">
+                  <div class="area">지역주택조합</div>
+                </div>
+              </div>
+              <div class="consultation-section">
+                <img class="consultation-icon" src="https://placehold.co/28x28" />
+                <div class="consultation-title">로펌에 간편 상담을 신청해 보세요</div>
+                <div class="consultation-button">
+                  <div class="consultation-button-text">간편 상담 신청</div>
+                </div>
+              </div>
+              <div class="address-section">
+                <div class="location-icon">
+                  <div class="location-pin"></div>
+                </div>
+                <div class="address-text-container">
+                  <div class="address-text">서울특별시 서초구 반포대로30길 61 (서초동) 4층, 로티피 법률사무소</div>
+                </div>
+              </div>
             </div>
-            <div data-layer="ad-title" class="ad-title">AD LAWYERS</div>
-          </div>
-          <div data-layer="lawfirm-main-content" class="lawfirm-main-content">
-            <div data-layer="lawfirm-header" class="lawfirm-header">
-              <div data-layer="lawfirm-title" class="lawfirm-title">로펌</div>
-              <div data-layer="category-filter" class="category-filter">분야별 ▼</div>
-            </div>
-            <div data-layer="lawfirm-section" class="lawfirm-section">
-              <div data-layer="lawfirm-info-container" class="lawfirm-info-container">
-                <div data-layer="lawfirm-name-container" class="lawfirm-name-container">
-                  <div data-layer="lawfirm-name" class="lawfirm-name">[로티피] 법률상담부터 사건종결까지 직접 진행합니다.</div>
-                </div>
-                <div data-layer="lawfirm-description-container" class="lawfirm-description-container">
-                  <div data-layer="lawfirm-description" class="lawfirm-description">의뢰인의 눈높이에서 쉽고 친절한 상담을 약속합니다</div>
-                </div>
-                <div data-layer="lawfirm-tags" class="lawfirm-tags">
-                  <div data-layer="lawyer-tag" class="lawyer-tag">
-                    <div data-layer="lawyer-name" class="lawyer-name">최광희 변호사</div>
-                  </div>
-                  <div data-layer="case-type-tag" class="case-type-tag">
-                    <div data-layer="case-type" class="case-type">민사사건</div>
-                  </div>
-                  <div data-layer="specialty-tag" class="specialty-tag">
-                    <div data-layer="specialty" class="specialty">이혼/상속사건</div>
-                  </div>
-                  <div data-layer="area-tag" class="area-tag">
-                    <div data-layer="area" class="area">지역주택조합</div>
-                  </div>
-                </div>
-                <div data-layer="image-gallery-container" class="image-gallery-container">
-                  <div data-layer="image-gallery" class="image-gallery">
-                    <img data-layer="gallery-image-1" class="gallery-image-1" src="https://placehold.co/167x125" />
-                    <img data-layer="gallery-image-2" class="gallery-image-2" src="https://placehold.co/224x125" />
-                    <img data-layer="gallery-image-3" class="gallery-image-3" src="https://placehold.co/165x125" />
-                    <img data-layer="gallery-image-4" class="gallery-image-4" src="https://placehold.co/166x125" />
-                    <img data-layer="gallery-image-5" class="gallery-image-5" src="https://placehold.co/166x125" />
-                  </div>
-                  <div data-layer="gallery-nav-button" class="gallery-nav-button">
-                    <div data-layer="nav-icon" class="nav-icon">
-                      <div data-layer="nav-arrow" class="nav-arrow"></div>
+            <div class="load-more-button">
+              <div class="load-more-text">더보기</div>
+              <div class="load-more-icon">
+                <div class="icon-mask">
+                  <div class="icon-fill">
+                    <div class="icon-image">
+                      <div class="icon-arrow"></div>
                     </div>
                   </div>
                 </div>
-                <div data-layer="consultation-banner" class="consultation-banner">
-                  <img data-layer="consultation-icon" class="consultation-icon" src="https://placehold.co/28x28" />
-                  <div data-layer="consultation-title" class="consultation-title">로펌에 간편 상담을 신청해 보세요</div>
-                  <div data-layer="consultation-button" class="consultation-button">
-                    <div data-layer="consultation-button-text" class="consultation-button-text">간편 상담 신청</div>
-                  </div>
-                </div>
-                <div data-layer="address-container" class="address-container">
-                  <div data-layer="location-icon" class="location-icon">
-                    <div data-layer="location-pin" class="location-pin"></div>
-                  </div>
-                  <div data-layer="address-text-container" class="address-text-container">
-                    <div data-layer="address-text" class="address-text">서울특별시 서초구 반포대로30길 61 (서초동) 4층, 로티피 법률사무소</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div data-layer="Frame 1171278528" class="Frame1171278528">
-              <div data-layer="Container" class="Container">
-                <div data-layer="lawfirm-name" class="lawfirm-name">[로티피] 법률상담부터 사건종결까지 직접 진행합니다.</div>
-              </div>
-              <div data-layer="Container" class="Container">
-                <div data-layer="lawfirm-description" class="lawfirm-description">의뢰인의 눈높이에서 쉽고 친절한 상담을 약속합니다</div>
-              </div>
-              <div data-layer="Frame 1171278526" class="Frame1171278526">
-                <div data-layer="Button" class="Button">
-                  <div data-layer="lawyer-name" class="lawyer-name">최광희 변호사</div>
-                </div>
-                <div data-layer="Button" class="Button">
-                  <div data-layer="case-type" class="case-type">민사사건</div>
-                </div>
-                <div data-layer="Button" class="Button">
-                  <div data-layer="specialty" class="specialty">이혼/상속사건</div>
-                </div>
-                <div data-layer="Button" class="Button">
-                  <div data-layer="area" class="area">지역주택조합</div>
-                </div>
-              </div>
-              <div data-layer="Background+Border" class="BackgroundBorder">
-                <img data-layer="consultation-icon" class="consultation-icon" src="https://placehold.co/28x28" />
-                <div data-layer="consultation-title" class="consultation-title">로펌에 간편 상담을 신청해 보세요</div>
-                <div data-layer="Button" class="Button">
-                  <div data-layer="consultation-button-text" class="consultation-button-text">간편 상담 신청</div>
-                </div>
-              </div>
-              <div data-layer="Container" class="Container">
-                <div data-layer="SVG" class="Svg">
-                  <div data-layer="Vector" class="Vector"></div>
-                </div>
-                <div data-layer="Container" class="Container">
-                  <div data-layer="address-text" class="address-text">서울특별시 서초구 반포대로30길 61 (서초동) 4층, 로티피 법률사무소</div>
-                </div>
-              </div>
-            </div>
-            <div data-layer="load-more-button" class="load-more-button">
-              <div data-layer="load-more-text" class="load-more-text">더보기</div>
-              <div data-layer="load-more-icon" class="load-more-icon">
-                <div data-layer="icon-mask" class="icon-mask">
-                  <div data-layer="icon-fill" class="icon-fill">
-                    <div data-layer="icon-image" class="icon-image">
-                      <div data-layer="icon-arrow" class="icon-arrow"></div>
-                    </div>
-                  </div>
-                </div>
-                <div data-layer="icon-background" class="icon-background"></div>
+                <div class="icon-background"></div>
               </div>
             </div>
           </div>
