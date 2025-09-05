@@ -1,46 +1,55 @@
 /* 단계별선임 페이지 스타일 */
 
 :root{
+  /* 메인페이지 색상 체계 통일 */
+  --bg:#f3f4f6;         /* 히어로 배경(라이트 그레이) */
+  --bg-2:#ffffff;       /* 기본 배경 */
+  --text:#0f172a;       /* 제목 컬러 */
+  --muted:#6b7280;      /* 보조 텍스트 */
+  --red:#ef4444;        /* 강조(형사 문제) */
+  --line:#e5e7eb;       /* 경계선 */
+  --chip:#f8fafc;       /* 칩 배경 */
+  --shadow: 0 1px 2px rgba(0,0,0,.06), 0 8px 24px rgba(0,0,0,.06);
+  --content-max: 1150px; /* 검색영역/퀵액션 동일 가로 폭 */
+  --brand:#11b39a;      /* 브랜드 그린 (메인페이지와 통일) */
+  --brand-700:#0e947f;  /* 진한 그린 (메인페이지와 통일) */
+  
+  /* 기존 변수 (호환성 유지) */
   --wrap:1200px;
-  --line:#e7ebf0;
-  --text:#0f172a;
-  --muted:#64748b;
-  --brand:#0f58bd;   /* 파랑 */
-  --brand-700:#0b3a8c;
-  --accent:#11b39a;  /* 그린 */
-  --accent-700:#0b8b77;
-  --soft:#f5f7fa;
+  --accent:#11b39a;     /* 그린 (브랜드와 통일) */
+  --accent-700:#0e947f; /* 진한 그린 (브랜드와 통일) */
+  --soft:#f3f4f6;       /* 메인 배경과 통일 */
 }
 
 *{box-sizing:border-box}
 html,body{margin:0;padding:0}
-body{font-family:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic","Segoe UI",Roboto,Arial,sans-serif;color:var(--text);background:#fff}
+body{font-family:"Noto Sans KR","Apple SD Gothic Neo","Malgun Gothic","Segoe UI",Roboto,Arial,sans-serif;color:var(--text);background:var(--bg-2)}
 
 /* 메인 컨테이너 스타일 재정의 */
 .main {
-  background: #fff;
+  background: var(--bg-2);
   min-height: 100vh;
 }
 
-.frame{max-width:var(--wrap); margin:36px auto; padding:28px; border:1px solid var(--line); border-radius:12px; box-shadow:0 10px 30px rgba(15,23,42,.06); background:#fff}
+.frame{max-width:var(--wrap); margin:36px auto; padding:28px; border:1px solid var(--line); border-radius:12px; box-shadow:var(--shadow); background:var(--bg-2)}
 .title{font-size:24px; font-weight:900; text-align:center; margin:0 0 10px; letter-spacing:-.01em} 
-.subtitle{margin:0 0 18px; text-align:center; color:#8a94a6; font-weight:800; font-size:13px}
+.subtitle{margin:0 0 18px; text-align:center; color:var(--muted); font-weight:800; font-size:13px}
 
 /* 탭 */
-.tabs{display:flex; gap:10px; justify-content:center; margin-bottom:18px; background:#f0f3f7; padding:6px; border-radius:12px; border:1px solid var(--line); width:max-content; margin-left:auto; margin-right:auto}
-.tab{min-width:160px; text-align:center; padding:10px 18px; border-radius:8px; border:1px solid transparent; background:transparent; color:#6b7280; font-weight:900; cursor:pointer; transition:.2s ease}
-.tab.active{background:linear-gradient(180deg,#1d4ed8,#0f58bd); color:#fff; border-color:#1b3f8b; box-shadow:0 6px 18px rgba(29,78,216,.18)}
+.tabs{display:flex; gap:10px; justify-content:center; margin-bottom:18px; background:var(--chip); padding:6px; border-radius:12px; border:1px solid var(--line); width:max-content; margin-left:auto; margin-right:auto}
+.tab{min-width:160px; text-align:center; padding:10px 18px; border-radius:8px; border:1px solid transparent; background:transparent; color:var(--muted); font-weight:900; cursor:pointer; transition:.2s ease}
+.tab.active{background:linear-gradient(180deg,var(--brand),var(--brand-700)); color:#fff; border-color:var(--brand-700); box-shadow:0 6px 18px rgba(17,179,154,.18)}
 
 /* 카테고리 아이콘 바(간단 라벨) */
-.cats{display:flex; gap:14px; justify-content:center; flex-wrap:wrap; padding:12px; background:#f8fafc; border-radius:12px; margin-bottom:20px; border:1px solid var(--line)}
-.chip{display:flex; align-items:center; gap:10px; padding:8px 12px; border:1px solid #eef2f6; border-radius:999px; background:#fff; color:#4b5563; font-weight:800; box-shadow:0 1px 2px rgba(2,6,23,.04)}
-.ico{width:28px; height:28px; border-radius:50%; background:#eef2f7; display:inline-block; box-shadow:inset 0 0 0 1px #dbe3eb}
+.cats{display:flex; gap:14px; justify-content:center; flex-wrap:wrap; padding:12px; background:var(--chip); border-radius:12px; margin-bottom:20px; border:1px solid var(--line)}
+.chip{display:flex; align-items:center; gap:10px; padding:8px 12px; border:1px solid var(--line); border-radius:999px; background:var(--bg-2); color:var(--muted); font-weight:800; box-shadow:var(--shadow)}
+.ico{width:28px; height:28px; border-radius:50%; background:var(--chip); display:inline-block; box-shadow:inset 0 0 0 1px var(--line)}
 
 /* 3단 컬럼 */
 .cols{display:flex; flex-direction:column; gap:20px}
-.col{background:#fff; border:1px solid var(--line); border-radius:10px; padding:14px; box-shadow:0 6px 16px rgba(15,23,42,.06); position:relative}
+.col{background:var(--bg-2); border:1px solid var(--line); border-radius:10px; padding:14px; box-shadow:var(--shadow); position:relative}
 .colhead{display:flex; align-items:center; gap:10px; margin-bottom:12px}
-.badge{width:28px; height:28px; border-radius:50%; background:radial-gradient(circle at 30% 30%, #fff, #e4edff); color:#0b3a8c; display:flex; align-items:center; justify-content:center; font-weight:900; box-shadow:inset 0 0 0 1px #cfe0ff}
+.badge{width:28px; height:28px; border-radius:50%; background:radial-gradient(circle at 30% 30%, #fff, #e6f7f3); color:var(--brand-700); display:flex; align-items:center; justify-content:center; font-weight:900; box-shadow:inset 0 0 0 1px #c7f0e7}
 .coltitle{font-weight:900}
 .coldesc{color:var(--muted); font-size:13px}
 

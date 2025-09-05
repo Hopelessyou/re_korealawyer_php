@@ -15,13 +15,16 @@
 <div class="special-assault-hub-page">
   <!-- 헤더 배너 -->
   <div class="special-assault-header-banner">
-    <h1 class="special-assault-title">형사 · 특수폭행 허브</h1>
-    
-    <!-- 상태 태그 -->
-    <div class="status-tags">
-      <span class="status-tag completed">법률감수 완료</span>
-      <span class="status-tag">최종 수정: 2025-08-18</span>
-      <span class="status-tag">버전: v1.0.0</span>
+    <!-- 제목과 상태 태그를 같은 라인에 배치 -->
+    <div class="special-assault-header-row">
+      <h1 class="special-assault-title">형사 · 특수폭행 허브</h1>
+      
+      <!-- 상태 태그 -->
+      <div class="status-tags">
+        <span class="status-tag completed">법률감수 완료</span>
+        <span class="status-tag">최종 수정: 2025-08-18</span>
+        <span class="status-tag">버전: v1.0.0</span>
+      </div>
     </div>
     
     <!-- 네비게이션 탭 -->
@@ -48,28 +51,30 @@
         <div class="issue-map-grid">
           <!-- 양형 요소·선처 포인트 -->
           <div class="issue-map-card">
-            <a href="{{ route('wiki.sentencing-factors') }}" class="issue-map-link">
-              <h3 class="issue-map-title">양형 요소·선처 포인트</h3>
-              <p class="issue-map-description">수단 위험성·상해·주도성·<br/>전력·피해회복 등<br/><span class="issue-map-link">세부 가이드</span></p>
-            </a>
+            <h3 class="issue-map-title">양형 요소·선처 포인트</h3>
+            <p class="issue-map-description">수단 위험성·상해·주도성·<br/>전력·피해회복 등</p>
+            <a href="{{ route('wiki.sentencing-factors') }}" class="issue-map-link">세부 가이드</a>
           </div>
 
           <!-- 초기 진술·피의자신문 -->
           <div class="issue-map-card">
             <h3 class="issue-map-title">초기 진술·피의자신문</h3>
-            <p class="issue-map-description">변호인 참여·질문 리스트·<br/>금기 표현<br/><span class="issue-map-link">세부 가이드</span></p>
+            <p class="issue-map-description">변호인 참여·질문 리스트·<br/>금기 표현</p>
+            <a href="#" class="issue-map-link">세부 가이드</a>
           </div>
 
           <!-- CCTV·통신·목격자·의무기록 -->
           <div class="issue-map-card">
             <h3 class="issue-map-title">CCTV·통신·목격자·의<br/>무기록</h3>
-            <p class="issue-map-description">확보·보존·제출 타이밍<br/><span class="issue-map-link">증거 모음</span></p>
+            <p class="issue-map-description">확보·보존·제출 타이밍</p>
+            <a href="#" class="issue-map-link">증거 모음</a>
           </div>
 
           <!-- 합의/공탁·재범방지 -->
           <div class="issue-map-card">
             <h3 class="issue-map-title">합의/공탁·재범방지</h3>
-            <p class="issue-map-description">처벌불원·봉사/치료·서약<br/>서<br/><span class="issue-map-link">회복 전략</span></p>
+            <p class="issue-map-description">처벌불원·봉사/치료·서약<br/>서</p>
+            <a href="#" class="issue-map-link">회복 전략</a>
           </div>
         </div>
       </div>

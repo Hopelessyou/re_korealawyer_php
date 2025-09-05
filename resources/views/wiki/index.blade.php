@@ -49,14 +49,6 @@
     <button type="button" class="filter-tag">검수 배지</button>
   </div>
   
-  <div class="filter-tags filter-tags--secondary">
-    <button type="button" class="filter-tag">경찰조사</button>
-    <button type="button" class="filter-tag">음주운전</button>
-    <button type="button" class="filter-tag">내용증명</button>
-    <button type="button" class="filter-tag">가압류/가처분</button>
-    <button type="button" class="filter-tag">전세금반환</button>
-  </div>
-  
   <div class="consultation-card">
     <div class="card-header">
       <h3 class="card-title">변호사에게 바로 물어보기</h3>
