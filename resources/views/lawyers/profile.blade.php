@@ -1,15 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-<!-- 네비게이션 -->
-<div class="lp-nav">
-  <a href="{{ route('lawyers.profile', ['id' => 1]) }}" class="lp-nav-item active">홈</a>
-  <a href="{{ route('lawyers.profile.services', ['id' => 1]) }}" class="lp-nav-item">변호사 서비스</a>
-  <a href="{{ route('lawyers.profile.reviews', ['id' => 1]) }}" class="lp-nav-item">이용후기</a>
-  <a href="{{ route('lawyers.profile.activities', ['id' => 1]) }}" class="lp-nav-item">활동내역</a>
-</div>
 
-<main>
+<main class="lawyer-profile-page" style="padding: 0 !important; margin: 0 !important;">
+  <x-lawyer-profile-nav active-tab="home" :lawyer-id="1" />
   <div class="container">
     <!-- 메인 레이아웃 -->
     <div class="lp-layout">
@@ -28,29 +22,16 @@
           <span class="lp-tag">영어 가능</span>
         </div>
 
-        <div class="lp-info-container">
-          <div class="lp-info-left">
-            <div class="lp-stats-box">
-              <div class="lp-stats-label">예약준수율</div>
-              <div class="lp-stats-percent">96%</div>
-              <div class="lp-stats-progress"><div class="lp-stats-progress-bar" style="width:96%"></div></div>
-              <div class="lp-office-name">법무법인 태신</div>
-              <div class="lp-office-address">서울특별시 서초구 서초대로50길 18 (서초동) 4층</div>
-              <div class="lp-office-phone">
-                <span class="lp-phone-label">사무실 전화</span>
-                <span class="lp-phone-number">050-7725-8845</span>
-              </div>
-            </div>
-
-            <!-- 간편 문의 -->
-            <div class="ls-quick-contact">
-              <div class="label">간편 문의</div>
-              <div class="note">간편 문의는 사무실 직원이 응대할 수 있습니다.</div>
-              <div class="actions">
-                <div class="qi"></div>
-                <div class="qi"></div>
-                <div class="qi"></div>
-              </div>
+        <div class="lp-info-container lp-info-container-home">
+          <div class="lp-stats-box">
+            <div class="lp-stats-label">예약준수율</div>
+            <div class="lp-stats-percent">96%</div>
+            <div class="lp-stats-progress"><div class="lp-stats-progress-bar" style="width:96%"></div></div>
+            <div class="lp-office-name">법무법인 태신</div>
+            <div class="lp-office-address">서울특별시 서초구 서초대로50길 18 (서초동) 4층</div>
+            <div class="lp-office-phone">
+              <span class="lp-phone-label">사무실 전화</span>
+              <span class="lp-phone-number">050-7725-8845</span>
             </div>
           </div>
 
@@ -62,6 +43,17 @@
               <div class="lp-info-row"><span class="lp-info-label">자격</span><span class="lp-info-text">사법시험 47회 (2008년)</span></div>
               <div class="lp-info-row"><span class="lp-info-label">소속</span><span class="lp-info-text">서울지방변호사회</span></div>
               <div class="lp-info-row"><span class="lp-info-label">학력</span><span class="lp-info-text">연세대학교 법학과 학사 졸업</span></div>
+            </div>
+          </div>
+
+          <!-- 간편 문의 -->
+          <div class="ls-quick-contact">
+            <div class="label">간편 문의</div>
+            <div class="note">간편 문의는 사무실 직원이 응대할 수 있습니다.</div>
+            <div class="actions">
+              <div class="qi"></div>
+              <div class="qi"></div>
+              <div class="qi"></div>
             </div>
           </div>
         </div>
@@ -498,7 +490,7 @@
       <div class="lp-right">
         <div class="lp-profile-card">
           <div class="lp-profile-image">
-            <img src="https://via.placeholder.com/479x545" alt="유정훈 변호사">
+            <img src="https://picsum.photos/479/545" alt="유정훈 변호사">
           </div>
           <div class="lp-profile-header">
             <div class="lp-profile-info">
