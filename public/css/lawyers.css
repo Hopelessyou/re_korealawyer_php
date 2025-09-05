@@ -655,7 +655,7 @@ main.lawyer-profile-page {
   align-items: center;
 }
 
-.ls-card:hover {
+.ls-card:hover { 
   transform: translateY(-5px);
   box-shadow: 0 6px 16px rgba(0,0,0,0.15);
   border-color: #3b82f6;

@@ -290,7 +290,7 @@
 
 .mini-item{
   display:flex; 
-  flex-direction: column;
+  flex-direction: row;
   gap:8px; 
   align-items:center;
 }
@@ -305,9 +305,9 @@
 
 /* Hot Lawyers widget (mint bordered) */
 .widget-hotlawyers{
-  border:2px solid #c7f0e7; 
+  border:2px solid var(--line); 
   border-radius:14px; 
-  box-shadow:0 2px 8px rgba(22,193,168,.06);
+  box-shadow:var(--shadow);
 }
 
 .widget-hotlawyers .mini-list{
@@ -316,7 +316,7 @@
 
 .widget-hotlawyers .mini-item{
   padding:12px 0; 
-  border-bottom:1px solid #eafaf6;
+  border-bottom:1px solid var(--line);
   display:flex;
   align-items:flex-start;
   gap:12px;
@@ -384,9 +384,9 @@
 
 /* Similar Cases widget */
 .widget-similarcases{
-  border:2px solid #c7f0e7; 
+  border:2px solid var(--line); 
   border-radius:14px; 
-  box-shadow:0 2px 8px rgba(22,193,168,.06);
+  box-shadow:var(--shadow);
 }
 
 .widget-similarcases .mini-list{
@@ -439,9 +439,9 @@
 
 /* ===== Sidebar widgets (카드/동영상/실시간 인기뉴스/자주 작성 문서) ===== */
 .widget-mint{
-  border:2px solid #c7f0e7; 
+  border:2px solid var(--line); 
   border-radius:14px; 
-  box-shadow:0 2px 8px rgba(22,193,168,.06);
+  box-shadow:var(--shadow);
 }
 
 /* 카드 */
@@ -492,7 +492,7 @@
 
 .widget-news li{
   padding:10px 0; 
-  border-top:1px solid #eef2f7;
+  border-top:1px solid var(--line);
 }
 
 .widget-news li:first-child{
@@ -501,9 +501,9 @@
 
 .widget-news .ntag{
   display:inline-block; 
-  background:#e6fbf3; 
-  border:1px solid #c7f0e7; 
-  color:#0f9a85; 
+  background:var(--chip); 
+  border:1px solid var(--line); 
+  color:var(--brand); 
   font-weight:900; 
   border-radius:999px; 
   padding:2px 8px; 
@@ -535,7 +535,7 @@
   gap:10px; 
   align-items:flex-start; 
   padding:10px 0; 
-  border-top:1px solid #eef2f7;
+  border-top:1px solid var(--line);
 }
 
 .widget-docs li:first-child{

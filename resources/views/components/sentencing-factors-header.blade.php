@@ -1,12 +1,14 @@
 <!-- 특수폭행 양형 요소와 선처 포인트 헤더 배너 -->
 <div class="sentencing-factors-header-banner">
-  <h1 class="sentencing-factors-title">특수폭행 양형 요소와 선처 포인트</h1>
-  
-  <!-- 상태 태그 -->
-  <div class="status-tags">
-    <span class="status-tag completed">법률감수 완료</span>
-    <span class="status-tag">최종 수정: 2025-08-22</span>
-    <span class="status-tag">버전: v1.0.0</span>
+  <div class="sentencing-factors-header-row">
+    <h1 class="sentencing-factors-title">특수폭행 양형 요소와 선처 포인트</h1>
+    
+    <!-- 상태 태그 -->
+    <div class="status-tags">
+      <span class="status-tag completed">법률감수 완료</span>
+      <span class="status-tag">최종 수정: 2025-08-22</span>
+      <span class="status-tag">버전: v1.0.0</span>
+    </div>
   </div>
   
   <!-- 소개 텍스트 박스 -->
